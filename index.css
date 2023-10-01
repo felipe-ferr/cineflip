@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Quicksand:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Quicksand:wght@300&display=swap');
 
 body{
     margin: 0;
@@ -8,23 +8,27 @@ body{
 /* container da barra de navegação */
 .navbarContainer{
     display: flex;
-    background-color: rgb(24, 24, 24);
-    height: 50px;
-    box-shadow: inset 0px -2px 0px 0px rgb(172, 132, 31);
-
+    top: 0;
+    position: fixed;
+    width: 100%;
+    justify-content: space-between;
+    padding: 10px 0px;
 }
 .navbarlogo{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     width: 20%;
-    
+    padding: 0px 80px;
+    height: 60px;
+    box-sizing: border-box;
 }
 .navbarlinks{
     display: flex;
-    width: 80%;
+    width: 35%;
     justify-content: space-around;
     align-items: center;
+    height: 60px;
 }
 .navbarlinks a{
     text-decoration: none;
@@ -35,9 +39,32 @@ body{
     font-family: 'Quicksand', sans-serif;
     width: 100%;
     height: 100%;
+    gap: 15px;
 }
 .navbarlinks a:hover{
-    box-shadow: inset 0px -2px 0px 0px rgb(255, 225, 0);
+    box-shadow: inset 0px -1px 0px 0px rgb(255, 225, 0);
+    color:rgb(255, 225, 0);
+}
+.navlogin-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+    height: 60px;
+}
+.navlogin-btn a{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+    width: 50%;
+    height: 100%;
+    gap:15px;
+}
+.navlogin-btn a:hover{
+    box-shadow: inset 0px -1px 0px 0px rgb(255, 225, 0);
     color:rgb(255, 225, 0);
 }
 .responsive-img{
@@ -55,33 +82,49 @@ body{
 }
 .header-container{
     display: flex;
-    overflow-x: scroll;
-    height: 75vh;
+    height: 80vh;
     -ms-overflow-style: none;  /* Esconde a barra de scroll IE e Edge */
     scrollbar-width: none;  /* esconde a barra de scroll no Firefox */
-    flex-wrap: nowrap;
     scroll-behavior: smooth;
-}
-.btn-header-left{
-    left: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
+    flex-direction: column;
 }
 /* esconde a barra de scroll */
 .header-container::-webkit-scrollbar {
     display: none;
 }
-  
+
+.header-filme-info{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    padding: 10px;
+}
+.header-filme-info h1{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 100px;
+    margin: 0;
+}
+.header-filme-info p{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 17px;
+    margin-left: 10px;
+}
 .header-barbie{
     background-image: radial-gradient(circle, rgba(255,255,255,0) 0%, rgba(4,24,29,1) 100%), url("imagem/barbie-header.png");
     background-size: 100% 100%;
     width: 100%;
     height: 100%;
-    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 50px 90px;
+    align-items: flex-start;
+    box-sizing: border-box;
+    color: white;
 }
-.oppenheimer-barbie{
+.header-oppenheimer{
+    display: none;
     background-image: radial-gradient(circle, rgba(255,255,255,0) 0%, rgba(4,24,29,1) 100%), url("imagem/oppenheimer-header.jpg");
     background-size: 100% 100%;
     width: 100%;
