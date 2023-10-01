@@ -99,7 +99,7 @@ body{
     flex-direction: column;
     width: 40%;
     padding: 10px;
-    margin-top: 100px;
+    margin-top: 120px;
 }
 .header-filme-info h1{
     font-family: 'Montserrat', sans-serif;
@@ -179,7 +179,7 @@ body{
     background-size: 100% 100%;
     width: 100%;
     height: 100%;
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
     flex-direction: column;
@@ -189,12 +189,51 @@ body{
     color: white;
 }
 .header-oppenheimer{
-    display: none;
     background-image: radial-gradient(circle, rgba(255,255,255,0) 0%, rgba(4,24,29,1) 100%), url("imagem/oppenheimer-header.jpg");
+    display: flex;
     background-size: 100% 100%;
     width: 100%;
     height: 100%;
-    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 50px 90px;
+    align-items: flex-start;
+    box-sizing: border-box;
+    color: white;
+}
+
+.header-filmes-em-cartaz{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: row;
+    gap: 15px;
+    margin-top: -150px;
+    padding: 0px 40px;
+}
+.filme-poster-container{
+    background-size: 100% 100%;
+    width: 12%;
+}
+.filme-poster{
+    height: 200px;
+    background-size: 100% 100%;
+    border-radius: 10px;
+    
+}
+.filme-poster-desc{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: rgb(30, 30, 30);
+    width: 100%;
+}
+.filme-poster-desc p{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 17px;
+    color: white;
 }
 
 
