@@ -59,13 +59,51 @@
         <div id="oppenfilme" class="header-oppenheimer fade-in">
 
             <div class="header-filme-info">
-                <h1 style="font-size:90px" >Oppenheimer</h1>
+                <h1>Oppenheimer</h1>
                 <div class="filme-categoria-duracao">
                     <img style="width:20px;height:20px" src="imagem/classificacao_16.svg">
                     <p>Drama/História</p>
                     <p><i style="font-size:18px" class="material-symbols-outlined">schedule</i>3 Horas</p>
                 </div>
                 <p>Sinopse: O físico J. Robert Oppenheimer trabalha com uma equipe de cientistas durante o Projeto Manhattan, levando ao desenvolvimento da bomba atômica.</p>  
+
+                <div class="header-filme-info-botoes">
+                    <a class="compraringresso" href="comprar_ingresso.php"><i class="material-symbols-outlined">sell</i>Comprar Ingresso</a>
+                    <a class="vertrailer" href="comprar_ingresso.php"><i class="material-symbols-outlined">play_circle</i>Ver Trailer</a>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="mariofilme" class="header-mario fade-in">
+
+            <div class="header-filme-info">
+                <h1 style="font-size:60px" >Super Mario Bros. O Filme</h1>
+                <div class="filme-categoria-duracao">
+                    <img style="width:20px;height:20px" src="imagem/classificacao_livre.svg">
+                    <p>Aventura/Comedia</p>
+                    <p><i style="font-size:18px" class="material-symbols-outlined">schedule</i>1 Hora e 32 minutos</p>
+                </div>
+                <p>Sinopse: Mario é um encanador junto com seu irmão Luigi. Um dia, eles vão parar no reino dos cogumelos, governado pela Princesa Peach, mas ameaçado pelo rei dos Koopas, que faz de tudo para conseguir reinar em todos os lugares.</p>  
+
+                <div class="header-filme-info-botoes">
+                    <a class="compraringresso" href="comprar_ingresso.php"><i class="material-symbols-outlined">sell</i>Comprar Ingresso</a>
+                    <a class="vertrailer" href="comprar_ingresso.php"><i class="material-symbols-outlined">play_circle</i>Ver Trailer</a>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="freirafilme" class="header-freira fade-in">
+
+            <div class="header-filme-info">
+                <h1>A Freira 2</h1>
+                <div class="filme-categoria-duracao">
+                    <img style="width:20px;height:20px" src="imagem/classificacao_livre.svg">
+                    <p>Terror/Thriller</p>
+                    <p><i style="font-size:18px" class="material-symbols-outlined">schedule</i>1 Hora e 50 minutos</p>
+                </div>
+                <p>Sinopse: Em 1956, na França, um padre é assassinado e parece que um mal está se espalhando. Determinada a deter o maligno, irmã Irene mais uma vez fica cara a cara com uma força demoníaca.</p>  
 
                 <div class="header-filme-info-botoes">
                     <a class="compraringresso" href="comprar_ingresso.php"><i class="material-symbols-outlined">sell</i>Comprar Ingresso</a>
@@ -100,17 +138,17 @@
         
                 </div>
     
-                <div class="filme-poster-container">
+                <div onclick="showmario()" class="filme-poster-container">
                 
-                    <div class="filme-poster" style="background-image:url('imagem/megatubarao-poster.png');"></div>
+                    <div class="filme-poster" style="background-image:url('imagem/mario-poster.jpg');"></div>
                     <div class="filme-poster-desc">
-                        <p>Megatubarão 2</p>
+                        <p>Super Mario Bros. O Filme</p>
                     </div>
             
             
                     </div>
     
-                    <div class="filme-poster-container">
+                    <div onclick="showfreira()" class="filme-poster-container">
                 
                         <div class="filme-poster" style="background-image:url('imagem/freira2-poster.jpg');"></div>
                         <div class="filme-poster-desc">
