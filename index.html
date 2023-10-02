@@ -8,6 +8,8 @@
 
     <link rel="stylesheet"href="index.css">
 
+    <script type="application/javascript" src="js/showHeaderFilmes.js"></script>
+
 
     <title>CineFlip</title>
 </head>
@@ -35,7 +37,7 @@
     
         </div>
 
-        <div class="header-barbie">
+        <div id="barbiefilme" class="header-barbie fade-in">
 
             <div class="header-filme-info">
                 <h1>Barbie</h1>
@@ -54,7 +56,7 @@
 
         </div>
 
-        <div class="header-oppenheimer">
+        <div id="oppenfilme" class="header-oppenheimer fade-in">
 
             <div class="header-filme-info">
                 <h1 style="font-size:90px" >Oppenheimer</h1>
@@ -78,7 +80,7 @@
 
         <div class="header-filmes-em-cartaz">
 
-            <div class="filme-poster-container">
+            <div onclick="showbarbie()" class="filme-poster-container">
                 
             <div class="filme-poster" style="background-image:url('imagem/barbie-poster.png');"></div>
             <div class="filme-poster-desc">
@@ -88,7 +90,7 @@
     
             </div>
     
-            <div class="filme-poster-container">
+            <div onclick="showoppenheimer()"class="filme-poster-container">
                 
                 <div class="filme-poster" style="background-image:url('imagem/oppenheimer-poster.jpeg');"></div>
                 <div class="filme-poster-desc">
