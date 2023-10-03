@@ -100,7 +100,7 @@ body{
     flex-direction: column;
     width: 40%;
     padding: 10px;
-    margin-top: 120px;
+    margin-top: 80px;
 }
 .header-filme-info h1{
     font-family: 'Montserrat', sans-serif;
@@ -232,8 +232,7 @@ body{
     color: white;
 }
 
-
-.header-filmes-em-cartaz{
+.filmes-em-cartaz-container{
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -242,36 +241,63 @@ body{
     margin-top: -100px;
     padding: 0px 40px;
     z-index: 2;
+    
+}
+.filmes-em-cartaz{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 30px;
+    width: 45%;
+    z-index: 2;
 }
 .filme-poster-container{
     background-size: 100% 100%;
-    width: 12%;
     transition-duration: 0.4s;
     z-index: 2;
+    width: 100%; 
 }
-.filme-poster-container:hover{
+.filme-poster-container:hover > .filme-poster-desc{
     cursor: pointer;
-    transform: scale(1.02);
+    box-shadow: inset 0px -1px 0px 0px rgb(250, 221, 0);
 }
 .filme-poster{
-    height: 200px;
+    height: 22vh;
     background-size: 100% 100%;
     border-radius: 10px;
     z-index: 2;
-    
+
 }
-.filme-poster-desc{
+.filme-poster-container .filme-poster-desc{
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
     background-color: rgb(30, 30, 30);
     width: 100%;
     z-index: 2;
+    transition-duration: 0.3s;
+    box-shadow: inset 0px -1px 0px 0px rgb(123, 109, 5);
 }
+
 .filme-poster-desc p{
     font-family: 'Quicksand', sans-serif;
-    font-size: 17px;
+    font-size: 1vw;
     color: white;
+}
+.poster-active{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(30, 30, 30);
+    width: 100%;
+    z-index: 2;
+    transition-duration: 0.3s;
+    box-shadow: inset 0px -1px 0px 0px rgb(250, 221, 0);
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1vw;
+    color: white;
+    transform: scale(1.02);
 }
 
 /* ----------------------------------------------
