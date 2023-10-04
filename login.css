@@ -1,6 +1,6 @@
 .container {  
     display: grid;
-    height: 30vh;
+    height: 50vh;
     background-color: blueviolet;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
@@ -8,8 +8,8 @@
     grid-auto-flow: row;
     grid-template-areas:
       "titulo . ."
-      "titulo escolhas escolhas"
-      "titulo . .";
+      "titulo . escolhas"
+      ". . escolhas";
   }
   
 .titulo { 
@@ -17,5 +17,7 @@
     background-color: aquamarine;
 }
   
-  .escolhas { grid-area: escolhas; }
+  .escolhas { 
+    background-color: rgb(21, 90, 67);
+    grid-area: escolhas; }
   
