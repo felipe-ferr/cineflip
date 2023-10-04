@@ -1,23 +1,27 @@
 .container {  
     display: grid;
-    height: 50vh;
+    height: 60vh;
     background-color: blueviolet;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 0.3fr 1fr 1fr;
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
+      "nav nav nav"
       "titulo . ."
-      "titulo . escolhas"
-      ". . escolhas";
+      "titulo . escolhas";
   }
   
 .titulo { 
     grid-area: titulo; 
     background-color: aquamarine;
 }
-  
-  .escolhas { 
+.escolhas { 
     background-color: rgb(21, 90, 67);
-    grid-area: escolhas; }
+    grid-area: escolhas; 
+}
+.nav{
+    grid-area: nav;
+    background-color: red;
+}
   
