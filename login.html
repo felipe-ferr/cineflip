@@ -16,9 +16,77 @@
 
 
 <body>
+    <div class="navbarContainer">
 
-    <div class="container">
-        <div class="nav">nav</div>
-        <div class="titulo">titulo</div>
-        <div class="escolhas">escolhas</div>
-      </div>
+        <div class="navbarlogo">
+            <a href="index.html"><img class="responsive-img" src="imagem/cineflip-logo.svg" style="width:150px;height:40px"></a>
+        </div>
+
+        <div class="navbarlinks">
+            <a href="cartaz.html"><i class="material-symbols-outlined">movie</i>Filmes em Cartaz</a>
+            <a href="lanches.html"><i class="material-symbols-outlined">fastfood</i>Lanches</a>
+            <a href="unidades.html"><i class="material-symbols-outlined">location_on</i>Unidades</a>
+        </div>
+
+        <div class="navlogin-btn">
+            <a href="cad_clientes.php"><i class="material-symbols-outlined">account_circle</i>Login</a>
+        </div>
+
+    </div>
+
+    <div class="container-geral">
+        <div class="container-desenho-form">
+
+            <div class="desenho"> 
+                <img src="desenho-login.svg"> 
+                <img class="responsive-img" src="imagem/cineflip-logo.svg" style="width:150px;height:40px">
+            </div>
+
+            <div class="form-container">
+                <div class="titulo">
+                    <h1>Bem vindo de volta.</h1>
+                </div>
+
+                
+                <form method="post"action="login.php">
+
+                    
+                        <div class="nome">
+                            <p>Nome: </p>
+                            <div class="container-icone-texto">
+                            <div class="icone"><i class="material-symbols-outlined">account_circle</i></div>
+
+                            <input type="text"name="nome"placeholder="Nome..">
+
+                            </div>
+                            
+                        </div>
+    
+                        <div class="senha">
+                            <p>Senha: </p>
+                            <div class="container-icone-texto">
+                            <div class="icone"><i class="material-symbols-outlined">lock</i></div>
+
+                            <input type="password"name="nome"placeholder="Senha..">
+
+                            </div>
+                            
+                        </div>
+    
+                       <div class="submit">
+                          <button type="submit">Enviar<i style="color:black" class="material-symbols-outlined">chevron_right</i></button>
+                       </div>
+                       
+
+                </form>
+
+
+
+            </div>
+
+        </div>
+    </div>
+
+   
+
+
