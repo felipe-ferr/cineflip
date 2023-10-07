@@ -15,7 +15,7 @@ a{
     justify-content: space-between;
     padding: 10px 0px;
     z-index: 2;
-    background-color: rgb(30, 30, 30);
+    position: absolute;
 }
 .navbarlogo{
     display: flex;
@@ -102,7 +102,7 @@ a{
 form{
     display: flex;
     gap: 15px;
-    padding: 5vh 5vh;
+    padding: 15vh 5vh;
     flex-direction: column;
     background-color: rgba(0, 0, 0, 0.379);
     width:80vw;
@@ -184,9 +184,50 @@ form h1{
     cursor: pointer;
 }
 
-.imagens{
+.imagens-container{
     display: flex;
     width: 100%;
-    height: 100vh;
+    height:auto;
+    position: relative;
+    background-size: 100% 100%;
+    animation: background-change 20s infinite;
 }
+.imagens-container .gradient{
+    background: rgb(97,97,97);
+    background: linear-gradient(273deg, rgba(97,97,97,0.375875350140056) 0%, rgba(56,56,56,0.7792366946778712) 50%, rgba(19,19,19,1) 95%);
+    width: 100%;
+}
+.imagens-container .logo{
+    position: absolute;
+    right: 15%;
+    bottom: 15%;
+}
+
+
+
+@keyframes background-change {
+    0% {
+        background-image: url("imagem/cad_cliente_barbie.webp");
+        background-size: 100% 100%;
+    }
+    20% {
+        background-image: url("imagem/cad_cliente_barbie.webp");
+        background-size: 100% 100%;
+    }
+    50%{
+        background-image: url("imagem/cad_cliente_oppen.avif");
+        background-size: 100% 100%;
+    }
+    90%{
+        background-image: url("imagem/super-mario-bros-movie.webp");
+        background-size: 100% 100%;
+    }
+    100% {
+        background-image: url("imagem/cad_cliente_barbie.webp");
+        background-size: 100% 100%;
+    }
+    
+}
+
+
 
