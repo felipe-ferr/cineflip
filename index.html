@@ -33,13 +33,15 @@
 
             <div class="navlogin-btn">
                 <a href="login.html"><i class="material-symbols-outlined">account_circle</i>Login</a>
+                <a href="cad_clientes.html"><i class="material-symbols-outlined">account_circle</i>Registrar</a>
             </div>
     
         </div>
 
-        <div id="barbiefilme" class="header-barbie fade-in">
+        <div id="barbiefilme" class="header-barbie fade-in">   
 
             <div class="header-filme-info">
+
                 <h1>Barbie</h1>
                 <div class="filme-categoria-duracao">
                     <img style="width:20px;height:20px" src="imagem/classificacao_12.svg">
@@ -47,10 +49,11 @@
                     <p><i style="font-size:18px" class="material-symbols-outlined">schedule</i>1 hora e 54 minutos</p>
                 </div>
                 <p>Sinopse: Depois de ser expulsa da Barbieland por ser uma boneca de aparência menos do que perfeita, Barbie parte para o mundo humano em busca da verdadeira felicidade.</p>  
+                
 
                 <div class="header-filme-info-botoes">
                     <a class="compraringresso" href="comprar_ingresso.php"><i class="material-symbols-outlined">sell</i>Comprar Ingresso</a>
-                    <a class="vertrailer" href="comprar_ingresso.php"><i class="material-symbols-outlined">play_circle</i>Ver Trailer</a>
+                    <a onclick="mostrarVideoBarbie()" id="trailerbotao"class="vertrailer" href="comprar_ingresso.php"><i class="material-symbols-outlined">play_circle</i>Ver Trailer</a>
                 </div>
             </div>
 
@@ -119,28 +122,28 @@
 
            <div class="filmes-em-cartaz">
             <div onclick="showbarbie()" class="filme-poster-container"> 
-                <div class="filme-poster" style="background-image:url('imagem/barbie-poster.png');"></div>
+                <div class="filme-poster" style="background-image:url('imagem/big-poster-filme-barbie-2023-tamanho-90x60-cm-lo02-filme-barbie.webp');"></div>
                 <div class="filme-poster-desc">
                     <p>Barbie</p>
                 </div>
                 </div>
         
                 <div onclick="showoppenheimer()"class="filme-poster-container">
-                    <div class="filme-poster" style="background-image:url('imagem/oppenheimer-poster.jpeg');"></div>
+                    <div class="filme-poster" style="background-image:url('imagem/06-opp-dm-mobile-banner-1080x745-now-pl-f01-071223-64bab982784c7-1.jpg');"></div>
                     <div class="filme-poster-desc">
                         <p>Oppenheimer</p>
                     </div>
                     </div>
         
                     <div onclick="showmario()" class="filme-poster-container">
-                        <div class="filme-poster" style="background-image:url('imagem/mario-poster.jpg');"></div>
+                        <div class="filme-poster" style="background-image:url('imagem/super_mario_bros_filme_poster_recorte.jpg');"></div>
                         <div class="filme-poster-desc">
                             <p>Super Mario Bros</p>
                         </div>
                         </div>
         
                         <div onclick="showfreira()" class="filme-poster-container">
-                            <div class="filme-poster" style="background-image:url('imagem/freira2-poster.jpg');"></div>
+                            <div class="filme-poster" style="background-image:url('imagem/poltrona-a-freira-18jul18-2.jpg');"></div>
                             <div class="filme-poster-desc">
                                 <p>A Freira 2</p>
                             </div>

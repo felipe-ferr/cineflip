@@ -83,7 +83,7 @@ body{
 }
 .header-container{
     display: flex;
-    height: auto;
+    height: 70vh;
     gap: 50px;
     -ms-overflow-style: none;  /* Esconde a barra de scroll IE e Edge */
     scrollbar-width: none;  /* esconde a barra de scroll no Firefox */
@@ -173,6 +173,7 @@ body{
 .header-filme-info-botoes .vertrailer:hover{
     background-color: rgba(30, 30, 30, 0.59);
 }
+
 .header-barbie{
     background-image: radial-gradient(circle, rgba(255,255,255,0) 0%, rgba(4,24,29,1) 100%), url("imagem/barbie-header.png");
     display: flex;
@@ -236,19 +237,17 @@ body{
     justify-content: flex-end;
     flex-direction: row;
     gap: 15px;
-    margin-top: -100px;
+    margin-top: -80px;
     padding: 0px 40px;
     z-index: 2;
-    grid-area: escolhas; 
-    
 }
 .filmes-em-cartaz{
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: row;
-    gap: 30px;
-    width: 45%;
+    gap: 10px;
+    width: 50%;
     z-index: 2;
 }
 .filme-poster-container{
@@ -257,16 +256,20 @@ body{
     z-index: 2;
     width: 100%; 
 }
+.filme-poster-container:hover{
+    cursor: pointer;
+}
 .filme-poster-container:hover > .filme-poster-desc{
     cursor: pointer;
     box-shadow: inset 0px -1px 0px 0px rgb(250, 221, 0);
+ 
 }
 .filme-poster{
-    height: 22vh;
+    height: 17vh;
     background-size: 100% 100%;
     border-radius: 10px;
     z-index: 2;
-
+    border: 3px solid goldenrod;
 }
 .filme-poster-container .filme-poster-desc{
     display: flex;
@@ -276,7 +279,6 @@ body{
     width: 100%;
     z-index: 2;
     transition-duration: 0.3s;
-    box-shadow: inset 0px -1px 0px 0px rgb(123, 109, 5);
 }
 
 .filme-poster-desc p{
