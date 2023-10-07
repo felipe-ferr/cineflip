@@ -16,13 +16,13 @@ a{
     padding: 10px 0px;
     z-index: 2;
     position: absolute;
+    background-color: rgba(0, 0, 0, 0.178);
 }
 .navbarlogo{
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
     width: 20%;
-    padding: 0px 80px;
     height: 60px;
     box-sizing: border-box;
 }
@@ -94,7 +94,7 @@ a{
     display: flex;
     box-sizing: border-box;
     width: 100vw;
-    height: auto;
+    height: 100%;
     font-family: 'Quicksand', sans-serif;
     background-color: #1e1e1e;
     box-sizing: border-box;
@@ -102,13 +102,14 @@ a{
 form{
     display: flex;
     gap: 15px;
-    padding: 15vh 5vh;
+    padding: 15vh 7vw;
     flex-direction: column;
     background-color: rgba(0, 0, 0, 0.379);
-    width:80vw;
+    width:120vw;
 }
 form p{
     color: white;
+    font-size: 1vw;
 }
 input[type=checkbox]{
     width: 2vw;
@@ -117,7 +118,7 @@ input[type=checkbox]{
 form h1{
     color: white;
     font-family: 'Montserrat', sans-serif;
-    font-size: 3rem;
+    font-size: 3vw;
     margin: 0;
 }
 .inputContainer{
@@ -137,12 +138,13 @@ form h1{
     background-color: rgba(48, 48, 48, 0.611);
     border: none;
     width: 100%;
-    height: 8vh;
+    height: 6vh;
     position: relative;
     color: white;
     font-size: 1rem;
     padding: 0px 30%;
     border-radius: 10px;
+    transition-duration: 0.4s;
 }
 .inputContainer p{
     position: absolute;
@@ -163,10 +165,10 @@ form h1{
 .inputContainer input:focus{
     background-color: rgba(33, 33, 33, 0.433);
     outline: none;
-    border: 2px solid goldenrod;
+    box-shadow: inset 0px 0px 0px 2px goldenrod;
 }
 .inputContainer input:focus ~ p{
-    transform: translateY(-15px);
+    transform: translateY(-12px);
     font-size: 0.7rem;
 }
 .submit{
@@ -176,7 +178,7 @@ form h1{
     font-family: 'Quicksand', sans-serif;
     border: none;
     border-radius: 50px;
-    padding: 15px;
+    padding: 2vh;
     transition-duration: 0.2s;
 }
 .submit:hover{
@@ -187,21 +189,51 @@ form h1{
 .imagens-container{
     display: flex;
     width: 100%;
-    height:auto;
+    height: 100%;
+    object-fit: cover;
     position: relative;
     background-size: 100% 100%;
     animation: background-change 20s infinite;
 }
 .imagens-container .gradient{
-    background: rgb(97,97,97);
-    background: linear-gradient(273deg, rgba(97,97,97,0.375875350140056) 0%, rgba(56,56,56,0.7792366946778712) 50%, rgba(19,19,19,1) 95%);
+    display: flex;
+    justify-content: flex-start;
+    background-color: rgba(31, 31, 31, 0.838);
     width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
-.imagens-container .logo{
-    position: absolute;
-    right: 15%;
-    bottom: 15%;
+.social-media-container{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
 }
+.social-media-container ion-icon{
+    color: white;
+    font-size: 2vw;
+    cursor: pointer;
+}
+.social-media-container ion-icon:hover{
+    color: goldenrod;
+}
+.contato-container{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    width: 100%;
+    margin-top: 50px;
+}
+.contato-container .contato{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+}
+
 
 
 
