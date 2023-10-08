@@ -13,28 +13,12 @@
     
     
     <div class="container-geral">
-
-        <div class="navbarContainer">
-
-            <div class="navbarlogo">
-                <a href="index.html"><img class="responsive-img" src="imagem/cineflip-logo.svg" style="width:150px;height:40px"></a>
-            </div>
     
-            <div class="navbarlinks">
-                <a href="cartaz.html"><i class="material-symbols-outlined">movie</i>Filmes em Cartaz</a>
-                <a href="lanches.html"><i class="material-symbols-outlined">fastfood</i>Lanches</a>
-                <a href="unidades.html"><i class="material-symbols-outlined">location_on</i>Unidades</a>
-            </div>
-    
-            <div class="navlogin-btn">
-                <a href="login.html"><i class="material-symbols-outlined">account_circle</i>Login</a>
-                <a href="cad_clientes.html"><i class="material-symbols-outlined">account_circle</i>Registrar</a>
-            </div>
-    
-        </div>
 
         
             <form method="post"action="cad_clientes.php">
+
+                <a class="botaoinicio"href="index.html"><i class="material-symbols-outlined">arrow_back</i>Voltar ao início</a>
 
                 <h1>Crie sua conta.</h1>
 
@@ -54,8 +38,18 @@
                         <input type="text"name="telefone"><p>Telefone:</p><i class="material-symbols-outlined">phone</i>
                     </div>
                     <div class="inputContainer">
-                        <input type="text"name="cidade"> <p>Cidade:</p><i class="material-symbols-outlined">location_on</i>
+                        <p style="color: white;" >Sexo: </p>
+                        <select value="sexo">
+                            <option disabled="disabled" selected="selected" ></option>
+                            <option>Masculino</option>
+                            <option>Feminino</option>
+                            <option>Prefiro não dizer</option>
+                        </select><i class="material-symbols-outlined">expand_more</i>
                     </div>
+                </div>
+
+                <div class="inputContainer">
+                    <input style="padding:0px 15%" type="text"name="end"><p>Endereço:</p><i class="material-symbols-outlined">location_on</i>
                 </div>
 
                 <div class="inputContainer">
@@ -66,6 +60,8 @@
                 <div class="inputContainer">
                     <input style="padding:0px 15%" type="password"name="senha"><p>Senha:</p><i class="material-symbols-outlined">key</i>
                 </div>
+
+
 
                 <p><input type="checkbox"> Eu li e concordo com os termos de uso</p>
 

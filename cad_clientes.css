@@ -12,23 +12,15 @@ a{
 .navbarContainer{
     display: flex;
     width: 100%;
-    justify-content: space-between;
     padding: 10px 0px;
     z-index: 2;
     position: absolute;
-}
-.navbarlogo{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 20%;
-    height: 60px;
-    box-sizing: border-box;
+    justify-content: flex-start;
 }
 .navbarlinks{
     display: flex;
-    width: 35%;
-    justify-content: space-around;
+    width: 100%;
+    justify-content: flex-start;
     align-items: center;
     height: 60px;
 }
@@ -101,10 +93,15 @@ a{
 form{
     display: flex;
     gap: 15px;
-    padding: 15vh 7vw;
+    padding-top: 5vh;
+    padding-left: 10vh;
+    padding-right: 10vh;
+    padding-bottom: 10vh;
     flex-direction: column;
     background-color: rgba(0, 0, 0, 0.379);
     width:100vw;
+    height: auto;
+    border-right: 2px solid goldenrod;
 }
 form p{
     color: white;
@@ -119,6 +116,14 @@ form h1{
     font-family: 'Montserrat', sans-serif;
     font-size: 3vw;
     margin: 0;
+}
+.botaoinicio{
+    color: goldenrod;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.1vw;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
 }
 .inputContainer{
     display: flex;
@@ -170,6 +175,29 @@ form h1{
     transform: translateY(-12px);
     font-size: 0.7rem;
 }
+.inputContainer select{
+    appearance: none;
+    background-color: rgba(48, 48, 48, 0.611);
+    border: none;
+    width: 100%;
+    height: 6vh;
+    position: relative;
+    color: white;
+    font-size: 1rem;
+    padding: 0px 30%;
+    border-radius: 10px;
+    transition-duration: 0.4s;
+    font-family: 'Quicksand', sans-serif;
+}
+.inputContainer select:focus{
+    background-color: rgba(33, 33, 33, 0.433);
+    outline: none;
+    box-shadow: inset 0px 0px 0px 2px goldenrod;
+}
+.inputContainer select:focus ~ p{
+    transform: translateY(-12px);
+    font-size: 0.7rem;
+}
 .submit{
     background-color: goldenrod;
     color: black;
@@ -188,11 +216,10 @@ form h1{
 .imagens-container{
     display: flex;
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    height: auto;
     position: relative;
     background-size: 100% 100%;
-    animation: background-change 20s infinite;
+    animation: background-change 22s infinite ease;
 }
 .imagens-container .gradient{
     display: flex;
@@ -241,7 +268,11 @@ form h1{
         background-image: url("video/gif4-fundo-register.gif");
         background-size: cover cover;
     }
-    25% {
+    10% {
+        background-image: url("video/gif4-fundo-register.gif");
+        background-size: cover cover;
+    }
+    40%{
         background-image: url("video/gif2-fundo-register.gif");
         background-size: cover cover;
     }
@@ -253,10 +284,18 @@ form h1{
         background-image: url("video/gif1-fundo-register.gif");
         background-size: cover cover;
     }
+
+ 
+
    
     
     
 }
 
+@media screen and (max-width: 800px){
+    .imagens-container{
+        display: none;
+    }
+}
 
 
