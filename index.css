@@ -86,7 +86,7 @@ body{
 }
 .header-container{
     display: flex;
-    height: 70vh;
+    height: 75vh;
     gap: 50px;
     -ms-overflow-style: none;  /* Esconde a barra de scroll IE e Edge */
     scrollbar-width: none;  /* esconde a barra de scroll no Firefox */
