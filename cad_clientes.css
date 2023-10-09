@@ -172,7 +172,7 @@ form h1{
     box-shadow: inset 0px 0px 0px 2px goldenrod;
 }
 .inputContainer input:focus ~ p{
-    transform: translateY(-12px);
+    transform: translateY(-10px);
     font-size: 0.7rem;
 }
 .inputContainer select{
@@ -193,10 +193,6 @@ form h1{
     background-color: rgba(33, 33, 33, 0.433);
     outline: none;
     box-shadow: inset 0px 0px 0px 2px goldenrod;
-}
-.inputContainer select:focus ~ p{
-    transform: translateY(-12px);
-    font-size: 0.7rem;
 }
 .submit{
     background-color: goldenrod;

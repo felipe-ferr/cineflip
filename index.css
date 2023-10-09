@@ -92,6 +92,7 @@ body{
     scrollbar-width: none;  /* esconde a barra de scroll no Firefox */
     scroll-behavior: smooth;
     flex-direction: column;
+    border-bottom: 0.3vh solid goldenrod;
 }
 /* esconde a barra de scroll */
 .header-container::-webkit-scrollbar {
@@ -240,9 +241,10 @@ body{
     justify-content: flex-end;
     flex-direction: row;
     gap: 15px;
-    margin-top: -80px;
+    margin-top: -12vh;
     padding: 0px 40px;
     z-index: 2;
+
 }
 .filmes-em-cartaz{
     display: flex;
@@ -252,16 +254,18 @@ body{
     gap: 10px;
     width: 50%;
     z-index: 2;
+    padding: 2vh;
+    border-radius: 10px;
 }
 .filme-poster-container{
     background-size: 100% 100%;
     transition-duration: 0.4s;
     z-index: 2;
     width: 100%; 
-    transform: skew(-7deg);
 }
 .filme-poster-container:hover{
     cursor: pointer;
+    transform: scale(1.03);
 }
 .filme-poster-container:hover > .filme-poster-desc{
     cursor: pointer;
@@ -273,6 +277,7 @@ body{
     background-size: 100% 100%;
     border-radius: 10px;
     z-index: 2;
+    border: 0.2vw solid goldenrod;
 }
 .filme-poster-container .filme-poster-desc{
     display: flex;
