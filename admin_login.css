@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Quicksand:wght@400&display=swap');
+
+body{
+    margin: 0;
+}
+.container-geral{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    padding: 10vh 15vh;
+    box-sizing: border-box;
+    background-color: rgb(30, 30, 30);
+}
+.dashboard{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.2fr 1fr;
+    grid-template-areas: 
+    "dashboard-nav dashboard-nav"
+    "tables tables";
+    height: 100vh;
+    width: 100%;
+    border: 2px solid goldenrod;
+    
+}
+.dashboard-nav{
+    grid-area: dashboard-nav;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(30, 30, 30);
+    color: white;
+    height: 100%;
+}
+.dashboard-nav a{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1vw;
+    height: 100%;
+    border: 1px solid goldenrod;
+    border-collapse: collapse;
+}
+.dashboard-nav a:hover{
+    color: goldenrod;
+}
+.active{
+    color: goldenrod;
+    background-color: rgb(20, 20, 20);
+    border: 2px solid goldenrod;
+}
+.tables{
+    grid-area: tables;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    color: white;
+    padding: 5vh;
+    box-sizing: border-box;
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 0.8rem;
+}
+.tables caption{
+    font-size: 2vw;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid white;
+    text-align: center;
+    overflow: hidden;
+}
+.tables td{
+    padding: 4vh 2vh;
+    border-bottom: 1px solid white;
+   
+   
+}
+.tables th{
+    padding: 4vh 2vh;
+    background-color: rgb(19, 19, 19);
+    border-bottom: 1px solid white;
+    
+}
+tr{
+    background-color: rgba(51, 51, 51, 0.577);
+
+    
+}
+button{
+    border: none;
+    background-color: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 0.8rem;
+    cursor: pointer;
+}
+button:hover{
+    color:goldenrod
+}
