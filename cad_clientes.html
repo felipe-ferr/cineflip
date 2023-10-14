@@ -26,44 +26,48 @@
 
                 <div class="inputContainerRow">
                     <div class="inputContainer">
-                        <input type="text"name="nome"><p>Nome:</p><i class="material-symbols-outlined">account_circle</i>
+                        <input required type="text"name="nome"><p>Nome:</p><i class="material-symbols-outlined">account_circle</i>
                     </div>
                     <div class="inputContainer">
-                        <input type="text"name="cpf"> <p>CPF:</p><i class="material-symbols-outlined">description</i>
+                        <input required type="text"name="cpf"> <p>CPF:</p><i class="material-symbols-outlined">description</i>
                     </div>
                 </div>
 
                 <div class="inputContainerRow">
                     <div class="inputContainer">
-                        <input type="text"name="telefone"><p>Telefone:</p><i class="material-symbols-outlined">phone</i>
+                        <input required type="text"name="telefone"><p>Telefone:</p><i class="material-symbols-outlined">phone</i>
                     </div>
                     <div class="inputContainer">
-                        <p style="color: white;" >Sexo: </p>
-                        <select value="sexo">
-                            <option disabled="disabled" selected="selected" ></option>
-                            <option>Masculino</option>
-                            <option>Feminino</option>
-                            <option>Prefiro não dizer</option>
+                        <p style="color: white;">Sexo: </p>
+                        <select required name="sexo">
+                            <option disabled="disabled" selected="selected"></option>
+                            <option value="m">Masculino</option>
+                            <option value="f">Feminino</option>
+                            <option value="n">Prefiro não dizer</option>
                         </select><i class="material-symbols-outlined">expand_more</i>
                     </div>
                 </div>
 
                 <div class="inputContainer">
-                    <input style="padding:0px 15%" type="text"name="end"><p>Endereço:</p><i class="material-symbols-outlined">location_on</i>
+                    <input required style="padding:0px 15%" type="text"name="end"><p>Endereço:</p><i class="material-symbols-outlined">location_on</i>
                 </div>
 
                 <div class="inputContainer">
-                    <input style="padding:0px 15%" type="text"name="email"><p>E-mail:</p><i class="material-symbols-outlined">mail</i>
+                    <input required style="padding:0px 15%" type="text"name="email"><p>E-mail:</p><i class="material-symbols-outlined">mail</i>
                 </div>
 
 
                 <div class="inputContainer">
-                    <input style="padding:0px 15%" type="password"name="senha"><p>Senha:</p><i class="material-symbols-outlined">key</i>
+                    <input required style="padding:0px 15%" type="password"name="senha"><p>Senha:</p><i class="material-symbols-outlined">key</i>
                 </div>
 
 
 
-                <p><input type="checkbox"> Eu li e concordo com os termos de uso</p>
+                <div class="inputContainerCheckbox">
+                    <input class="none" required type="checkbox"id="checkbox">
+                    <label for="checkbox"><p>Eu li e concordo com os termos de uso</p></label>
+                    
+                </div>
 
                 <button type="submit"class="submit">Criar conta</button>
 

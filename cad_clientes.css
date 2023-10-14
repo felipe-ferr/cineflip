@@ -90,6 +90,9 @@ a{
     background-color: #1e1e1e;
     box-sizing: border-box;
 }
+label{
+    cursor: pointer;
+}
 form{
     display: flex;
     gap: 15px;
@@ -134,6 +137,15 @@ form h1{
     box-sizing: border-box;
    
 }
+.inputContainerCheckbox{
+    display: flex;
+    width: 100%;
+    position: relative;
+    align-items: center;
+    justify-content: flex-start;
+    box-sizing: border-box;
+   
+}
 .inputContainerRow{
     display: flex;
     gap: 10px;
@@ -145,7 +157,7 @@ form h1{
     height: 6vh;
     position: relative;
     color: white;
-    font-size: 1rem;
+    font-size: 1vw;
     padding: 0px 30%;
     border-radius: 10px;
     transition-duration: 0.4s;
@@ -153,7 +165,7 @@ form h1{
 .inputContainer p{
     position: absolute;
     left: 0;
-    padding: 0px 10px;
+    padding: 0px 2vh;
     color: rgba(255, 255, 255, 0.411);
     transition-duration: 0.3s;
     font-size: 0.9rem;
@@ -162,7 +174,7 @@ form h1{
 .inputContainer i{
     position: absolute;
     right: 0;
-    padding: 0px 10px;
+    padding: 0px 2vh;
     color: white;
     transition-duration: 0.3s;
 }
@@ -172,7 +184,7 @@ form h1{
     box-shadow: inset 0px 0px 0px 2px goldenrod;
 }
 .inputContainer input:focus ~ p{
-    transform: translateY(-10px);
+    transform: translateY(-1vh);
     font-size: 0.7rem;
 }
 .inputContainer select{
