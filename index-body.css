@@ -21,35 +21,6 @@ h1{
     padding: 0 5vw;
     gap: 3vw;
 }
-.ingressos-container { 
-    display: grid;
-    width: 50%;
-    height: auto;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas:
-      "poster-info desc"
-      "poster-info desc";
-}
-  
-.poster-info { 
-    display: grid; 
-    grid-template-columns: 1fr; 
-    grid-template-rows: 1fr 0fr; 
-    gap: 0px 0px; 
-    grid-template-areas: 
-      "poster-imagem"
-      "tags"; 
-    grid-area: poster-info; 
-    height: 100%;
-}
-.poster-imagem{
-    grid-area: poster-imagem;
-    background-size: 100% 100%;
-    border-radius: 10px 0px 0px 10px;
-}
 .tags{
     grid-area: tags;
     display: flex;
@@ -59,30 +30,32 @@ h1{
 }
 .tags span{
     font-family: 'Quicksand', sans-serif;
-    font-size: 1vw;
+    font-size: 0.8rem;
     color: white;
     text-align: center;
-    background-color: goldenrod;
+    border: 0.1vw solid goldenrod;
     padding: 0.7vh;
     width: 100%;
-    border-radius: 1vh;
 }
   
 .ingresso-desc { 
     grid-area: desc; 
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    padding: 1vh 4vh;
-    gap: 2vh;
-    height: 100%;
-    background-color: rgba(16, 16, 16, 0.645);
-    border-radius: 0px 10px 10px 0px;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 2vh 5vh;
+    gap: 1.5vh;
+    background-color: rgb(30, 30, 30);
+    border-radius: 10px;
+    width: 25%;
+    border: 0.3vh solid goldenrod;
+
 }
 .ingresso-desc h1{
     font-family: 'Montserrat', sans-serif;
-    font-size: 3vw;
+    font-size: 1.2rem;
     color: white;
     text-align: center;
     margin: 0;
@@ -99,6 +72,12 @@ h1{
     width: 100%;
     border-top: 0.1vw solid white;
 }
+.ingresso-desc img{
+    height: 27vh;
+    width: 65%;
+    border-radius: 5px;
+    border: 0.3vh solid goldenrod;
+}
 .ingressos-desc-filme-info{
     grid-area: tags;
     display: flex;
@@ -112,4 +91,49 @@ h1{
     justify-content: center;
     font-size: 0.7rem;
 }
-  
+.ingresso-desc .compraringresso-desc{
+    background-color: goldenrod;
+    color:black;
+    padding:1vh;
+    border-radius: 2vh;
+    text-decoration: none;
+    font-family: 'Quicksand', sans-serif;
+    transition-duration: 0.4s;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 0.8rem;
+    width: 100%;
+}
+.ingresso-desc .compraringresso-desc:hover{
+    background-color: rgb(255, 217, 0);
+}
+.ingresso-desc .compraringresso-desc .material-symbols-outlined{
+    color: black;
+}
+.ingresso-desc .vertrailer-desc{
+    background-color: inherit;
+    color:white;
+    padding:1vh;
+    border-radius: 15px;
+    border: 0.3vh solid goldenrod;
+    text-decoration: none;
+    font-family: 'Quicksand', sans-serif;
+    transition-duration: 0.4s;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 0.8rem;
+    width: 100%;
+    height: 100%;
+}
+.ingresso-desc .vertrailer-desc:hover{
+    background-color: rgba(30, 30, 30, 0.59);
+}
+.desc-filme-botoes{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    gap: 1vw
+}

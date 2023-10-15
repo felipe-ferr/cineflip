@@ -2,7 +2,7 @@
 
 body{
     margin: 0;
-    background-color: rgb(30, 30, 30);
+    background-color: rgb(23, 23, 23);
 }
 
 /* container da barra de navegação */
@@ -92,7 +92,6 @@ body{
     scrollbar-width: none;  /* esconde a barra de scroll no Firefox */
     scroll-behavior: smooth;
     flex-direction: column;
-
 }
 /* esconde a barra de scroll */
 .header-container::-webkit-scrollbar {
@@ -238,7 +237,7 @@ body{
     color: white;
 }
 .header-paw{
-    background-image: radial-gradient(circle, rgba(255,255,255,0) 0%, rgba(4,24,29,1) 100%), url("imagem/paw-header.png");
+    background-image: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(4,24,29,1) 100%), url("imagem/swift-header.webp");
     display: none;
     background-size: 100% 100%;
     width: 100%;
@@ -258,7 +257,7 @@ body{
     justify-content: center;
     flex-direction: row;
     gap: 15px;
-    margin-top: -10vh;
+    margin-top: -11vh;
     z-index: 2;
 
 }
@@ -292,7 +291,7 @@ body{
     background-size: 100% 100%;
     border-radius: 10px;
     z-index: 2;
-    filter: grayscale(15);
+    filter:grayscale(90%);
 }
 .filme-poster-container .filme-poster-desc{
     display: flex;
@@ -320,8 +319,8 @@ body{
     font-family: 'Quicksand', sans-serif;
     font-size: 1vw;
     color: white;
-    transform: translateY(-2vh);
-    filter: grayscale(0);
+    transform: translateY(-1vh);
+    filter:grayscale(0%);
 }
 
 /* ----------------------------------------------
