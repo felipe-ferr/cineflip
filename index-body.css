@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Quicksand:wght@400&display=swap');
+
+body{
+    margin: 0
+}
+hr{
+    width: 90%;
+    border-top: 0.1vw solid white;
+}
+h1{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3vw;
+    color: white;
+    text-align: center;
+}
+.ingressos-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    padding: 0 5vw;
+    gap: 3vw;
+}
+.ingressos-container { 
+    display: grid;
+    width: 50%;
+    height: auto;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "poster-info desc"
+      "poster-info desc";
+}
+  
+.poster-info { 
+    display: grid; 
+    grid-template-columns: 1fr; 
+    grid-template-rows: 1fr 0fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      "poster-imagem"
+      "tags"; 
+    grid-area: poster-info; 
+    height: 100%;
+}
+.poster-imagem{
+    grid-area: poster-imagem;
+    background-size: 100% 100%;
+    border-radius: 10px 0px 0px 10px;
+}
+.tags{
+    grid-area: tags;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5vw;
+}
+.tags span{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1vw;
+    color: white;
+    text-align: center;
+    background-color: goldenrod;
+    padding: 0.7vh;
+    width: 100%;
+    border-radius: 1vh;
+}
+  
+.ingresso-desc { 
+    grid-area: desc; 
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 1vh 4vh;
+    gap: 2vh;
+    height: 100%;
+    background-color: rgba(16, 16, 16, 0.645);
+    border-radius: 0px 10px 10px 0px;
+}
+.ingresso-desc h1{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3vw;
+    color: white;
+    text-align: center;
+    margin: 0;
+}
+.ingresso-desc p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.9vw;
+    color: white;
+    text-align: center;
+    margin: 0;
+    text-align: left;
+}
+.ingresso-desc hr{
+    width: 100%;
+    border-top: 0.1vw solid white;
+}
+.ingressos-desc-filme-info{
+    grid-area: tags;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5vw;
+}
+.ingressos-desc-filme-info p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.7rem;
+}
+  

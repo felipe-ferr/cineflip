@@ -8,7 +8,8 @@
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
-    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="index-header.css" />
+    <link rel="stylesheet" href="index-body.css" />
 
     <script type="application/javascript" src="js/showHeaderFilmes.js"></script>
 
@@ -17,7 +18,7 @@
 
 <body>
     <div class="header-container">
-        <div class="navbarContainer">
+        <div class="navbarContainer"id="nav" >
             <div class="navbarlogo">
                 <a href="index.html"><img src="imagem/cineflip-logo.svg" /></a>
             </div>
@@ -33,6 +34,8 @@
                 <a href="cad_clientes.html"><i class="material-symbols-outlined">account_circle</i>Registrar</a>
             </div>
         </div>
+
+        <script type="application/javascript" src="js/estiloPaginasNavScroll.js"></script>
 
         <div id="barbiefilme" class="header-barbie fade-in">
             <div class="header-filme-info">
@@ -176,19 +179,89 @@
     </div>
     <script src="js/botoesAtivos.js"></script>
 
-    <div class="ingressos-section-container">
+    <hr style="margin-top: 10vh;">
+
+    <h1>Filmes em Cartaz</h1>
+
+    <div style="margin-top: 1vh;" class="ingressos-section">
 
         <div class="ingressos-container">
             <div class="poster-info">
+                <div style="background-image: url('imagem/barbie-poster2.webp');"
+                    class="poster-imagem">
+                </div>
+            </div>
+            <div class="ingresso-desc">
+                <h1>Barbie</h1>
+                <div class="tags">
+                    <span>Dublado</span>
+                    <span>Legendado</span>
+                    <span>3D</span>
+                    <span>2D</span>
+                </div>
+                <div class="ingressos-desc-filme-info">
+                    <p><img style="width: 20px; height: 20px" src="imagem/classificacao_12.svg" />
+                    <p>Comédia/Romance</p>
+                    <p>
+                        <i style="font-size: 18px" class="material-symbols-outlined">schedule</i>1 hora e 54 minutos
+                    </p>
+                    </p>
+                </div>
+                <hr>
+                <p>Sinopse: Depois de ser expulsa da Barbieland por ser uma boneca de aparência menos do que perfeita,
+                    Barbie
+                    parte para o mundo humano em busca da verdadeira felicidade.</p>
+
+                <div class="header-filme-info-botoes">
+                    <a class="compraringresso" href="comprar_ingresso.php"><i
+                            class="material-symbols-outlined">sell</i>Comprar Ingresso</a>
+                    <a onclick="mostrarVideoBarbie()" id="trailerbotao" class="vertrailer"
+                        href="comprar_ingresso.php"><i class="material-symbols-outlined">play_circle</i>Ver
+                        Trailer</a>
+                </div>
             </div>
 
-            <div class="ingressos-desc"></div>
+        </div>
 
+        <div class="ingressos-container">
+            <div class="poster-info">
+                <div style="background-image: url('imagem/oppen-poster2.jpg');"
+                    class="poster-imagem">
+                </div>
+            </div>
+            <div class="ingresso-desc">
+                <h1>Oppenheimer</h1>
+                <div class="tags">
+                    <span>Dublado</span>
+                    <span>Legendado</span>
+                    <span>3D</span>
+                    <span>2D</span>
+                </div>
+                <div class="ingressos-desc-filme-info">
+                    <p><img style="width: 20px; height: 20px" src="imagem/classificacao_12.svg" />
+                    <p>Drama/História</p>
+                    <p>
+                        <i style="font-size: 18px" class="material-symbols-outlined">schedule</i>3 horas
+                    </p>
+                    </p>
+                </div>
+                <hr>
+                <p>Sinopse: O físico J. Robert Oppenheimer trabalha com uma equipe de
+                    cientistas durante o Projeto Manhattan, levando ao desenvolvimento
+                    da bomba atômica.</p>
+
+                <div class="header-filme-info-botoes">
+                    <a class="compraringresso" href="comprar_ingresso.php"><i
+                            class="material-symbols-outlined">sell</i>Comprar Ingresso</a>
+                    <a class="vertrailer"
+                        href="comprar_ingresso.php"><i class="material-symbols-outlined">play_circle</i>Ver
+                        Trailer</a>
+                </div>
+            </div>
 
         </div>
 
     </div>
-
 
 
 
