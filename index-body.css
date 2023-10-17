@@ -59,6 +59,7 @@ h1{
     color: white;
     text-align: center;
     margin: 0;
+    text-wrap: nowrap;
 }
 .ingresso-desc p{
     font-family: 'Montserrat', sans-serif;
@@ -89,7 +90,8 @@ h1{
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 0.7rem;
+    font-size: 0.8rem;
+    text-wrap: nowrap;
 }
 .ingresso-desc .compraringresso-desc{
     background-color: goldenrod;
@@ -102,8 +104,9 @@ h1{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     width: 100%;
+    text-wrap: nowrap;
 }
 .ingresso-desc .compraringresso-desc:hover{
     background-color: rgb(255, 217, 0);
@@ -123,9 +126,11 @@ h1{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     width: 100%;
     height: 100%;
+    text-wrap: nowrap;
+    
 }
 .ingresso-desc .vertrailer-desc:hover{
     background-color: rgba(30, 30, 30, 0.59);
@@ -135,5 +140,5 @@ h1{
     justify-content: flex-start;
     align-items: center;
     width: 100%;
-    gap: 1vw
+    gap: 0.6vw
 }
