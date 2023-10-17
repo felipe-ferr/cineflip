@@ -273,23 +273,27 @@ form h1{
 
 @keyframes background-change {
     0% {
-        background-image: url("video/gif4-fundo-register.gif");
+        background-image: url("https://iili.io/JFlNYhb.gif");
         background-size: cover cover;
     }
     10% {
-        background-image: url("video/gif4-fundo-register.gif");
+        background-image: url("https://iili.io/JFlNYhb.gif");
         background-size: cover cover;
     }
     40%{
-        background-image: url("video/gif2-fundo-register.gif");
+        background-image: url("https://iili.io/JFlN7Tu.gif");
         background-size: cover cover;
     }
     75%{
-        background-image: url("video/gif3-fundo-register.gif");
+        background-image: url("https://iili.io/JFlNRpe.gif");
         background-size: cover cover;
     }
-    100%{
-        background-image: url("video/gif1-fundo-register.gif");
+    95%{
+        background-image: url("https://iili.io/JFlwNgS.gif");
+        background-size: cover cover;
+    }
+    100% {
+        background-image: url("https://iili.io/JFlNYhb.gif");
         background-size: cover cover;
     }
 
