@@ -5,7 +5,7 @@ body{
     background-color: rgb(23, 23, 23);
 }
 
-/* container da barra de navegação */
+/* container da barra de navegaÃ§Ã£o */
 .navbarContainer{
     display: flex;
     top: 0;
@@ -225,6 +225,7 @@ body{
     align-items: flex-start;
     box-sizing: border-box;
     color: white;
+    text-wrap: nowrap;
 }
 .header-freira{
     background-image: radial-gradient(circle, rgba(255,255,255,0) 0%, rgba(4,24,29,1) 100%), url("imagem/freira-header.jpg");
@@ -253,6 +254,7 @@ body{
     align-items: flex-start;
     box-sizing: border-box;
     color: white;
+    text-wrap: nowrap;
 }
 
 .filmes-em-cartaz-container{
@@ -360,5 +362,4 @@ body{
 	-webkit-animation: fade-in 0.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 	        animation: fade-in 0.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 }
-
 
