@@ -55,10 +55,11 @@ h1{
 }
 .ingresso-desc h1{
     font-family: 'Montserrat', sans-serif;
-    font-size: 1.2rem;
+    font-size: 1rem;
     color: white;
     text-align: center;
     margin: 0;
+    text-wrap: nowrap;
 }
 .ingresso-desc p{
     font-family: 'Montserrat', sans-serif;
@@ -90,6 +91,7 @@ h1{
     align-items: center;
     justify-content: center;
     font-size: 0.7rem;
+    text-wrap: nowrap;
 }
 .ingresso-desc .compraringresso-desc{
     background-color: goldenrod;
@@ -126,6 +128,7 @@ h1{
     font-size: 0.8rem;
     width: 100%;
     height: 100%;
+    text-wrap: nowrap;
 }
 .ingresso-desc .vertrailer-desc:hover{
     background-color: rgba(30, 30, 30, 0.59);
@@ -135,5 +138,6 @@ h1{
     justify-content: flex-start;
     align-items: center;
     width: 100%;
-    gap: 1vw
+    gap: 1vw;
+    
 }

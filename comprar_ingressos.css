@@ -1,0 +1,282 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Quicksand:wght@400&display=swap");
+
+body {
+    margin: 0;
+    background-color: rgb(23, 23, 23);
+}
+
+.navbarContainer {
+    display: flex;
+    top: 0;
+    position: fixed;
+    width: 100%;
+    justify-content: space-between;
+    z-index: 3;
+    transition-duration: 0.4s;
+    padding: 1vh 0;
+    height: 12vh;
+}
+
+.navbarlogo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.navbarlogo img {
+    width: 10vw;
+}
+
+.navbarlinks {
+    display: flex;
+    width: 35%;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+}
+
+.navbarlinks a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: "Quicksand", sans-serif;
+    font-size: 1vw;
+    width: 100%;
+    height: 100%;
+    gap: 1vw;
+}
+
+.navbarlinks a:hover {
+    box-shadow: inset 0px -1px 0px 0px rgb(255, 225, 0);
+    color: rgb(255, 225, 0);
+}
+
+.navlogin-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+    height: 100%;
+}
+
+.navlogin-btn a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1vw;
+    color: white;
+    font-family: "Quicksand", sans-serif;
+    width: 50%;
+    height: 100%;
+    gap: 3vh;
+}
+
+.navlogin-btn a:hover {
+    box-shadow: inset 0px -1px 0px 0px rgb(255, 225, 0);
+    color: rgb(255, 225, 0);
+}
+
+.material-symbols-outlined {
+    color: goldenrod;
+    font-size: 1.5vw;
+    font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+}
+
+.container-geral {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    margin-top: 14vh;
+    padding: 2vh 3vw;
+    box-sizing: border-box;
+}
+
+.sidebar-movie {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 80%;
+    height: 100vh;
+    padding: 1vw;
+    box-sizing: border-box;
+    gap: 1vh;
+    border-right: 1px solid goldenrod;
+}
+
+.sidebar-movie p {
+    font-family: "Quicksand", sans-serif;
+    font-size: 1vw;
+    margin: 0;
+    text-align: left;
+    color: rgb(210, 210, 210);
+}
+
+.sidebar-movie h1 {
+    font-family: "Quicksand", sans-serif;
+    font-size: 2vw;
+    margin: 0;
+    text-align: left;
+    color: rgb(255, 255, 255);
+}
+
+.poster-info-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.poster-info-container .poster {
+    width: 50%;
+    background-image: url("imagem/barbie-poster2.webp");
+    background-size: 100% 100%;
+    height: 55vh;
+    border-radius: 10px;
+}
+
+.poster-info-container .info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 50%;
+    height: 100%;
+    padding: 1vw;
+    box-sizing: border-box;
+    gap: 1vh;
+}
+
+.poster-info-container a {
+    background-color: inherit;
+    color: white;
+    padding: 1vh;
+    border-radius: 15px;
+    border: 0.3vh solid goldenrod;
+    text-decoration: none;
+    font-family: "Quicksand", sans-serif;
+    transition-duration: 0.4s;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 0.8rem;
+    text-wrap: nowrap;
+}
+
+.poster-info-container p {
+    font-family: "Quicksand", sans-serif;
+    font-size: 1vw;
+    margin: 0;
+    text-align: left;
+    color: rgb(210, 210, 210);
+}
+
+.poster-info-container h1 {
+    font-family: "Quicksand", sans-serif;
+    font-size: 1.2vw;
+    margin: 0;
+    text-align: left;
+    color: goldenrod;
+}
+
+.ingressos-desc-filme-info {
+    grid-area: tags;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5vw;
+}
+
+.ingressos-desc-filme-info p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8em;
+    text-wrap: nowrap;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    padding: 2vh;
+}
+
+.assentos-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 70%;
+}
+
+.tela {
+    display: flex;
+    width: 100%;
+}
+
+.tela hr {
+    width: 100%;
+}
+
+.linha-cadeira {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: auto;
+}
+
+.linha-cadeira p {
+    color: goldenrod;
+    font-size: large;
+    font-family: "Quicksand", sans-serif;
+    margin: 0;
+}
+
+input[type="checkbox"] {
+    appearance: none;
+}
+
+label {
+    -webkit-appearance: none !important;
+    -moz-appearance: none !important;
+    -o-appearance: none !important;
+    -ms-appearance: none !important;
+    appearance: none !important;
+    width: 3vw;
+    height: 4vh;
+    background-image: url("imagem/poltrona-checked.svg");
+    background-size: 100% 100%;
+    cursor: pointer;
+
+}
+
+input:checked+label {
+    width: 3vw;
+    height: 4vh;
+    background-image: url("imagem/poltrona-unchecked.svg");
+    background-size: 100% 100%;
+    cursor: pointer;
+}
+
+.pedido-detalhes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 30%;
+    height: 100vh;
+    background-color: #343434;
+}
