@@ -234,15 +234,20 @@ form {
 .linha-cadeira {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     height: auto;
+    width: 100%;
 }
 
 .linha-cadeira p {
     color: goldenrod;
-    font-size: large;
+    font-size: 1rem;
     font-family: "Quicksand", sans-serif;
     margin: 0;
+    width: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 input[type="checkbox"] {
