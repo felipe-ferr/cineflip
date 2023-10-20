@@ -272,8 +272,8 @@ label {
 }
 
 input:checked+label {
-    width: 3vw;
-    height: 4vh;
+    width: 2.3vw;
+    height: 4.3vh;
     background-image: url("imagem/poltrona-unchecked.svg");
     background-size: 100% 100%;
     cursor: pointer;
