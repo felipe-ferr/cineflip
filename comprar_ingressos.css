@@ -234,9 +234,10 @@ form {
 .linha-cadeira {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     height: auto;
     width: 100%;
+    gap: 0;
 }
 
 .linha-cadeira p {
@@ -260,11 +261,13 @@ label {
     -o-appearance: none !important;
     -ms-appearance: none !important;
     appearance: none !important;
-    width: 3vw;
-    height: 4vh;
+    width: 2.3vw;
+    height: 4.3vh;
     background-image: url("imagem/poltrona-checked.svg");
     background-size: 100% 100%;
     cursor: pointer;
+    margin: 0;
+ 
 
 }
 
