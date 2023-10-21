@@ -158,17 +158,19 @@ form h1{
     position: relative;
     color: white;
     font-size: 1vw;
-    padding: 0px 30%;
     border-radius: 10px;
     transition-duration: 0.4s;
 }
 .inputContainer p{
     position: absolute;
     left: 0;
-    padding: 0px 2vh;
+    padding: 0px 3vh;
     color: rgba(255, 255, 255, 0.411);
     transition-duration: 0.3s;
     font-size: 0.9rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     
 }
 .inputContainer i{
@@ -181,11 +183,16 @@ form h1{
 .inputContainer input:focus{
     background-color: rgba(33, 33, 33, 0.433);
     outline: none;
+    padding: 0px 5%;
     box-shadow: inset 0px 0px 0px 2px goldenrod;
 }
 .inputContainer input:focus ~ p{
-    transform: translateY(-1vh);
+    transform: translateY(-3vh);
     font-size: 0.7rem;
+    background-color: #131313;
+    padding: 0px 1vh;
+    margin-left: 3%;
+    border-radius: 5px;
 }
 .inputContainer select{
     appearance: none;
@@ -205,6 +212,9 @@ form h1{
     background-color: rgba(33, 33, 33, 0.433);
     outline: none;
     box-shadow: inset 0px 0px 0px 2px goldenrod;
+}
+.inputContainer select > option{
+    background-color: rgb(48, 48, 48);
 }
 .submit{
     background-color: goldenrod;
