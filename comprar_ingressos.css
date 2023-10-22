@@ -3,13 +3,23 @@
 body {
     margin: 0;
     background-color: rgb(23, 23, 23);
-    font-family: 'Quicksand',sans-serif;
+    font-family: 'Quicksand', sans-serif;
+    box-sizing: border-box;
+    height: 100vh;
+    
+}
+html{
+    height: 100%;
+}
+
+p {
+    margin: 0;
 }
 
 .navbarContainer {
     display: flex;
     top: 0;
-    position: fixed;
+    position: relative;
     width: 100%;
     justify-content: space-between;
     z-index: 3;
@@ -92,10 +102,9 @@ body {
 .container-geral {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     width: 100%;
     height: auto;
-    margin-top: 14vh;
     padding: 2vh 3vw;
     box-sizing: border-box;
 }
@@ -207,36 +216,84 @@ body {
 
 form {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     flex-direction: column;
     width: 100%;
     height: auto;
     padding: 2vh;
+    gap: 2vh;
 }
-.inputContainer{
+
+form p {
+    color: goldenrod;
+}
+
+.data-container {
+    display: flex;
+    width: auto;
+    justify-content: center;
+
+}
+
+.data {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 4vw;
+    height: 8vh;
+    background-color: #131212;
+    transition-duration: 0.3s;
+    box-sizing: border-box;
+}
+
+.data:focus-within {
+    background-color: goldenrod;
+    margin: 0;
+    color: black;
+}
+.data:focus-within .material-symbols-outlined{
+    color: black;
+}
+.data:focus-within p{
+    color: black;
+}
+
+.data input[type="radio"] {
+    -webkit-appearance: none;
+    appearance: none;
+    margin: 0;
+    border: none;
+}
+
+
+.inputContainer {
     display: flex;
     width: 60%;
     position: relative;
     align-items: center;
     justify-content: center;
     box-sizing: border-box;
-   
+
 }
-.inputContainerCheckbox{
+
+.inputContainerCheckbox {
     display: flex;
     width: 100%;
     position: relative;
     align-items: center;
     justify-content: flex-start;
     box-sizing: border-box;
-   
+
 }
-.inputContainerRow{
+
+.inputContainerRow {
     display: flex;
     gap: 10px;
 }
-.inputContainer input{
+
+.inputContainer input {
     background-color: rgba(48, 48, 48, 0.611);
     border: none;
     width: 100%;
@@ -248,32 +305,37 @@ form {
     border-radius: 10px;
     transition-duration: 0.4s;
 }
-.inputContainer p{
+
+.inputContainer p {
     position: absolute;
     left: 0;
     padding: 0px 2vh;
     color: rgba(255, 255, 255, 0.411);
     transition-duration: 0.3s;
     font-size: 0.9rem;
-    
+
 }
-.inputContainer i{
+
+.inputContainer i {
     position: absolute;
     right: 0;
     padding: 0px 2vh;
     color: white;
     transition-duration: 0.3s;
 }
-.inputContainer input:focus{
+
+.inputContainer input:focus {
     background-color: rgba(33, 33, 33, 0.433);
     outline: none;
     box-shadow: inset 0px 0px 0px 2px goldenrod;
 }
-.inputContainer input:focus ~ p{
+
+.inputContainer input:focus~p {
     transform: translateY(-1vh);
     font-size: 0.7rem;
 }
-.inputContainer select{
+
+.inputContainer select {
     appearance: none;
     background-color: rgba(48, 48, 48, 0.611);
     border: none;
@@ -287,12 +349,14 @@ form {
     transition-duration: 0.4s;
     font-family: 'Quicksand', sans-serif;
 }
-.inputContainer select:focus{
+
+.inputContainer select:focus {
     background-color: rgba(33, 33, 33, 0.433);
     outline: none;
     box-shadow: inset 0px 0px 0px 2px goldenrod;
 }
-.inputContainer select > option{
+
+.inputContainer select>option {
     background-color: rgb(48, 48, 48);
 }
 
@@ -303,6 +367,10 @@ form {
     justify-content: center;
     flex-direction: column;
     width: 70%;
+    background-color: #131212;
+    border-radius: 15px;
+    padding: 2vh;
+    box-sizing: border-box;
 }
 
 .tela {
@@ -312,15 +380,18 @@ form {
     align-items: center;
     flex-direction: column;
 }
-.tela p{
+
+.tela p {
     font-size: 0.7rem;
     color: gray;
-    margin-top: -3vh;
+    margin-top: -5vh;
 }
 
 .tela img {
-    width: 75%;
-    height: 8vh;
+    width: 90%;
+    height: 12vh;
+    margin-left: 2.2vh;
+
 
 }
 
@@ -330,7 +401,6 @@ form {
     justify-content: center;
     height: auto;
     width: 100%;
-    gap: 0;
 }
 
 .linha-cadeira p {
@@ -338,15 +408,16 @@ form {
     font-size: 1rem;
     font-family: "Quicksand", sans-serif;
     margin: 0;
-    width: 5%;
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 0 1vh;
 }
 
 .linha-cadeira input[type="checkbox"] {
-    appearance: none;
+    display: none;
 }
+
 
 .linha-cadeira label {
     -webkit-appearance: none !important;
@@ -354,18 +425,20 @@ form {
     -o-appearance: none !important;
     -ms-appearance: none !important;
     appearance: none !important;
-    width: 2.3vw;
-    height: 4.3vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2vw;
+    height: 4vh;
     background-image: url("imagem/poltrona-checked.svg");
     background-size: 100% 100%;
     cursor: pointer;
-    margin: 0;
 
 }
 
 .linha-cadeira :checked+label {
-    width: 2.3vw;
-    height: 4.3vh;
+    width: 2vw;
+    height: 4vh;
     background-image: url("imagem/poltrona-unchecked.svg");
     background-size: 100% 100%;
     cursor: pointer;

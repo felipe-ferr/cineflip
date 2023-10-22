@@ -77,6 +77,9 @@
 
             <form method="post" action="comprar_ingresso.php">
 
+                <input type="hidden"name="barbie">
+
+                <p style="color:grey">Escolha o Shopping:</p>
                 <div class="inputContainer">
                     <p style="color: white;">Escolha o Shopping: </p>
                     <select required name="shopping">
@@ -87,6 +90,47 @@
                         <option value="Park Shopping">Park Shopping</option>
                     </select><i class="material-symbols-outlined">expand_more</i>
                 </div>
+
+                <p style="color:grey">Escolha o dia:</p>
+
+                <div class="data-container">
+                 
+                    <label class="data">
+                        <input type="radio" name="radio"/> <p>Seg</p>
+                        <i class="material-symbols-outlined">calendar_month</i></label>
+                      </label>
+                      <label class="data">
+                        <input type="radio" name="radio"/> <p>Ter</p>
+                        <i class="material-symbols-outlined">calendar_month</i></label>
+                      </label>
+                      <label class="data">
+                        <input type="radio" name="radio"/> <p>Qua</p>
+                        <i class="material-symbols-outlined">calendar_month</i></label>
+                      </label>
+                      <label class="data">
+                        <input type="radio" name="radio"/> <p>Qui</p>
+                        <i class="material-symbols-outlined">calendar_month</i></label>
+                      </label>
+                      <label class="data">
+                        <input type="radio" name="radio"/> <p>Sex</p>
+                        <i class="material-symbols-outlined">calendar_month</i></label>
+                      </label>
+                      <label class="data">
+                        <input type="radio" name="radio"/> <p>Sab</p>
+                        <i class="material-symbols-outlined">calendar_month</i></label>
+                      </label>
+                      <label class="data">
+                        <input type="radio" name="radio"/> <p>Dom</p>
+                        <i class="material-symbols-outlined">calendar_month</i></label>
+                      </label>
+    
+                    
+                    
+                </div>
+                    
+                    
+                
+
                 <div class="assentos-container">
                     <div class="tela">
                         <img src="imagem/tela.svg">
@@ -110,6 +154,22 @@
                         <label for="a7"></label>
                         <input type="checkbox" id="a8" value="a8" />
                         <label for="a8"></label>
+                        <input type="checkbox" id="a9" value="a9" />
+                        <label for="a9"></label>
+                        <input type="checkbox" id="a10" value="a10" />
+                        <label for="a10"></label>  
+                        <input type="checkbox" id="a11" value="a11" />
+                        <label for="a11"></label>  
+                        <input type="checkbox" id="a12" value="a12" />
+                        <label for="a12"></label>  
+                        <input type="checkbox" id="a13" value="a13" />
+                        <label for="a13"></label>  
+                        <input type="checkbox" id="a14" value="a14" />
+                        <label for="a14"></label>  
+                        <input type="checkbox" id="a15" value="a15" />
+                        <label for="a15"></label>  
+                        <input type="checkbox" id="a16" value="a16" />
+                        <label for="a16"></label>   
                         <p>A</p>
                     </div>
                     <div class="linha-cadeira">
@@ -130,6 +190,22 @@
                         <label for="b7"></label>
                         <input type="checkbox" id="b8" value="b8" />
                         <label for="b8"></label>
+                        <input type="checkbox" id="b9" value="b9" />
+                        <label for="b9"></label>
+                        <input type="checkbox" id="b10" value="b10" />
+                        <label for="b10"></label>
+                        <input type="checkbox" id="b11" value="b11" />
+                        <label for="b11"></label>
+                        <input type="checkbox" id="b12" value="b12" />
+                        <label for="b12"></label>
+                        <input type="checkbox" id="b13" value="b13" />
+                        <label for="b13"></label>
+                        <input type="checkbox" id="b14" value="b14" />
+                        <label for="b14"></label>
+                        <input type="checkbox" id="b15" value="b15" />
+                        <label for="b15"></label>
+                        <input type="checkbox" id="b16" value="b16" />
+                        <label for="b16"></label>
                         <p>B</p>
                     </div>
                     <div class="linha-cadeira">
@@ -150,6 +226,22 @@
                         <label for="c7"></label>
                         <input type="checkbox" id="c8" value="c8" />
                         <label for="c8"></label>
+                        <input type="checkbox" id="c9" value="c9" />
+                        <label for="c9"></label>
+                        <input type="checkbox" id="c10" value="c10" />
+                        <label for="c10"></label>  
+                        <input type="checkbox" id="c11" value="c11" />
+                        <label for="c11"></label>  
+                        <input type="checkbox" id="c12" value="c12" />
+                        <label for="c12"></label>  
+                        <input type="checkbox" id="c13" value="c13" />
+                        <label for="c13"></label>  
+                        <input type="checkbox" id="c14" value="c14" />
+                        <label for="c14"></label>  
+                        <input type="checkbox" id="c15" value="c15" />
+                        <label for="c15"></label>  
+                        <input type="checkbox" id="c16" value="c16" />
+                        <label for="c16"></label>   
                         <p>C</p>
                     </div>
                     <div class="linha-cadeira">
@@ -170,28 +262,65 @@
                         <label for="d7"></label>
                         <input type="checkbox" id="d8" value="d8" />
                         <label for="d8"></label>
+                        <input type="checkbox" id="d9" value="d9" />
+                        <label for="d9"></label>
+                        <input type="checkbox" id="d10" value="d10" />
+                        <label for="d10"></label>  
+                        <input type="checkbox" id="d11" value="d11" />
+                        <label for="d11"></label>  
+                        <input type="checkbox" id="d12" value="d12" />
+                        <label for="d12"></label>  
+                        <input type="checkbox" id="d13" value="d13" />
+                        <label for="d13"></label>  
+                        <input type="checkbox" id="d14" value="d14" />
+                        <label for="d14"></label>  
+                        <input type="checkbox" id="d15" value="d15" />
+                        <label for="d15"></label>  
+                        <input type="checkbox" id="d16" value="d16" />
+                        <label for="d16"></label>   
                         <p>D</p>
                     </div>
                     <div class="linha-cadeira">
                         <p>E</p>
-                        <input type="checkbox" id="e1" value="e1" />
-                        <label for="e1"></label>
-                        <input type="checkbox" id="e2" value="e2" />
-                        <label for="e2"></label>
-                        <input type="checkbox" id="e3" value="e3" />
-                        <label for="e3"></label>
-                        <input type="checkbox" id="e4" value="e4" />
-                        <label for="e4"></label>
-                        <input type="checkbox" id="e5" value="e5" />
-                        <label for="e5"></label>
-                        <input type="checkbox" id="e6" value="e6" />
-                        <label for="e6"></label>
-                        <input type="checkbox" id="e7" value="e7" />
-                        <label for="e7"></label>
-                        <input type="checkbox" id="e8" value="e8" />
-                        <label for="e8"></label>
+                        <input type="checkbox" id="E1" value="E1" />
+                        <label for="E1"></label>
+                        <input type="checkbox" id="E2" value="E2" />
+                        <label for="E2"></label>
+                        <input type="checkbox" id="E3" value="E3" />
+                        <label for="E3"></label>
+                        <input type="checkbox" id="E4" value="E4" />
+                        <label for="E4"></label>
+                        <input type="checkbox" id="E5" value="E5" />
+                        <label for="E5"></label>
+                        <input type="checkbox" id="E6" value="E6" />
+                        <label for="E6"></label>
+                        <input type="checkbox" id="E7" value="E7" />
+                        <label for="E7"></label>
+                        <input type="checkbox" id="E8" value="E8" />
+                        <label for="E8"></label>
+                        <input type="checkbox" id="E9" value="E9" />
+                        <label for="E9"></label>
+                        <input type="checkbox" id="E10" value="E10" />
+                        <label for="E10"></label>  
+                        <input type="checkbox" id="E11" value="E11" />
+                        <label for="E11"></label>  
+                        <input type="checkbox" id="E12" value="E12" />
+                        <label for="E12"></label>  
+                        <input type="checkbox" id="E13" value="E13" />
+                        <label for="E13"></label>  
+                        <input type="checkbox" id="E14" value="E14" />
+                        <label for="E14"></label>  
+                        <input type="checkbox" id="E15" value="E15" />
+                        <label for="E15"></label>  
+                        <input type="checkbox" id="E16" value="E16" />
+                        <label for="E16"></label>   
                         <p>E</p>
                     </div>
+
+
+
+
+                    
 
                     <div style="margin-top: 5vh;" class="linha-cadeira">
                         <p>F</p>
@@ -211,6 +340,22 @@
                         <label for="f7"></label>
                         <input type="checkbox" id="f8" value="f8" />
                         <label for="f8"></label>
+                        <input type="checkbox" id="f9" value="f9" />
+                        <label for="f9"></label>
+                        <input type="checkbox" id="f10" value="f10" />
+                        <label for="f10"></label>  
+                        <input type="checkbox" id="f11" value="f11" />
+                        <label for="f11"></label>  
+                        <input type="checkbox" id="f12" value="f12" />
+                        <label for="f12"></label>  
+                        <input type="checkbox" id="f13" value="f13" />
+                        <label for="f13"></label>  
+                        <input type="checkbox" id="f14" value="f14" />
+                        <label for="f14"></label>  
+                        <input type="checkbox" id="f15" value="f15" />
+                        <label for="f15"></label>  
+                        <input type="checkbox" id="f16" value="f16" />
+                        <label for="f16"></label>   
                         <p>F</p>
                     </div>
                     <div class="linha-cadeira">
@@ -231,6 +376,22 @@
                         <label for="g7"></label>
                         <input type="checkbox" id="g8" value="g8" />
                         <label for="g8"></label>
+                        <input type="checkbox" id="g9" value="g9" />
+                        <label for="g9"></label>
+                        <input type="checkbox" id="g10" value="g10" />
+                        <label for="g10"></label>
+                        <input type="checkbox" id="g11" value="g11" />
+                        <label for="g11"></label>
+                        <input type="checkbox" id="g12" value="g12" />
+                        <label for="g12"></label>
+                        <input type="checkbox" id="g13" value="g13" />
+                        <label for="g13"></label>
+                        <input type="checkbox" id="g14" value="g14" />
+                        <label for="g14"></label>
+                        <input type="checkbox" id="g15" value="g15" />
+                        <label for="g15"></label>
+                        <input type="checkbox" id="g16" value="g16" />
+                        <label for="g16"></label>
                         <p>G</p>
                     </div>
                     <div class="linha-cadeira">
@@ -251,6 +412,22 @@
                         <label for="h7"></label>
                         <input type="checkbox" id="h8" value="h8" />
                         <label for="h8"></label>
+                        <input type="checkbox" id="h9" value="h9" />
+                        <label for="h9"></label>
+                        <input type="checkbox" id="h10" value="h10" />
+                        <label for="h10"></label>  
+                        <input type="checkbox" id="h11" value="h11" />
+                        <label for="h11"></label>  
+                        <input type="checkbox" id="h12" value="h12" />
+                        <label for="h12"></label>  
+                        <input type="checkbox" id="h13" value="h13" />
+                        <label for="h13"></label>  
+                        <input type="checkbox" id="h14" value="h14" />
+                        <label for="h14"></label>  
+                        <input type="checkbox" id="h15" value="h15" />
+                        <label for="h15"></label>  
+                        <input type="checkbox" id="h16" value="h16" />
+                        <label for="h16"></label>   
                         <p>H</p>
                     </div>
                     <div class="linha-cadeira">
@@ -271,6 +448,22 @@
                         <label for="i7"></label>
                         <input type="checkbox" id="i8" value="i8" />
                         <label for="i8"></label>
+                        <input type="checkbox" id="i9" value="i9" />
+                        <label for="i9"></label>
+                        <input type="checkbox" id="i10" value="i10" />
+                        <label for="i10"></label>  
+                        <input type="checkbox" id="i11" value="i11" />
+                        <label for="i11"></label>  
+                        <input type="checkbox" id="i12" value="i12" />
+                        <label for="i12"></label>  
+                        <input type="checkbox" id="i13" value="i13" />
+                        <label for="i13"></label>  
+                        <input type="checkbox" id="i14" value="i14" />
+                        <label for="i14"></label>  
+                        <input type="checkbox" id="i15" value="i15" />
+                        <label for="i15"></label>  
+                        <input type="checkbox" id="i16" value="i16" />
+                        <label for="i16"></label>   
                         <p>I</p>
                     </div>
                     <div class="linha-cadeira">
@@ -291,10 +484,32 @@
                         <label for="j7"></label>
                         <input type="checkbox" id="j8" value="j8" />
                         <label for="j8"></label>
+                        <input type="checkbox" id="j9" value="j9" />
+                        <label for="j9"></label>
+                        <input type="checkbox" id="j10" value="j10" />
+                        <label for="j10"></label>  
+                        <input type="checkbox" id="j11" value="j11" />
+                        <label for="j11"></label>  
+                        <input type="checkbox" id="j12" value="j12" />
+                        <label for="j12"></label>  
+                        <input type="checkbox" id="j13" value="j13" />
+                        <label for="j13"></label>  
+                        <input type="checkbox" id="j14" value="j14" />
+                        <label for="j14"></label>  
+                        <input type="checkbox" id="j15" value="j15" />
+                        <label for="j15"></label>  
+                        <input type="checkbox" id="j16" value="j16" />
+                        <label for="j16"></label>   
                         <p>J</p>
                     </div>
+        
                 </form>
 
+
+            </div>
+            
+            <div class="pedido-detalhes">
+                a
             </div>
 
         </body>
