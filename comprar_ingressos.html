@@ -9,7 +9,7 @@
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="comprar_ingressos.css" />
 
-    <script type="application/javascript" src="js/showHeaderFilmes.js"></script>
+    <script type="application/javascript" src="js/comprarIngressoItems.js"></script>
 
     <title>CineFlip</title>
 </head>
@@ -92,56 +92,134 @@
 
             <div class="data-container">
 
-                <label class="data">
-                    <input onclick="mostrarHorarios()" type="radio" name="radio" value="Segunda" />
+                <label  class="data">
+                    <input onclick="mostrarIdioma()"type="radio" name="data" value="Segunda" />
                     <p>Seg</p>
                     <i class="material-symbols-outlined">calendar_month</i>
                 </label>
-                </label>
                 <label class="data">
-                    <input type="radio" name="radio" value="Terça" />
+                    <input onclick="mostrarIdioma()"type="radio" name="data" value="Terça" />
                     <p>Ter</p>
                     <i class="material-symbols-outlined">calendar_month</i>
                 </label>
-                </label>
                 <label class="data">
-                    <input type="radio" name="radio" value="Quarta" />
+                    <input onclick="mostrarIdioma()"type="radio" name="data" value="Quarta" />
                     <p>Qua</p>
                     <i class="material-symbols-outlined">calendar_month</i>
                 </label>
-                </label>
                 <label class="data">
-                    <input type="radio" name="radio" value="Quinta" />
+                    <input onclick="mostrarIdioma()"type="radio" name="data" value="Quinta" />
                     <p>Qui</p>
                     <i class="material-symbols-outlined">calendar_month</i>
                 </label>
-                </label>
                 <label class="data">
-                    <input type="radio" name="radio" value="Sexta" />
+                    <input onclick="mostrarIdioma()"type="radio" name="data" value="Sexta" />
                     <p>Sex</p>
                     <i class="material-symbols-outlined">calendar_month</i>
                 </label>
-                </label>
                 <label class="data">
-                    <input type="radio" name="radio" value="Sábado" />
+                    <input onclick="mostrarIdioma()"type="radio" name="data" value="Sábado" />
                     <p>Sab</p>
                     <i class="material-symbols-outlined">calendar_month</i>
                 </label>
-                </label>
                 <label class="data">
-                    <input type="radio" name="radio" value="Domingo" />
+                    <input onclick="mostrarIdioma()"type="radio" name="data" value="Domingo" />
                     <p>Dom</p>
                     <i class="material-symbols-outlined">calendar_month</i>
                 </label>
-                </label>
-
-
 
             </div>
 
+
+            <div id="mostraridioma" class="idioma-titulo-container fade-in">
+                <p>Escolha o idioma e a exibição</p>
+                <div class="idioma-container">
+                    <label class="idioma">
+                        <input onclick="mostrarHorarios()" type="radio" name="idioma" value="Legendado2D" />
+                        <p>Legendado</p>
+                        <span class="tag">2D</span>
+                    </label>
+                    <label class="idioma">
+                        <input onclick="mostrarHorarios()" type="radio" name="idioma" value="Dublado2D" />
+                        <p>Dublado</p>
+                        <span class="tag">2D</span>
+                    </label>
+                    <label class="idioma">
+                        <input onclick="mostrarHorarios()" type="radio" name="idioma" value="Legendado3D" />
+                        <p>Legendado</p>
+                        <span class="tag">3D</span>
+                    </label>
+                    <label class="idioma">
+                        <input onclick="mostrarHorarios()" type="radio" name="idioma" value="Dublado3D" />
+                        <p>Dublado</p>
+                        <span class="tag">3D</span>
+                    </label>
+                </div>
+            </div>
+
+            <div id="mostrarhorarios" class="horarios-titulo-container fade-in">
+                <p>Sessões Disponíveis:</p>
+                <div class="horarios-container">
+                    <label class="horario">
+                        <input onclick="mostrarTipoingresso()" type="radio" name="horario" value="14h00" />
+                        <p>14:00</p>
+                        <i class="material-symbols-outlined">schedule</i>
+                    </label>
+                    <label class="horario">
+                        <input onclick="mostrarTipoingresso()" type="radio" name="horario" value="15h30" />
+                        <p>15:30</p>
+                        <i class="material-symbols-outlined">schedule</i>
+                    </label>
+                    <label class="horario">
+                        <input onclick="mostrarTipoingresso()" type="radio" name="horario" value="16h00" />
+                        <p>16:00</p>
+                        <i class="material-symbols-outlined">schedule</i>
+                    </label>
+                    <label class="horario">
+                        <input onclick="mostrarTipoingresso()" type="radio" name="horario" value="19h00" />
+                        <p>19:00</p>
+                        <i class="material-symbols-outlined">schedule</i>
+                    </label>
+                    <label class="horario">
+                        <input onclick="mostrarTipoingresso()" type="radio" name="horario" value="20h30" />
+                        <p>20:30</p>
+                        <i class="material-symbols-outlined">schedule</i>
+                    </label>
+                    <label class="horario">
+                        <input onclick="mostrarTipoingresso()" type="radio" name="horario" value="21h00" />
+                        <p>21:00</p>
+                        <i class="material-symbols-outlined">schedule</i>
+                    </label>
+                    <label class="horario">
+                        <input onclick="mostrarTipoingresso()" type="radio" name="horario" value="22h00" />
+                        <p>22:00</p>
+                        <i class="material-symbols-outlined">schedule</i>
+                    </label>
+                </div>
+            </div>
+
+            <div id="mostrartipoingresso" class="tipoingresso-titulo-container fade-in">
+                <p>Tipo de Ingresso:</p>
+                <div class="tipoingresso-container">
+                    <label class="tipoingresso">
+                        <input onclick="mostrarAssentos()" type="radio" name="tipoIngresso" value="Meia" />
+                        <p>Meia</p>
+                        <p>R$15,00</p>
+                        <ion-icon name="ticket-outline"></ion-icon>
+                    </label>
+                    <label class="tipoingresso">
+                        <input onclick="mostrarAssentos()" type="radio" name="tipoIngresso" value="Inteira" />
+                        <p>Inteira</p>
+                        <p>R$30,00</p>
+                        <ion-icon name="ticket-outline"></ion-icon>
+                    </label>
+            </div>
+            </div>
+
     
-                <div id="mostrar" class="assentos-container">
+                <div id="mostrarassentos" class="assentos-container">
                     <div class="tela">
+                        <p style="margin: 0;font-size: 0.9em" >Escolha os Assentos:</p>
                         <img src="imagem/tela.svg">
                         <p>Tela</p>
                     </div>
@@ -514,12 +592,6 @@
     
                 </div>
 
-
-
-
-
-            
-
         </form>
 
         <div class="pedido-detalhes">
@@ -528,12 +600,7 @@
     </div>
 
 
-<script>
-    function mostrarHorarios(){
-        var x = document.getElementById("mostrar");
 
-        x.style.display = "flex";
-
-    }
-</script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>

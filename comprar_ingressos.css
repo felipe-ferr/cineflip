@@ -221,19 +221,19 @@ form {
     flex-direction: column;
     width: 100%;
     height: auto;
-    padding: 2vh;
+    padding: 10vh;
     gap: 2vh;
 }
 
 form p {
-    color: goldenrod;
+    color: grey;
 }
 
 .data-container {
     display: flex;
-    width: auto;
-    justify-content: center;
-
+    width: 100%;
+    justify-content: space-around;
+    box-shadow:  0px 1px 0px 0px goldenrod;
 }
 
 .data {
@@ -242,15 +242,26 @@ form p {
     justify-content: center;
     align-items: center;
     padding: 3vh 3vh;
-    background-color: #131212;
+    background-color: #0d0d0d;
     transition-duration: 0.3s;
     box-sizing: border-box;
+    cursor: pointer;
+    width: 100%;
+
 }
 .data p{
     color: rgb(171, 171, 171);
+    transition-duration: 0.3s;
 }
 .data .material-symbols-outlined{
     color: rgb(171, 171, 171);
+    transition-duration: 0.3s;
+}
+.data input[type="radio"]:hover ~ .material-symbols-outlined{
+    color: goldenrod;
+}
+.data input[type="radio"]:hover+p{
+    color: goldenrod;
 }
 
 .data input[type="radio"]:checked ~ .material-symbols-outlined{
@@ -260,10 +271,246 @@ form p {
     color: goldenrod;
 }
 
+
 .data input[type="radio"] {
     -webkit-appearance: none;
     appearance: none;
     margin: 0;
+
+}
+.idioma-titulo-container{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 1vh;
+}
+
+.idioma-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    box-shadow:  0px 1px 0px 0px goldenrod;
+}
+
+.idioma {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3vh 3vh;
+    background-color: #0d0d0d;
+    transition-duration: 0.3s;
+    box-sizing: border-box;
+    cursor: pointer;
+    width: 100%;
+
+}
+.idioma p{
+    color: rgb(171, 171, 171);
+    transition-duration: 0.3s;
+}
+.idioma .material-symbols-outlined{
+    color: rgb(171, 171, 171);
+    transition-duration: 0.3s;
+}
+.idioma input[type="radio"]:hover ~ span{
+    color: goldenrod;
+}
+.idioma input[type="radio"]:hover~p{
+    color: goldenrod;
+}
+
+.idioma input[type="radio"]:checked ~ .material-symbols-outlined{
+    color: goldenrod;
+}
+.idioma input[type="radio"]:checked+p{
+    color: goldenrod;
+}
+
+
+.idioma input[type="radio"] {
+    -webkit-appearance: none;
+    appearance: none;
+    margin: 0;
+
+}
+
+.idioma-container span{
+    padding: 1vh 1vh;
+    color: grey;
+    transition-duration: 0.3s;
+}
+.idioma-container input[type="radio"]:checked ~ span{
+    color: goldenrod;
+}
+
+
+
+
+
+
+
+
+
+.tipoingresso-titulo-container{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 1vh;
+}
+
+.tipoingresso-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    box-shadow:  0px 1px 0px 0px goldenrod;
+}
+
+.tipoingresso {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3vh 3vh;
+    background-color: #0d0d0d;
+    transition-duration: 0.3s;
+    box-sizing: border-box;
+    cursor: pointer;
+    width: 100%;
+
+}
+.tipoingresso p{
+    color: rgb(171, 171, 171);
+    transition-duration: 0.3s;
+}
+.tipoingresso ion-icon{
+    color: rgb(171, 171, 171);
+    transition-duration: 0.3s;
+    font-size: 1.5vw;
+}
+.tipoingresso input[type="radio"]:hover ~ span{
+    color: goldenrod;
+}
+.tipoingresso input[type="radio"]:hover~p{
+    color: goldenrod;
+}
+.tipoingresso input[type="radio"]:hover~ ion-icon{
+    color: goldenrod;
+}
+
+.tipoingresso input[type="radio"]:checked ~ ion-icon{
+    color: goldenrod;
+}
+.tipoingresso input[type="radio"]:checked ~ p{
+    color: goldenrod;
+}
+
+
+.tipoingresso input[type="radio"] {
+    -webkit-appearance: none;
+    appearance: none;
+    margin: 0;
+
+}
+
+.tipoingresso-container span{
+    padding: 1vh 1vh;
+    color: grey;
+    transition-duration: 0.3s;
+}
+.tipoingresso-container input[type="radio"]:checked ~ span{
+    color: goldenrod;
+}
+
+
+
+
+
+
+
+
+.horarios-titulo-container{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 1vh;
+}
+
+.horarios-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    box-shadow:  0px 1px 0px 0px goldenrod;
+   
+}
+
+.horario {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3vh 3vh;
+    background-color: #0d0d0d;
+    transition-duration: 0.3s;
+    box-sizing: border-box;
+    cursor: pointer;
+    width: 100%;
+    
+
+}
+.horario p{
+    color: rgb(171, 171, 171);
+    transition-duration: 0.3s;
+}
+.horario .material-symbols-outlined{
+    color: rgb(171, 171, 171);
+    transition-duration: 0.3s;
+}
+.horario input[type="radio"]:hover ~ span{
+    color: goldenrod;
+}
+.horario input[type="radio"]:hover~p{
+    color: goldenrod;
+}
+
+.horario input[type="radio"]:checked ~ .material-symbols-outlined{
+    color: goldenrod;
+}
+.horario input[type="radio"]:hover ~ .material-symbols-outlined{
+    color: goldenrod;
+}
+.horario input[type="radio"]:checked+p{
+    color: goldenrod;
+}
+
+
+.horario input[type="radio"] {
+    -webkit-appearance: none;
+    appearance: none;
+    margin: 0;
+
+}
+
+.horario-container span{
+    background-color: #131212;
+    padding: 1vh 1vh;
+    color: grey;
+    transition-duration: 0.3s;
+}
+.horario-container input[type="radio"]:checked ~ span{
+    color: goldenrod;
 }
 
 
@@ -355,6 +602,7 @@ form p {
     box-shadow: inset 0px 0px 0px 2px goldenrod;
 }
 
+
 .inputContainer select>option {
     background-color: rgb(48, 48, 48);
 }
@@ -365,8 +613,8 @@ form p {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    width: 70%;
-    background-color: #131212;
+    width: 100%;
+    background-color: #0d0d0d;
     border-radius: 15px;
     padding: 2vh;
     box-sizing: border-box;
@@ -411,7 +659,7 @@ form p {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0 1vh;
+    width: 1.5vw;
 }
 
 .linha-cadeira input[type="checkbox"] {
@@ -452,4 +700,39 @@ form p {
     width: 30%;
     height: 100vh;
     background-color: #343434;
+}
+
+/* ----------------------------------------------
+ * Generated by Animista on 2023-10-22 20:35:7
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation fade-in
+ * ----------------------------------------
+ */
+ @-webkit-keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  
+  .fade-in {
+	-webkit-animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 }
