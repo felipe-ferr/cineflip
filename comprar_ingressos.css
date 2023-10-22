@@ -241,30 +241,29 @@ form p {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 4vw;
-    height: 8vh;
+    padding: 3vh 3vh;
     background-color: #131212;
     transition-duration: 0.3s;
     box-sizing: border-box;
 }
+.data p{
+    color: rgb(171, 171, 171);
+}
+.data .material-symbols-outlined{
+    color: rgb(171, 171, 171);
+}
 
-.data:focus-within {
-    background-color: goldenrod;
-    margin: 0;
-    color: black;
+.data input[type="radio"]:checked ~ .material-symbols-outlined{
+    color: goldenrod;
 }
-.data:focus-within .material-symbols-outlined{
-    color: black;
-}
-.data:focus-within p{
-    color: black;
+.data input[type="radio"]:checked+p{
+    color: goldenrod;
 }
 
 .data input[type="radio"] {
     -webkit-appearance: none;
     appearance: none;
     margin: 0;
-    border: none;
 }
 
 
@@ -362,7 +361,7 @@ form p {
 
 
 .assentos-container {
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
     flex-direction: column;
@@ -379,12 +378,13 @@ form p {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin-bottom: 4vh;
 }
 
 .tela p {
     font-size: 0.7rem;
     color: gray;
-    margin-top: -5vh;
+    margin-top: -7vh;
 }
 
 .tela img {
