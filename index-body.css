@@ -47,10 +47,9 @@ h1{
     box-sizing: border-box;
     padding: 2vh 5vh;
     gap: 1.5vh;
-    background-color: rgb(30, 30, 30);
+    background-color: rgb(25, 25, 25);
     border-radius: 10px;
     width: 25%;
-    border: 0.3vh solid goldenrod;
 
 }
 .ingresso-desc h1{
@@ -77,7 +76,6 @@ h1{
     height: 27vh;
     width: 65%;
     border-radius: 5px;
-    border: 0.3vh solid goldenrod;
 }
 .ingressos-desc-filme-info{
     grid-area: tags;
