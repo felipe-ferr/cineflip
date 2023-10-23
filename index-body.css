@@ -33,9 +33,10 @@ h1{
     font-size: 0.8rem;
     color: white;
     text-align: center;
-    border: 0.1vw solid goldenrod;
+    border: 0.1vw solid grey;
     padding: 0.7vh;
     width: 100%;
+    border-radius: 5px;
 }
   
 .ingresso-desc { 
@@ -83,6 +84,7 @@ h1{
     align-items: center;
     justify-content: space-between;
     gap: 0.5vw;
+   
 }
 .ingressos-desc-filme-info p{
     display: flex;
