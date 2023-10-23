@@ -9,8 +9,10 @@ function mostrarIdioma(){
 }
 function mostrarAssentos(){
         var x = document.getElementById("mostrarassentos");
+        var y = document.getElementById("mostrarpagamento");
 
         x.style.display = "flex";
+        y.style.display = "flex";
         document.getElementById("mostrarassentos").scrollIntoView({behavior: "smooth"});
 
 }

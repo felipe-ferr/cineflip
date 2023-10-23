@@ -236,9 +236,8 @@ form p {
     display: flex;
     width: 100%;
     justify-content: space-around;
-    box-shadow:  0px 1px 0px 0px goldenrod;
+    box-shadow:  0px 0px 0px 1px goldenrod;
 }
-
 .data {
     display: flex;
     flex-direction: column;
@@ -296,7 +295,7 @@ form p {
     align-items: center;
     justify-content: space-around;
     width: 100%;
-    box-shadow:  0px 1px 0px 0px goldenrod;
+    box-shadow:  0px 0px 0px 1px goldenrod;
 }
 
 .idioma {
@@ -352,13 +351,6 @@ form p {
 }
 
 
-
-
-
-
-
-
-
 .tipoingresso-titulo-container{
     display: none;
     flex-direction: column;
@@ -374,7 +366,7 @@ form p {
     align-items: center;
     justify-content: space-around;
     width: 100%;
-    box-shadow:  0px 1px 0px 0px goldenrod;
+    box-shadow:  0px 0px 0px 1px goldenrod;
 }
 
 .tipoingresso {
@@ -434,12 +426,6 @@ form p {
 }
 
 
-
-
-
-
-
-
 .horarios-titulo-container{
     display: none;
     flex-direction: column;
@@ -455,7 +441,7 @@ form p {
     align-items: center;
     justify-content: space-around;
     width: 100%;
-    box-shadow:  0px 1px 0px 0px goldenrod;
+    box-shadow:  0px 0px 0px 1px goldenrod;
    
 }
 
@@ -513,6 +499,86 @@ form p {
     transition-duration: 0.3s;
 }
 .horario-container input[type="radio"]:checked ~ span{
+    color: goldenrod;
+}
+
+
+
+
+
+
+
+.pagamento-titulo-container{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 1vh;
+}
+
+.pagamento-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    box-shadow:  0px 0px 0px 1px goldenrod;
+}
+
+.pagamento {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 3vh 3vh;
+    background-color: #0d0d0d;
+    transition-duration: 0.3s;
+    box-sizing: border-box;
+    cursor: pointer;
+    width: 100%;
+    gap:1vw;
+
+}
+.pagamento p{
+    color: rgb(171, 171, 171);
+    transition-duration: 0.3s;
+}
+.pagamento .material-symbols-outlined{
+    color: rgb(171, 171, 171);
+    transition-duration: 0.3s;
+}
+.pagamento input[type="radio"]:hover ~ span{
+    color: goldenrod;
+}
+.pagamento input[type="radio"]:hover~p{
+    color: goldenrod;
+}
+.pagamento input[type="radio"]:hover~.material-symbols-outlined{
+    color: goldenrod;
+}
+
+.pagamento input[type="radio"]:checked ~ .material-symbols-outlined{
+    color: goldenrod;
+}
+.pagamento input[type="radio"]:checked~p{
+    color: goldenrod;
+}
+
+
+.pagamento input[type="radio"] {
+    -webkit-appearance: none;
+    appearance: none;
+    margin: 0;
+
+}
+
+.pagamento-container span{
+    padding: 1vh 1vh;
+    color: grey;
+    transition-duration: 0.3s;
+}
+.pagamento-container input[type="radio"]:checked ~ span{
     color: goldenrod;
 }
 
