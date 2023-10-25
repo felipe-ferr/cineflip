@@ -111,11 +111,11 @@ p {
 
 .sidebar-movie {
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: flex-start;
     flex-direction: column;
     width: 60%;
-    height: 100vh;
+    height: auto;
     padding: 1vw;
     box-sizing: border-box;
     gap: 1vh;
@@ -142,17 +142,17 @@ p {
 
 .poster-info-container {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: flex-start;
     justify-content: center;
     width: 100%;
 }
 
 .poster-info-container .poster {
-    width: 50%;
+    width: 80%;
     background-image: url("imagem/barbie-poster2.webp");
     background-size: 100% 100%;
-    height: 40vh;
+    height: 70vh;
     border-radius: 10px;
     margin-top: 2vh;
 }
@@ -236,7 +236,6 @@ form p {
     display: flex;
     width: 100%;
     justify-content: space-around;
-    box-shadow:  0px 0px 0px 1px goldenrod;
 }
 .data {
     display: flex;
@@ -295,7 +294,6 @@ form p {
     align-items: center;
     justify-content: space-around;
     width: 100%;
-    box-shadow:  0px 0px 0px 1px goldenrod;
 }
 
 .idioma {
@@ -366,7 +364,6 @@ form p {
     align-items: center;
     justify-content: space-around;
     width: 100%;
-    box-shadow:  0px 0px 0px 1px goldenrod;
 }
 
 .tipoingresso {
@@ -441,7 +438,6 @@ form p {
     align-items: center;
     justify-content: space-around;
     width: 100%;
-    box-shadow:  0px 0px 0px 1px goldenrod;
    
 }
 
@@ -523,7 +519,6 @@ form p {
     align-items: center;
     justify-content: space-around;
     width: 100%;
-    box-shadow:  0px 0px 0px 1px goldenrod;
 }
 
 .pagamento {
@@ -766,7 +761,7 @@ form p {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 30%;
+    width: 50%;
     height: 100vh;
     background-color: #343434;
 }

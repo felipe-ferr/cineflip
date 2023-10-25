@@ -2,7 +2,7 @@ function mostrarIdioma(){
     var x = document.getElementById("mostraridioma");
 
     x.style.display = "flex";
-    document.getElementById("mostraridioma").scrollIntoView({behavior: "smooth"});
+
     
     
 
@@ -20,13 +20,13 @@ function mostrarHorarios(){
     var x = document.getElementById("mostrarhorarios");
 
     x.style.display = "flex";
-    document.getElementById("mostrarhorarios").scrollIntoView({behavior: "smooth"});
+
 
 }
 function mostrarTipoingresso(){
     var x = document.getElementById("mostrartipoingresso");
 
     x.style.display = "flex";
-    document.getElementById("mostrartipoingresso").scrollIntoView({behavior: "smooth"});
+
 
 }
