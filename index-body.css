@@ -19,7 +19,7 @@ h1{
     justify-content: center;
     flex-direction: row;
     padding: 0 5vw;
-    gap: 3vw;
+    gap: 10vw;
 }
 .tags{
     grid-area: tags;
@@ -38,64 +38,52 @@ h1{
     width: 100%;
     border-radius: 5px;
 }
-  
-.ingresso-desc { 
-    grid-area: desc; 
+.ingressos-container{
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
-    box-sizing: border-box;
-    padding: 2vh 5vh;
-    gap: 1.5vh;
-    background-color: rgb(25, 25, 25);
-    border-radius: 10px;
-    width: 25%;
-
+    flex-direction: column;
+    width: 15%;
+    height: 50vh;
+    gap:1vh;
 }
-.ingresso-desc h1{
+.ingressos-container h1{
     font-family: 'Montserrat', sans-serif;
-    font-size: 1rem;
+    font-size: 1.3vw;
     color: white;
     text-align: center;
     margin: 0;
     text-wrap: nowrap;
 }
-.ingresso-desc p{
-    font-family: 'Montserrat', sans-serif;
-    font-size: 0.9vw;
-    color: white;
-    text-align: center;
-    margin: 0;
-    text-align: left;
-}
-.ingresso-desc hr{
+
+.ingresso-poster{
     width: 100%;
-    border-top: 0.1vw solid white;
-}
-.ingresso-desc img{
-    height: 27vh;
-    width: 65%;
-    border-radius: 5px;
-}
-.ingressos-desc-filme-info{
-    grid-area: tags;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 0.5vw;
-   
-}
-.ingressos-desc-filme-info p{
+    height: 100%;
+    background-size: 100% 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 0.7rem;
+    border-radius: 10px;
 }
-.ingresso-desc .compraringresso-desc{
-    background-color: goldenrod;
-    color:black;
-    padding:1vh;
+.ingresso-poster-botoes{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+}
+.ingresso-poster-botoes .material-symbols-outlined {
+    color: rgb(255, 255, 255);
+    font-size: 1.5vw;
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24
+}
+.ingresso-poster-botoes .compraringresso{
+    background-color: #FBAB7E;
+    background-image: linear-gradient(90deg, rgb(255, 183, 0) 0%, goldenrod);
+    color:white;
     border-radius: 2vh;
     text-decoration: none;
     font-family: 'Quicksand', sans-serif;
@@ -103,39 +91,31 @@ h1{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    font-size: 0.7rem;
     width: 100%;
-    text-wrap: nowrap;
+    padding: 2vh;
+    height: 1vh;
+    
 }
-.ingresso-desc .compraringresso-desc:hover{
+.ingresso-poster-botoes .compraringresso:hover{
     background-color: rgb(255, 217, 0);
 }
-.ingresso-desc .compraringresso-desc .material-symbols-outlined{
-    color: black;
-}
-.ingresso-desc .vertrailer-desc{
+.ingresso-poster-botoes .vertrailer{
     background-color: inherit;
     color:white;
-    padding:1vh;
     border-radius: 15px;
-    border: 0.3vh solid goldenrod;
+    border: 0.3vh solid white;
     text-decoration: none;
     font-family: 'Quicksand', sans-serif;
     transition-duration: 0.4s;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    font-size: 0.7rem;
     width: 100%;
-    height: 100%;
+    padding: 2vh;
+    height: 1vh;
+    text-wrap: nowrap;
+    
 }
-.ingresso-desc .vertrailer-desc:hover{
+.ingresso-poster-botoes .vertrailer:hover{
     background-color: rgba(30, 30, 30, 0.59);
-}
-.desc-filme-botoes{
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    width: 100%;
-    gap: 1vw
 }
