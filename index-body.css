@@ -19,7 +19,7 @@ h1{
     justify-content: center;
     flex-direction: row;
     padding: 0 5vw;
-    gap: 10vw;
+    gap: 13vw;
 }
 .tags{
     grid-area: tags;
@@ -69,7 +69,7 @@ h1{
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    gap: 10px;
+    gap: 0.3vw;
 }
 .ingresso-poster-botoes .material-symbols-outlined {
     color: rgb(255, 255, 255);
