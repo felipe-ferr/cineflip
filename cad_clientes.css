@@ -157,6 +157,7 @@ form h1{
     height: 6vh;
     position: relative;
     color: white;
+    padding: 0px 8vw;
     font-size: 1vw;
     border-radius: 10px;
     transition-duration: 0.4s;
@@ -166,7 +167,7 @@ form h1{
     left: 0;
     padding: 0px 3vh;
     color: rgba(255, 255, 255, 0.411);
-    transition-duration: 0.3s;
+    transition-duration: 0.2s;
     font-size: 0.9rem;
     display: flex;
     justify-content: center;
@@ -182,9 +183,15 @@ form h1{
     transition-duration: 0.3s;
 }
 .inputContainer input:focus{
-    background-color: rgba(33, 33, 33, 0.433);
+    background-color: #131313;
     outline: none;
-    padding: 0px 5%;
+    padding: 0px 10%;
+    box-shadow: inset 0px 0px 0px 2px goldenrod;
+}
+.inputContainer input::after{
+    background-color: #131313;
+    outline: none;
+    padding: 0px 20%;
     box-shadow: inset 0px 0px 0px 2px goldenrod;
 }
 .inputContainer input:focus ~ p{
