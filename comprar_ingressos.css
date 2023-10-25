@@ -119,9 +119,8 @@ p {
     padding: 1vw;
     box-sizing: border-box;
     gap: 1vh;
-    border: 1px solid goldenrod;
+    border-right: 1px solid goldenrod;
     background-color: #0d0d0d;
-    border-radius: 10px;
 }
 
 .sidebar-movie p {
