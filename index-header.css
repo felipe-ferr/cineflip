@@ -295,6 +295,10 @@ body{
     border-radius: 10px;
     z-index: 2;
     filter:grayscale(90%);
+    transition-duration: 0.4s;
+}
+.filme-poster:hover{
+    filter:grayscale(0%);
 }
 .filme-poster-container .filme-poster-desc{
     display: flex;
