@@ -72,6 +72,9 @@
             <h1>Pagamento realizado</h1>
             <h2 class="detalhes">Detalhes do pedido: </h2>
             <?php
+
+            
+ 
             echo "<p><span style=color:goldenrod>Local: </span>&nbsp $cinema";
             echo "<p><span style=color:goldenrod>Filme: </span>&nbsp $filme";
             echo "<p><span style=color:goldenrod>Data: </span>&nbsp $data";
@@ -86,31 +89,45 @@
             <div class="row-container">
                 <p><span style="color:goldenrod">Assentos:</span>
                     <?php
-                    if (!empty($_POST['assento'])) {
-                        foreach ($_POST['assento'] as $assentoprint) {
-                            echo '&nbsp' . $assentoprint . '&nbsp';
+                     $i = 0;
+                        if (!empty ($_POST['assento'])) {
+                            foreach ($_POST['assento'] as $assentoprint) {
+                                echo '&nbsp' . $assentoprint . '&nbsp';
+                               
+                                $i++;
+          
+                                
+                                
+                            }
+                            if ($tipoIngresso == "Meia") {
+                                $preco = 15;
+                            }
+                            if ($tipoIngresso == "Inteira"){
+                                $preco = 30;
+                            }
+                            if ($tipoIngresso == "Inteira" && $i > 1){
+                                $preco = 30 * $i;
+                            }
+                            if ($tipoIngresso == "Meia" && $i > 1){
+                                $preco = 15 * $i;
+                            }
+                 
                         }
-                    }
+            
 
                     ?>
 
             </div>
+            <?php
+            echo "<p><span style=color:goldenrod>Valor Final: </span>&nbsp R$$preco,00</p>";
+            ?>
 
-            <script> 
-        function printDiv() { 
-            var divContents = document.getElementById("pedidoprint").innerHTML; 
-            var a = window.open('', '', 'height=500, width=500'); 
-            a.document.write('<html>'); 
-            a.document.write(divContents); 
-            a.document.write('</body></html>'); 
-            a.document.close(); 
-            a.print(); 
-        } 
-    </script> 
+           <script src="js/printDiv.js"type="text/javascript"></script>
 
-            <a onclick="printDiv()">Imprimir Ingresso</a>
-
+          
+           <a onclick="printDiv()">Imprimir Ingresso</a>
         </div>
+  
 
     </div>
 
