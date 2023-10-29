@@ -32,8 +32,9 @@ body{
     background-color: rgb(30, 30, 30);
     color: white;
     height: 100%;
+    box-sizing: border-box;
 }
-.dashboard-nav a{
+.dashboard-nav .btn{
     width: 100%;
     display: flex;
     align-items: center;
@@ -42,16 +43,17 @@ body{
     font-family: 'Quicksand', sans-serif;
     font-size: 1vw;
     height: 100%;
-    border: 1px solid goldenrod;
+    box-sizing: border-box;
+    border-bottom: 1px solid goldenrod;
     border-collapse: collapse;
 }
-.dashboard-nav a:hover{
+.dashboard-nav .btn:hover{
     color: goldenrod;
 }
-.active{
+.ativo{
     color: goldenrod;
-    background-color: rgb(20, 20, 20);
-    border: 2px solid goldenrod;
+    background-color: rgb(16, 16, 16);
+    height: 100%;
 }
 .tables{
     grid-area: tables;
@@ -105,4 +107,11 @@ button{
 }
 button:hover{
     color:goldenrod
+}
+
+.container-clientes{
+    display: flex;
+}
+.container-ingressos{
+    display: none;
 }

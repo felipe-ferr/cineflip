@@ -8,12 +8,7 @@
     <link rel="stylesheet" href="index-header.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
-    <script>
-        function ativo() {
-  var element = document.getElementById("nav-btn");
-  element.classList.add("active");
-}
-    </script>
+    <script src="js/botoesAtivosDashboard.js"></script>
 
 </head>
 <body>
@@ -36,13 +31,14 @@
         </div>
 
     </div>
+    <script src="js/showDashboardTables.js"></script>
     <div class="container-geral">
         <div class="dashboard">
 
             <div class="dashboard-nav">
-                <a class="active" id="nav-btn"onclick="ativo()">Clientes</a>
-                <a id="nav-btn" onclick="ativo()">Ingressos</a>
-                <a id="nav-btn" onclick="ativo()">Pedidos</a>
+                <a class="btn ativo" onclick="showclientes()">Clientes</a>
+                <a class="btn" onclick="showingressos()">Ingressos</a>
+                <a class="btn" onclick="showpedidos()">Pedidos</a>
             </div>
 
             <div class="tables">
@@ -53,8 +49,8 @@
                 }
                 $result= mysqli_query($con,"SELECT * FROM clientes");
             ?>
-            <div class="container">
-                    <table id="prof">
+            <div style="overflow-x:auto" id="cliente" class="container-clientes">
+                    <table>
                         <caption>Lista de Clientes</caption>
                         <tr>
                             <th>Id</th>
@@ -101,7 +97,7 @@
                             <td>
                                 <form action="realizadelcliente.php" method="post">
                                     <input type="hidden" name="id" value="<?php echo $row["id"]; ?>">
-                                    <button type="submit" name="botdelprof" value="ok" id="del"><i class="material-symbols-outlined">delete</i>Deletar</button>
+                                    <button type="submit" name="botdelcliente" value="ok" id="del"><i class="material-symbols-outlined">delete</i>Deletar</button>
                                 </form>
 
                            
@@ -110,16 +106,154 @@
                             <td>
                                 <form action="formaltclientes.php" method="post">
                                     <input type="hidden" name="id" value="<?php echo $row["id"]; ?>">
-                                    <button type="submit" name="botaltprof" value="ok" id="alt"><i class="material-symbols-outlined">edit</i>Alterar</button>
+                                    <button type="submit" name="botaltcliente" value="ok" id="alt"><i class="material-symbols-outlined">edit</i>Alterar</button>
                                 </form>
                             </td>
                         </tr>
-                        
                         <?php
                             } mysqli_close($con);
                         ?>
+                      
         
                     </table>
             </div>
+
+         
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         </div>
+
+
+
+
+
+
+        <div class="tables">
+            <?php
+            $con= mysqli_connect("127.0.0.1","root","","cinema");
+            if(mysqli_connect_errno()){
+                echo "Failed to connect to MySQL: ". mysqli_connect_error();
+            }
+            $result= mysqli_query($con,"SELECT * FROM ingressos");
+        ?>
+        <div style="overflow-x:auto" id="ingresso" class="container-ingressos">
+                <table>
+                    <caption>Lista de Ingressos</caption>
+                    <tr>
+                        <th>Id</th>
+                        <th>Filme</th>
+                        <th>Data</th>
+                        <th>Idioma</th>
+                        <th>Horario</th>
+                        <th>Tipo de Ingresso</th>
+                        <th>Assento(s)</th>
+                        <th>Método de Pagamento</th>
+                        <th>Deletar</th>
+                        <th>Alt</th>
+                    </tr>
+    
+                    <?php
+                        while($row=mysqli_fetch_array($result)){
+                    ?>
+    
+                    <tr>
+                        <td>
+                            <?php echo $row['id']; ?>
+                        </td>
+                        <td>
+                            <?php echo $row['filme'] ?>
+                        </td>
+                        <td>
+                            <?php echo $row['data'] ?>
+                        </td>
+                        <td>
+                            <?php echo $row['idioma'] ?>
+                        </td>
+                        <td>
+                            <?php echo $row['horario'] ?>
+                        </td>
+                        <td>
+                            <?php echo $row['tipoIngresso'] ?>
+                        </td>
+                        <td>
+                            <?php echo $row['assento'] ?>
+                        </td>
+                        <td>
+                            <?php echo $row['metodoPagamento'] ?>
+                        </td>
+                        <td>
+                            <form action="realizadelingresso.php" method="post">
+                                <input type="hidden" name="id" value="<?php echo $row["id"]; ?>">
+                                <button type="submit" name="botdelingresso" value="ok" id="del"><i class="material-symbols-outlined">delete</i>Deletar</button>
+                            </form>
+
+                       
+
+                        </td>
+                        <td>
+                            <form action="formaltingressos.php" method="post">
+                                <input type="hidden" name="id" value="<?php echo $row["id"]; ?>">
+                                <button type="submit" name="botaltingresso" value="ok" id="alt"><i class="material-symbols-outlined">edit</i>Alterar</button>
+                            </form>
+                        </td>
+                    </tr>
+                    <?php
+                        } mysqli_close($con);
+                    ?>
+                  
+    
+                </table>
+        </div>
+
+     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+   
     </div>
