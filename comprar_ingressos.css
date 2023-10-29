@@ -114,7 +114,7 @@ p {
     justify-content: center;
     align-items: flex-start;
     flex-direction: column;
-    width: 60%;
+    width: 70%;
     height: auto;
     padding: 1vw;
     box-sizing: border-box;
@@ -149,7 +149,6 @@ p {
 
 .poster-info-container .poster {
     width: 80%;
-    background-image: url("imagem/barbie-poster2.webp");
     background-size: 100% 100%;
     height: 70vh;
     border-radius: 10px;

@@ -95,9 +95,7 @@
                                 echo '&nbsp' . $assentoprint . '&nbsp';
                                
                                 $i++;
-          
-                                
-                                
+    
                             }
                             if ($tipoIngresso == "Meia") {
                                 $preco = 15;
@@ -126,6 +124,23 @@
 
           
            <a onclick="printDiv()">Imprimir Ingresso</a>
+        </div>
+  
+
+    </div>
+
+
+
+
+    <div class="container-desenho-form slide-in-left">
+
+
+        <div class="loja-container">
+            <h1>Com fome?</h1>
+            <h2 class="detalhes">Experimente nossos combos!</h2>
+
+          
+           <a>Visitar Loja</a>
         </div>
   
 

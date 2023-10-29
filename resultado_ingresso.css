@@ -144,6 +144,55 @@ h1{
 .pedido-detalhes a:hover{
     background-color: gold;
 }
+
+
+.loja-container{
+    background-color: #131313;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap:2vh;
+    width: 100%;
+    height: 100%;
+    padding: 5vh;
+    box-sizing: border-box;
+    border-radius: 15px;
+    box-shadow: inset 0px 0px 0px 2px goldenrod;
+}
+.loja-container p{
+    font-size: 1vw;
+    font-family: 'Quicksand', sans-serif;
+    color: white;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    width: 100%;
+}
+.loja-container a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2vh;
+    box-sizing: border-box;
+    border-radius: 15px;
+    background-color: goldenrod;
+    font-size: 1vw;
+    font-family: 'Quicksand', sans-serif;
+    color: white;
+    text-decoration: none;
+}
+.loja-container a:hover{
+    background-color: gold;
+}
+
+
+
+
+
+
+
 .detalhes{
     font-size: 1vw;
     font-family: 'Quicksand', sans-serif;
@@ -160,7 +209,7 @@ h1{
 .container-geral{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     box-sizing: border-box;
     padding: 15vh 0px;
     height: 100vh;
