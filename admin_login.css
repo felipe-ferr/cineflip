@@ -50,11 +50,24 @@ body{
 .dashboard-nav .btn:hover{
     color: goldenrod;
 }
-.ativo{
+.dashboard-nav .active{
     color: goldenrod;
     background-color: rgb(16, 16, 16);
     height: 100%;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
 .tables{
     grid-area: tables;
     display: flex;

@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="index-header.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
-    <script src="js/botoesAtivosDashboard.js"></script>
+    <script src="js/dashboardBotoesAtivos.js"></script>
 
 </head>
 <body>
@@ -35,11 +35,25 @@
     <div class="container-geral">
         <div class="dashboard">
 
-            <div class="dashboard-nav">
-                <a class="btn ativo" onclick="showclientes()">Clientes</a>
-                <a class="btn" onclick="showingressos()">Ingressos</a>
-                <a class="btn" onclick="showpedidos()">Pedidos</a>
+            <div class="filmes-em-cartaz-container">
+                <div id="myDIV" class="filmes-em-cartaz">
+                    <div onclick="showclientes()" class="filme-poster-container">
+                        <div class="filme-poster active"></div>
+                        <div class="filme-poster-desc">
+                            <p>Clientes</p>
+                        </div>
+                    </div>
+        
+                    <div onclick="showingressos()" class="filme-poster-container">
+                        <div class="filme-poster"></div>
+                        <div class="filme-poster-desc">
+                            <p>Ingressos</p>
+                        </div>
+                    </div>
+                  
+                </div>
             </div>
+            <script src="js/botoesAtivos.js"></script>
 
             <div class="tables">
                 <?php
