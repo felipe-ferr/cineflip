@@ -43,10 +43,22 @@
                 <div id="dash-nav" class="dashboard-nav">
 
 
-                    <label class="container">One
-                        <input type="checkbox" checked="checked">
-                        <span class="checkmark"></span>
-                    </label>
+                <label class="data">
+                    <input checked onclick="showclientes()"type="radio" value="1" name="botao" />
+                    <p>Clientes</p>
+                </label>
+
+                <label class="data">
+                    <input onclick="showingressos()"type="radio" value="2"name="botao"/>
+                    <p>Ingressos</p>
+                </label>
+
+
+                <label class="data">
+                    <input onclick="showpedidos()"type="radio" value="3"name="botao"/>
+                    <p>Pedidos</p>
+                </label>
+
 
                 </div>
 
