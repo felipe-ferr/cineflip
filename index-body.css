@@ -19,11 +19,7 @@ h1{
     justify-content: center;
     flex-direction: row;
     padding: 0 5vw;
-    gap: 13vw;
-    color: #2f2b38
-
-    
-
+    gap: 7vw;
 }
 .tags{
     grid-area: tags;
@@ -47,9 +43,13 @@ h1{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    width: 15%;
+    width: 20%;
     height: 50vh;
     gap:1vh;
+    background: rgba(1, 27, 55, 0.479);
+    padding: 5vh;
+    border-radius: 15px 15px 0px 0px;
+    box-shadow: inset 0px -1px 0px 0px #C1054D;
 }
 .ingressos-container h1{
     font-family: 'Montserrat', sans-serif;
