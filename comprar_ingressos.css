@@ -2,7 +2,7 @@
 
 body {
     margin: 0;
-    background-color: rgb(17, 17, 17);
+    background-color: #06031b;
     font-family: 'Quicksand', sans-serif;
     box-sizing: border-box;
     height: 100vh;
@@ -63,8 +63,8 @@ p {
 }
 
 .navbarlinks a:hover {
-    box-shadow: inset 0px -1px 0px 0px rgb(255, 225, 0);
-    color: rgb(255, 225, 0);
+    box-shadow: inset 0px -1px 0px 0px #C1054D;
+    color: #C1054D;
 }
 
 .navlogin-btn {
@@ -89,12 +89,12 @@ p {
 }
 
 .navlogin-btn a:hover {
-    box-shadow: inset 0px -1px 0px 0px rgb(255, 225, 0);
-    color: rgb(255, 225, 0);
+    box-shadow: inset 0px -1px 0px 0px #C1054D;
+    color: #C1054D;
 }
 
 .material-symbols-outlined {
-    color: goldenrod;
+    color: #C1054D;
     font-size: 1.5vw;
     font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
 }
@@ -119,8 +119,7 @@ p {
     padding: 1vw;
     box-sizing: border-box;
     gap: 1vh;
-    border-right: 1px solid goldenrod;
-    background-color: #0d0d0d;
+    border-right: 1px solid #C1054D;
 }
 
 .sidebar-movie p {
@@ -172,7 +171,7 @@ p {
     color: white;
     padding: 1vh;
     border-radius: 15px;
-    border: 0.3vh solid goldenrod;
+    border: 0.3vh solid #C1054D;
     text-decoration: none;
     font-family: "Quicksand", sans-serif;
     transition-duration: 0.4s;
@@ -196,7 +195,7 @@ p {
     font-size: 1vw;
     margin: 0;
     text-align: left;
-    color: goldenrod;
+    color: #C1054D;
 }
 
 .ingressos-desc-filme-info {
@@ -241,7 +240,7 @@ form p {
     justify-content: center;
     align-items: center;
     padding: 3vh 3vh;
-    background-color: #0d0d0d;
+    background-color: #010017;
     transition-duration: 0.3s;
     box-sizing: border-box;
     cursor: pointer;
@@ -257,17 +256,17 @@ form p {
     transition-duration: 0.3s;
 }
 .data input[type="radio"]:hover ~ .material-symbols-outlined{
-    color: goldenrod;
+    color: #C1054D;
 }
 .data input[type="radio"]:hover+p{
-    color: goldenrod;
+    color: #C1054D;
 }
 
 .data input[type="radio"]:checked ~ .material-symbols-outlined{
-    color: goldenrod;
+    color: #C1054D;
 }
 .data input[type="radio"]:checked+p{
-    color: goldenrod;
+    color: #C1054D;
 }
 
 
@@ -300,7 +299,7 @@ form p {
     justify-content: center;
     align-items: center;
     padding: 3vh 3vh;
-    background-color: #0d0d0d;
+background-color: #010017;
     transition-duration: 0.3s;
     box-sizing: border-box;
     cursor: pointer;
@@ -316,17 +315,17 @@ form p {
     transition-duration: 0.3s;
 }
 .idioma input[type="radio"]:hover ~ span{
-    color: goldenrod;
+    color: #C1054D;
 }
 .idioma input[type="radio"]:hover~p{
-    color: goldenrod;
+    color: #C1054D;
 }
 
 .idioma input[type="radio"]:checked ~ .material-symbols-outlined{
-    color: goldenrod;
+    color: #C1054D;
 }
 .idioma input[type="radio"]:checked+p{
-    color: goldenrod;
+    color: #C1054D;
 }
 
 
@@ -343,7 +342,7 @@ form p {
     transition-duration: 0.3s;
 }
 .idioma-container input[type="radio"]:checked ~ span{
-    color: goldenrod;
+    color: #C1054D;
 }
 
 
@@ -370,7 +369,7 @@ form p {
     justify-content: center;
     align-items: center;
     padding: 3vh 3vh;
-    background-color: #0d0d0d;
+background-color: #010017;
     transition-duration: 0.3s;
     box-sizing: border-box;
     cursor: pointer;
@@ -387,20 +386,20 @@ form p {
     font-size: 1.5vw;
 }
 .tipoingresso input[type="radio"]:hover ~ span{
-    color: goldenrod;
+    color: #C1054D;
 }
 .tipoingresso input[type="radio"]:hover~p{
-    color: goldenrod;
+    color: #C1054D;
 }
 .tipoingresso input[type="radio"]:hover~ ion-icon{
-    color: goldenrod;
+    color: #C1054D;
 }
 
 .tipoingresso input[type="radio"]:checked ~ ion-icon{
-    color: goldenrod;
+    color: #C1054D;
 }
 .tipoingresso input[type="radio"]:checked ~ p{
-    color: goldenrod;
+    color: #C1054D;
 }
 
 
@@ -417,7 +416,7 @@ form p {
     transition-duration: 0.3s;
 }
 .tipoingresso-container input[type="radio"]:checked ~ span{
-    color: goldenrod;
+    color: #C1054D;
 }
 
 
@@ -445,7 +444,7 @@ form p {
     justify-content: center;
     align-items: center;
     padding: 3vh 3vh;
-    background-color: #0d0d0d;
+background-color: #010017;
     transition-duration: 0.3s;
     box-sizing: border-box;
     cursor: pointer;
@@ -462,20 +461,20 @@ form p {
     transition-duration: 0.3s;
 }
 .horario input[type="radio"]:hover ~ span{
-    color: goldenrod;
+    color: #C1054D;
 }
 .horario input[type="radio"]:hover~p{
-    color: goldenrod;
+    color: #C1054D;
 }
 
 .horario input[type="radio"]:checked ~ .material-symbols-outlined{
-    color: goldenrod;
+    color: #C1054D;
 }
 .horario input[type="radio"]:hover ~ .material-symbols-outlined{
-    color: goldenrod;
+    color: #C1054D;
 }
 .horario input[type="radio"]:checked+p{
-    color: goldenrod;
+    color: #C1054D;
 }
 
 
@@ -493,7 +492,7 @@ form p {
     transition-duration: 0.3s;
 }
 .horario-container input[type="radio"]:checked ~ span{
-    color: goldenrod;
+    color: #C1054D;
 }
 
 
@@ -525,7 +524,7 @@ form p {
     justify-content: flex-start;
     align-items: center;
     padding: 3vh 3vh;
-    background-color: #0d0d0d;
+background-color: #010017;
     transition-duration: 0.3s;
     box-sizing: border-box;
     cursor: pointer;
@@ -542,20 +541,20 @@ form p {
     transition-duration: 0.3s;
 }
 .pagamento input[type="radio"]:hover ~ span{
-    color: goldenrod;
+    color: #C1054D;
 }
 .pagamento input[type="radio"]:hover~p{
-    color: goldenrod;
+    color: #C1054D;
 }
 .pagamento input[type="radio"]:hover~.material-symbols-outlined{
-    color: goldenrod;
+    color: #C1054D;
 }
 
 .pagamento input[type="radio"]:checked ~ .material-symbols-outlined{
-    color: goldenrod;
+    color: #C1054D;
 }
 .pagamento input[type="radio"]:checked~p{
-    color: goldenrod;
+    color: #C1054D;
 }
 
 
@@ -572,7 +571,7 @@ form p {
     transition-duration: 0.3s;
 }
 .pagamento-container input[type="radio"]:checked ~ span{
-    color: goldenrod;
+    color: #C1054D;
 }
 
 
@@ -635,7 +634,7 @@ form p {
 .inputContainer input:focus {
     background-color: rgba(33, 33, 33, 0.433);
     outline: none;
-    box-shadow: inset 0px 0px 0px 2px goldenrod;
+    box-shadow: inset 0px 0px 0px 2px #C1054D;
 }
 
 .inputContainer input:focus~p {
@@ -661,7 +660,7 @@ form p {
 .inputContainer select:focus {
     background-color: rgba(33, 33, 33, 0.433);
     outline: none;
-    box-shadow: inset 0px 0px 0px 2px goldenrod;
+    box-shadow: inset 0px 0px 0px 2px #C1054D;
 }
 
 
@@ -676,7 +675,7 @@ form p {
     justify-content: center;
     flex-direction: column;
     width: 100%;
-    background-color: #0d0d0d;
+background-color: #010017;
     border-radius: 15px;
     padding: 2vh;
     box-sizing: border-box;
@@ -731,7 +730,7 @@ form p {
 }
 
 .linha-cadeira p {
-    color: goldenrod;
+    color: #C1054D;
     font-size: 1rem;
     font-family: "Quicksand", sans-serif;
     margin: 0;
@@ -783,7 +782,7 @@ form p {
 
 
 .submit-ingresso{
-    background-color: goldenrod;
+    background-color: #C1054D;
     border-radius: 15px;
     padding: 2vh;
     border: none;
@@ -794,7 +793,7 @@ form p {
 .submit-ingresso:hover{
     outline: none;
     cursor: pointer;
-    background-color: gold;
+    background-color: #ff0062;
 }
 /* ----------------------------------------------
  * Generated by Animista on 2023-10-22 20:35:7

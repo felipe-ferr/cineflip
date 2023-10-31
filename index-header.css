@@ -2,7 +2,7 @@
 
 body{
     margin: 0;
-    background-color: rgb(21, 21, 21);
+    background-color: #080421;
 }
 
 /* container da barra de navegaÃ§Ã£o */
@@ -48,8 +48,8 @@ body{
     gap:1vw;
 }
 .navbarlinks a:hover{
-    box-shadow: inset 0px -1px 0px 0px rgb(255, 225, 0);
-    color:rgb(255, 225, 0);
+    box-shadow: inset 0px -1px 0px 0px #C1054D;
+    color:#C1054D
 }
 .navlogin-btn{
     display: flex;
@@ -71,13 +71,13 @@ body{
     gap:3vh;
 }
 .navlogin-btn a:hover{
-    box-shadow: inset 0px -1px 0px 0px rgb(255, 225, 0);
-    color:rgb(255, 225, 0);
+    box-shadow: inset 0px -1px 0px 0px #C1054D;
+    color:#C1054D
 }
 
 
 .material-symbols-outlined {
-    color: goldenrod;
+    color: #C1054D;
     font-size: 1.5vw;
     font-variation-settings:
     'FILL' 0,
@@ -144,7 +144,7 @@ body{
     'opsz' 24
 }
 .header-filme-info-botoes .compraringresso{
-    background-color: goldenrod;
+    background-color: #C1054D;
     color:white;
     padding:3vh;
     border-radius: 2vh;
@@ -160,7 +160,7 @@ body{
     text-wrap: nowrap;
 }
 .header-filme-info-botoes .compraringresso:hover{
-    background-color: gold
+    background-color: #ff0062;
 }
 .header-filme-info-botoes .vertrailer{
     background-color: inherit;
@@ -286,7 +286,7 @@ body{
 }
 .filme-poster-container:hover > .filme-poster-desc{
     cursor: pointer;
-    color: goldenrod;
+    color: #C1054D;
  
 }
 .filme-poster{
