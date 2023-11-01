@@ -36,8 +36,8 @@ a{
     gap:1vw;
 }
 .navbarlinks a:hover{
-    box-shadow: inset 0px -1px 0px 0px #C1054D;
-    color:#C1054D;
+    box-shadow: inset 0px -1px 0px 0px goldenrod;;
+    color:goldenrod;;
 }
 .navlogin-btn{
     display: flex;
@@ -58,15 +58,15 @@ a{
     gap:15px;
 }
 .navlogin-btn a:hover{
-    box-shadow: inset 0px -1px 0px 0px #C1054D;
-    color:#C1054D;
+    box-shadow: inset 0px -1px 0px 0px goldenrod;;
+    color:goldenrod;;
 }
 .responsive-img{
     max-width: 100%;
     height: auto;
 }
 .material-symbols-outlined {
-    color: #C1054D;;
+    color: goldenrod;;;
     font-variation-settings:
     'FILL' 0,
     'wght' 400,
@@ -74,7 +74,7 @@ a{
     'opsz' 24
 }
 .inputContainer .material-symbols-outlined {
-    color: #C1054D;;
+    color: goldenrod;;;
     font-variation-settings:
     'FILL' 0,
     'wght' 400,
@@ -104,7 +104,7 @@ form{
     background-color: rgba(0, 0, 0, 0.379);
     width:100vw;
     height: auto;
-    border-right: 2px solid #C1054D;;
+    border-right: 2px solid goldenrod;;;
 }
 form p{
     color: white;
@@ -121,7 +121,7 @@ form h1{
     margin: 0;
 }
 .botaoinicio{
-    color: #C1054D;;
+    color: goldenrod;;;
     font-family: 'Montserrat', sans-serif;
     font-size: 1.1vw;
     display: flex;
@@ -186,13 +186,13 @@ form h1{
     background-color: #131313;
     outline: none;
     padding: 0px 10%;
-    box-shadow: inset 0px 0px 0px 2px #C1054D;;
+    box-shadow: inset 0px 0px 0px 2px goldenrod;;;
 }
 .inputContainer input::after{
     background-color: #131313;
     outline: none;
     padding: 0px 20%;
-    box-shadow: inset 0px 0px 0px 2px #C1054D;;
+    box-shadow: inset 0px 0px 0px 2px goldenrod;;;
 }
 .inputContainer input:focus ~ p{
     transform: translateY(-3vh);
@@ -219,13 +219,13 @@ form h1{
 .inputContainer select:focus{
     background-color: rgba(33, 33, 33, 0.433);
     outline: none;
-    box-shadow: inset 0px 0px 0px 2px #C1054D;;
+    box-shadow: inset 0px 0px 0px 2px goldenrod;;;
 }
 .inputContainer select > option{
     background-color: rgb(48, 48, 48);
 }
 .submit{
-    background-color: #C1054D;;
+    background-color: goldenrod;;;
     color: black;
     font-size: 1rem;
     font-family: 'Quicksand', sans-serif;
@@ -268,7 +268,7 @@ form h1{
     cursor: pointer;
 }
 .social-media-container ion-icon:hover{
-    color: #C1054D;;
+    color: goldenrod;;;
 }
 .contato-container{
     display: flex;
