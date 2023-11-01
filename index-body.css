@@ -140,6 +140,7 @@ h1{
     height: 100%;
     flex-direction: column;
 }
+
 .lanches-menu{
     display: flex;
     width: 70%;
