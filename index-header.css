@@ -2,7 +2,7 @@
 
 body{
     margin: 0;
-    background: linear-gradient(110deg, rgba(6,3,27,1) 0%, rgb(1, 14, 55) 100%);
+    background: linear-gradient(150deg, rgb(2, 1, 11) 0%, rgb(1, 16, 66) 100%);
 }
 
 /* container da barra de navegaÃ§Ã£o */
@@ -237,7 +237,7 @@ body{
     justify-content: center;
     flex-direction: row;
     gap: 15px;
-    margin-top: -11vh;
+    margin-top: -6vh;
     z-index: 2;
 
 }
@@ -263,7 +263,7 @@ body{
 }
 .filme-poster-container:hover > .filme-poster-desc{
     cursor: pointer;
-    color: goldenrod;;
+    color: goldenrod;
  
 }
 .filme-poster{

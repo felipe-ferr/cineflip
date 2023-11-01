@@ -43,13 +43,11 @@ h1{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    width: 20%;
+    width: 17%;
     height: 50vh;
     gap:1vh;
-    background: rgba(1, 27, 55, 0.479);
     padding: 5vh;
     border-radius: 15px 15px 0px 0px;
-    box-shadow: inset 0px -1px 0px 0px goldenrod;;
 }
 .ingressos-container h1{
     font-family: 'Montserrat', sans-serif;
@@ -122,3 +120,30 @@ h1{
 .ingresso-poster-botoes .vertrailer:hover{
     background-color: rgba(30, 30, 30, 0.59);
 }
+
+
+
+.lanches-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+    height: 50vh;
+}
+.lanches-imagem{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    background-color: goldenrod;
+    height: 100%;
+    flex-direction: column;
+}
+.lanches-menu{
+    display: flex;
+    width: 70%;
+    background-color: rgba(0, 0, 0, 0.59);
+    height: 100%;
+}
+
