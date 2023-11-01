@@ -2,8 +2,7 @@
 
 body{
     margin: 0;
-    background:linear-gradient(180deg, rgba(6, 3, 27, 0.912) 30%, rgba(1, 27, 55, 0.99) 100%), url("imagem/fundobody.jpg");
-    background-size: 100% 100%;
+    background: linear-gradient(110deg, rgba(6,3,27,1) 0%, rgb(1, 14, 55) 100%);
 }
 
 /* container da barra de navegaÃ§Ã£o */
