@@ -1,38 +1,95 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Quicksand:wght@400&display=swap');
 
-body{
+body {
     margin: 0
 }
-hr{
+
+hr {
     width: 90%;
     border-top: 0.1vw solid white;
 }
-h1{
+
+h1 {
     font-family: 'Montserrat', sans-serif;
     font-size: 2vw;
     color: white;
     text-align: center;
 }
 
- ::-webkit-scrollbar {
+
+.botoescontrolleft {
+    color: goldenrod;
+    font-size: 55px;
+    height: 430px;
+    display: flex;
+    align-items: center;
+    padding: 0px 5vw;
+    transition-duration: 0.3s;
+    border: none;
+    cursor: pointer;
+}
+
+.botoescontrolleft:hover ion-icon {
+    transform: scale(1.1);
+}
+
+.botoescontrolright {
+    color: goldenrod;
+    font-size: 55px;
+    height: 430px;
+    display: flex;
+    align-items: center;
+    padding: 0px 5vw;
+    transition-duration: 0.3s;
+    border: none;
+    cursor: pointer;
+
+}
+
+.botoescontrolright:hover ion-icon {
+    transform: scale(1.1);
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.carrossel::-webkit-scrollbar {
     display: none;
 }
-  
 
-.ingressos-section {
-    -ms-overflow-style: none;
-    scrollbar-width: none; 
+.carrossel-container::-webkit-scrollbar {
+    display: none;
 }
-.carrossel-container{
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.carrossel {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+
+
+.carrossel-container {
     display: flex;
     align-items: center;
     justify-content: center;
     overflow-x: scroll;
     flex-wrap: nowrap;
     width: 100%;
+    height: auto;
 }
-
-.carrossel-container .ingressos-section{
+.carrossel {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    overflow-x: scroll;
+    flex-wrap: nowrap;
+    scroll-behavior: smooth;
+    gap: 4vw;
+    width: 64vw;
+}
+.carrossel-container .ingressos-section {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -40,15 +97,18 @@ h1{
     padding: 0 5vw;
     gap: 7vw;
     width: 100%;
+
 }
-.tags{
+
+.tags {
     grid-area: tags;
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 0.5vw;
 }
-.tags span{
+
+.tags span {
     font-family: 'Quicksand', sans-serif;
     font-size: 0.8rem;
     color: white;
@@ -58,16 +118,18 @@ h1{
     width: 100%;
     border-radius: 5px;
 }
-.ingressos-container{
+
+.ingressos-container {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    height: 50vh;
-    gap:1vh;
-    border-radius: 15px 15px 0px 0px;
+    background-size: 100% 100%;
+    height: auto;
+    gap: 2vh;
 }
-.ingressos-container h1{
+
+.ingressos-container h1 {
     font-family: 'Montserrat', sans-serif;
     font-size: 1.3vw;
     color: white;
@@ -76,36 +138,37 @@ h1{
     text-wrap: nowrap;
 }
 
-.ingresso-poster{
-    width: 15vw;
-    height: 100%;
+.ingressos-container .ingresso-poster {
     background-size: 100% 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 50vh;
+    width: 16vw;
     border-radius: 10px;
 }
 
-.ingresso-poster-botoes{
+.ingresso-poster-botoes {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
 }
 
-.ingresso-poster-botoes  .material-symbols-outlined {
+.ingresso-poster-botoes .material-symbols-outlined {
     color: rgb(255, 255, 255);
     font-size: 1.5vw;
     font-variation-settings:
-    'FILL' 0,
-    'wght' 400,
-    'GRAD' 0,
-    'opsz' 24
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24
 }
-.ingresso-poster-botoes .compraringresso{
-    background-color: goldenrod;;
-    color:white;
-    border-radius: 2vh;
+
+.ingresso-poster-botoes .compraringresso {
+    background-color: goldenrod;
+    border-radius: 10px;
+    color: white;
     text-decoration: none;
     font-family: 'Quicksand', sans-serif;
     transition-duration: 0.4s;
@@ -116,96 +179,101 @@ h1{
     gap: 1vw;
     padding: 2vh;
     height: 1vh;
-    
+
 }
-.ingresso-poster-botoes .compraringresso:hover{
+
+.ingresso-poster-botoes .compraringresso:hover {
     background-color: gold;
 }
 
-.carrossel-container{
-    display: flex;
-    width: 100%;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: flex-start;
-}
-.carrossel{
-    margin-top: 15px;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    overflow-x: scroll;
-    flex-wrap: nowrap;
-    scroll-behavior: smooth;
-    gap: 5vw;
-    width: 65vw;
-    height: auto;
-}
-
-.botoescontrolleft{
-    color: goldenrod;
-    font-size: 55px;
-    height:430px;
-    display: flex;
-    align-items: center;
-    padding: 0px 5vw;
-    transition-duration: 0.3s;
-    border: none;
-    cursor: pointer;
-}
-.botoescontrolleft:hover ion-icon{
-    transform: scale(1.1);
-}
-.botoescontrolright{
-    color: goldenrod;
-    font-size: 55px;
-    height:430px;
-    display: flex;
-    align-items: center;
-    padding: 0px 5vw;
-    transition-duration: 0.3s;
-    background-color: inherit;
-    border: none;
-    cursor: pointer;
-
-}
-.botoescontrolright:hover ion-icon{
-    transform: scale(1.1);
-}
-/* Hide scrollbar for Chrome, Safari and Opera */
-.carrossel::-webkit-scrollbar {
-    display: none;
-}
-  
-/* Hide scrollbar for IE, Edge and Firefox */
-.carrossel {
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;  /* Firefox */
-}
 
 
-.lanches-section{
+.lanches-section {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: row;
     width: 100%;
-    height: 50vh;
+    box-sizing: border-box;
+    padding: 5vh;
+    height: auto;
 }
-.lanches-imagem{
+
+.lanches-imagem {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 30%;
-    background-color: goldenrod;
-    height: 100%;
     flex-direction: column;
+   
+}
+.lanches-imagem img{
+    width: 70%;
+    height: 90%;
+}
+.lanches-imagem h1{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2vw;
+    color: goldenrod;
+    text-align: center;
+    margin: 0;
+}
+.lanches-imagem p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1vw;
+    color: white;
+    text-align: center;
+    margin: 0;
+}
+.menu-row{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
 }
 
-.lanches-menu{
+.lanches-menu {
     display: flex;
     width: 70%;
-    background-color: rgba(0, 0, 0, 0.59);
     height: 100%;
+    flex-direction: column;
+    justify-content: flex-start;
 }
-
+.lanches-menu h1{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2vw;
+    color: goldenrod;
+    text-align: center;
+    margin: 0;
+}
+.lanches-menu p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1vw;
+    color: white;
+    text-align: center;
+    margin: 0;
+}
+.lanche-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 15vw;
+    gap: 1vw;
+}
+.lanche-container img{
+    width: 100%;
+    height: 30vh;
+}
+.lanche-container .comprarlanche{
+    width: 100%;
+    background-color: goldenrod;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2vh;
+    box-sizing: border-box;
+}
+.lanche-container .material-symbols-outlined{
+    color: white;
+}

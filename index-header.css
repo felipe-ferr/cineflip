@@ -2,8 +2,7 @@
 
 body{
     margin: 0;
-    background-image: linear-gradient(180deg, #111328 0%, #161022 49%, #181829 100%);
-
+    background: linear-gradient(179.4deg, rgb(7, 13, 47) -16.9%, rgb(11, 10, 19) 119.9%);
 }
 
 /* container da barra de navegaÃ§Ã£o */
@@ -67,15 +66,10 @@ body{
     display: flex;
     height: 75vh;
     gap: 50px;
-    -ms-overflow-style: none;  /* Esconde a barra de scroll IE e Edge */
-    scrollbar-width: none;  /* esconde a barra de scroll no Firefox */
     scroll-behavior: smooth;
     flex-direction: column;
 }
-/* esconde a barra de scroll */
-.header-container::-webkit-scrollbar {
-    display: none;
-}
+
 
 .header-filme-info{
     display: flex;
@@ -247,11 +241,12 @@ body{
     align-items: center;
     justify-content: space-around;
     flex-direction: row;
-    width: 100%;
+    width: 80%;
     gap: 1vw;
     z-index: 2;
     padding: 2vh;
     border-radius: 10px;
+   
 }
 .filme-poster-container{
     background-size: 100% 100%;

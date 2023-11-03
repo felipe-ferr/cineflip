@@ -1,387 +1,393 @@
 <!DOCTYPE html>
 <html lang="PT-BR">
 
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <link rel="stylesheet"
-            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
-        <link rel="stylesheet" href="index-header.css" />
-        <link rel="stylesheet" href="index-body.css" />
+    <link rel="stylesheet" href="index-header.css" />
+    <link rel="stylesheet" href="index-body.css" />
 
-        <script type="application/javascript" src="js/showHeaderFilmes.js"></script>
-        <script type="application/javascript" src="js/carrossel.js"></script>
+    <script type="application/javascript" src="js/showHeaderFilmes.js"></script>
+    <script type="application/javascript" src="js/carrossel.js"></script>
 
-        <title>CineFlip</title>
-    </head>
+    <title>CineFlip</title>
+</head>
 
-    <body>
-        <div class="header-container">
-            <div class="navbarContainer" id="nav">
-                <div class="navbarlogo">
-                    <a href="index.html"><img src="imagem/cineflip-logo.svg" /></a>
-                </div>
-
-                <div class="navbarlinks">
-                    <a href="cartaz.html"><i class="material-symbols-outlined">movie</i>Filmes
-                        em Cartaz</a>
-                    <a href="lanches.html"><i class="material-symbols-outlined">fastfood</i>Lanches</a>
-                    <a href="unidades.html"><i class="material-symbols-outlined">location_on</i>Unidades</a>
-                    <a href="login.html"><i class="material-symbols-outlined">account_circle</i>Login</a>
-                    <a href="cad_clientes.html"><i
-                            class="material-symbols-outlined">account_circle</i>Registrar</a>
-                </div>
-
+<body>
+    <div class="header-container">
+        <div class="navbarContainer" id="nav">
+            <div class="navbarlogo">
+                <a href="index.html"><img src="imagem/cineflip-logo.svg" /></a>
             </div>
 
-            <script type="application/javascript"
-                src="js/estiloPaginasNavScroll.js"></script>
-
-            <div id="barbiefilme" class="header-barbie fade-in">
-                <div class="header-filme-info">
-                    <h1>Barbie</h1>
-                    <div class="filme-categoria-duracao">
-                        <img style="width: 20px; height: 20px"
-                            src="imagem/classificacao_12.svg" />
-                        <p style="text-wrap: nowrap;">Comédia/Romance</p>
-                        <p>
-                            <i style="font-size: 18px"
-                                class="material-symbols-outlined">schedule</i>1
-                            hora e 54 minutos
-                        </p>
-                    </div>
-                    <p>
-                        Sinopse: Depois de ser expulsa da Barbieland por ser uma
-                        boneca de
-                        aparência menos do que perfeita, Barbie parte para o
-                        mundo humano em
-                        busca da verdadeira felicidade.
-                    </p>
-
-                    <div class="header-filme-info-botoes">
-                        <a class="compraringresso"
-                            href="comprar_ingressos_barbie.html"><i
-                                class="material-symbols-outlined">sell</i>Comprar
-                            Ingresso</a>
-                        <a onclick="mostrarVideoBarbie()" id="trailerbotao"
-                            class="vertrailer"
-                            href="https://www.youtube.com/watch?v=NVIpIMqeJVM"
-                            target="_blank"><i
-                                class="material-symbols-outlined">play_circle</i>Ver
-                            Trailer</a>
-                    </div>
-                </div>
+            <div class="navbarlinks">
+                <a href="cartaz.html"><i class="material-symbols-outlined">movie</i>Filmes
+                    em Cartaz</a>
+                <a href="lanches.html"><i class="material-symbols-outlined">fastfood</i>Lanches</a>
+                <a href="unidades.html"><i class="material-symbols-outlined">location_on</i>Unidades</a>
+                <a href="login.html"><i class="material-symbols-outlined">account_circle</i>Login</a>
+                <a href="cad_clientes.html"><i class="material-symbols-outlined">account_circle</i>Registrar</a>
             </div>
 
-            <div id="oppenfilme" class="header-oppenheimer fade-in">
-                <div class="header-filme-info">
-                    <h1>Oppenheimer</h1>
-                    <div class="filme-categoria-duracao">
-                        <img style="width: 20px; height: 20px"
-                            src="imagem/classificacao_16.svg" />
-                        <p style="text-wrap: nowrap;">Drama/História</p>
-                        <p>
-                            <i style="font-size: 18px"
-                                class="material-symbols-outlined">schedule</i>3
-                            Horas
-                        </p>
-                    </div>
-                    <p>
-                        Sinopse: O físico J. Robert Oppenheimer trabalha com uma
-                        equipe de
-                        cientistas durante o Projeto Manhattan, levando ao
-                        desenvolvimento
-                        da bomba atômica.
-                    </p>
+        </div>
 
-                    <div class="header-filme-info-botoes">
-                        <a class="compraringresso"
-                            href="comprar_ingressos_oppen.html"><i
-                                class="material-symbols-outlined">sell</i>Comprar
-                            Ingresso</a>
-                        <a class="vertrailer" target="_blank"
-                            href="https://www.youtube.com/watch?v=uYPbbksJxIg"><i
-                                class="material-symbols-outlined">play_circle</i>Ver
-                            Trailer</a>
-                    </div>
+        <script type="application/javascript" src="js/estiloPaginasNavScroll.js"></script>
+
+        <div id="barbiefilme" class="header-barbie fade-in">
+            <div class="header-filme-info">
+                <h1>Barbie</h1>
+                <div class="filme-categoria-duracao">
+                    <img style="width: 20px; height: 20px" src="imagem/classificacao_12.svg" />
+                    <p style="text-wrap: nowrap;">Comédia/Romance</p>
+                    <p>
+                        <i style="font-size: 18px" class="material-symbols-outlined">schedule</i>1
+                        hora e 54 minutos
+                    </p>
                 </div>
-            </div>
+                <p>
+                    Sinopse: Depois de ser expulsa da Barbieland por ser uma
+                    boneca de
+                    aparência menos do que perfeita, Barbie parte para o
+                    mundo humano em
+                    busca da verdadeira felicidade.
+                </p>
 
-            <div id="mariofilme" class="header-mario fade-in">
-                <div class="header-filme-info">
-                    <h1 style="font-size: 40px">Super Mario Bros. O Filme</h1>
-                    <div class="filme-categoria-duracao">
-                        <img style="width: 20px; height: 20px"
-                            src="imagem/classificacao_livre.svg" />
-                        <p style="text-wrap: nowrap;">Aventura/Comedia</p>
-                        <p>
-                            <i style="font-size: 18px"
-                                class="material-symbols-outlined">schedule</i>1
-                            Hora e 32 minutos
-                        </p>
-                    </div>
-                    <p>
-                        Sinopse: Mario é um encanador junto com seu irmão Luigi.
-                        Um dia,
-                        eles vão parar no reino dos cogumelos, governado pela
-                        Princesa
-                        Peach, mas ameaçado pelo rei dos Koopas.
-                    </p>
-
-                    <div class="header-filme-info-botoes">
-                        <a class="compraringresso"
-                            href="comprar_ingressos_mario.html"><i
-                                class="material-symbols-outlined">sell</i>Comprar
-                            Ingresso</a>
-                        <a class="vertrailer" target="_blank"
-                            href="https://www.youtube.com/watch?v=Cb4WV4aXBpk"><i
-                                class="material-symbols-outlined">play_circle</i>Ver
-                            Trailer</a>
-                    </div>
-                </div>
-            </div>
-
-            <div id="freirafilme" class="header-freira fade-in">
-                <div class="header-filme-info">
-                    <h1>A Freira 2</h1>
-                    <div class="filme-categoria-duracao">
-                        <img style="width: 20px; height: 20px"
-                            src="imagem/classificacao_18.png" />
-                        <p style="text-wrap: nowrap;">Terror/Mistério</p>
-                        <p>
-                            <i style="font-size: 18px"
-                                class="material-symbols-outlined">schedule</i>1
-                            Hora e 50 minutos
-                        </p>
-                    </div>
-                    <p>
-                        Sinopse: Em 1956, na França, um padre é assassinado e
-                        parece que um
-                        mal está se espalhando. Determinada a deter o maligno,
-                        irmã Irene
-                        mais uma vez fica cara a cara com uma força demoníaca.
-                    </p>
-
-                    <div class="header-filme-info-botoes">
-                        <a class="compraringresso"
-                            href="comprar_ingressos_freira.html"><i
-                                class="material-symbols-outlined">sell</i>Comprar
-                            Ingresso</a>
-                        <a class="vertrailer" href="comprar_ingresso.php"><i
-                                class="material-symbols-outlined">play_circle</i>Ver
-                            Trailer</a>
-                    </div>
-                </div>
-            </div>
-
-            <div id="pawfilme" class="header-paw fade-in">
-                <div class="header-filme-info">
-                    <h1 style="text-align:left;font-size:2.8vw">Taylor Swift:
-                        The Eras Tour</h1>
-                    <div class="filme-categoria-duracao">
-                        <img style="width: 20px; height: 20px"
-                            src="imagem/classificacao_12.svg" />
-                        <p style="text-wrap: nowrap;">Drama Musical/Musical</p>
-                        <p>
-                            <i style="font-size: 18px"
-                                class="material-symbols-outlined">schedule</i>1
-                            Hora e 40 minutos
-                        </p>
-                    </div>
-                    <p>
-                        Taylor Swift: The Eras Tour é um filme-concerto
-                        americano que documenta a The Eras Tour, a turnê de
-                        2023–2024 da cantora e compositora estadunidense Taylor
-                        Swift.
-                    </p>
-
-                    <div class="header-filme-info-botoes">
-                        <a class="compraringresso"
-                            href="comprar_ingressos_swift.html"><i
-                                class="material-symbols-outlined">sell</i>Comprar
-                            Ingresso</a>
-                        <a class="vertrailer" target="_blank"
-                            href="https://www.youtube.com/watch?v=KudedLV0tP0"><i
-                                class="material-symbols-outlined">play_circle</i>Ver
-                            Trailer</a>
-                    </div>
+                <div class="header-filme-info-botoes">
+                    <a class="compraringresso" href="comprar_ingressos_barbie.html"><i
+                            class="material-symbols-outlined">sell</i>Comprar
+                        Ingresso</a>
+                    <a onclick="mostrarVideoBarbie()" id="trailerbotao" class="vertrailer"
+                        href="https://www.youtube.com/watch?v=NVIpIMqeJVM" target="_blank"><i
+                            class="material-symbols-outlined">play_circle</i>Ver
+                        Trailer</a>
                 </div>
             </div>
         </div>
 
-        <div class="filmes-em-cartaz-container">
-            <div id="myDIV" class="filmes-em-cartaz">
-                <div onclick="showbarbie()" class="filme-poster-container">
-                    <div class="filme-poster active" style="
+        <div id="oppenfilme" class="header-oppenheimer fade-in">
+            <div class="header-filme-info">
+                <h1>Oppenheimer</h1>
+                <div class="filme-categoria-duracao">
+                    <img style="width: 20px; height: 20px" src="imagem/classificacao_16.svg" />
+                    <p style="text-wrap: nowrap;">Drama/História</p>
+                    <p>
+                        <i style="font-size: 18px" class="material-symbols-outlined">schedule</i>3
+                        Horas
+                    </p>
+                </div>
+                <p>
+                    Sinopse: O físico J. Robert Oppenheimer trabalha com uma
+                    equipe de
+                    cientistas durante o Projeto Manhattan, levando ao
+                    desenvolvimento
+                    da bomba atômica.
+                </p>
+
+                <div class="header-filme-info-botoes">
+                    <a class="compraringresso" href="comprar_ingressos_oppen.html"><i
+                            class="material-symbols-outlined">sell</i>Comprar
+                        Ingresso</a>
+                    <a class="vertrailer" target="_blank" href="https://www.youtube.com/watch?v=uYPbbksJxIg"><i
+                            class="material-symbols-outlined">play_circle</i>Ver
+                        Trailer</a>
+                </div>
+            </div>
+        </div>
+
+        <div id="mariofilme" class="header-mario fade-in">
+            <div class="header-filme-info">
+                <h1 style="font-size: 40px">Super Mario Bros. O Filme</h1>
+                <div class="filme-categoria-duracao">
+                    <img style="width: 20px; height: 20px" src="imagem/classificacao_livre.svg" />
+                    <p style="text-wrap: nowrap;">Aventura/Comedia</p>
+                    <p>
+                        <i style="font-size: 18px" class="material-symbols-outlined">schedule</i>1
+                        Hora e 32 minutos
+                    </p>
+                </div>
+                <p>
+                    Sinopse: Mario é um encanador junto com seu irmão Luigi.
+                    Um dia,
+                    eles vão parar no reino dos cogumelos, governado pela
+                    Princesa
+                    Peach, mas ameaçado pelo rei dos Koopas.
+                </p>
+
+                <div class="header-filme-info-botoes">
+                    <a class="compraringresso" href="comprar_ingressos_mario.html"><i
+                            class="material-symbols-outlined">sell</i>Comprar
+                        Ingresso</a>
+                    <a class="vertrailer" target="_blank" href="https://www.youtube.com/watch?v=Cb4WV4aXBpk"><i
+                            class="material-symbols-outlined">play_circle</i>Ver
+                        Trailer</a>
+                </div>
+            </div>
+        </div>
+
+        <div id="freirafilme" class="header-freira fade-in">
+            <div class="header-filme-info">
+                <h1>A Freira 2</h1>
+                <div class="filme-categoria-duracao">
+                    <img style="width: 20px; height: 20px" src="imagem/classificacao_18.png" />
+                    <p style="text-wrap: nowrap;">Terror/Mistério</p>
+                    <p>
+                        <i style="font-size: 18px" class="material-symbols-outlined">schedule</i>1
+                        Hora e 50 minutos
+                    </p>
+                </div>
+                <p>
+                    Sinopse: Em 1956, na França, um padre é assassinado e
+                    parece que um
+                    mal está se espalhando. Determinada a deter o maligno,
+                    irmã Irene
+                    mais uma vez fica cara a cara com uma força demoníaca.
+                </p>
+
+                <div class="header-filme-info-botoes">
+                    <a class="compraringresso" href="comprar_ingressos_freira.html"><i
+                            class="material-symbols-outlined">sell</i>Comprar
+                        Ingresso</a>
+                    <a class="vertrailer" href="comprar_ingresso.php"><i
+                            class="material-symbols-outlined">play_circle</i>Ver
+                        Trailer</a>
+                </div>
+            </div>
+        </div>
+
+        <div id="pawfilme" class="header-paw fade-in">
+            <div class="header-filme-info">
+                <h1 style="text-align:left;font-size:2.8vw">Taylor Swift:
+                    The Eras Tour</h1>
+                <div class="filme-categoria-duracao">
+                    <img style="width: 20px; height: 20px" src="imagem/classificacao_12.svg" />
+                    <p style="text-wrap: nowrap;">Drama Musical/Musical</p>
+                    <p>
+                        <i style="font-size: 18px" class="material-symbols-outlined">schedule</i>1
+                        Hora e 40 minutos
+                    </p>
+                </div>
+                <p>
+                    Taylor Swift: The Eras Tour é um filme-concerto
+                    americano que documenta a The Eras Tour, a turnê de
+                    2023–2024 da cantora e compositora estadunidense Taylor
+                    Swift.
+                </p>
+
+                <div class="header-filme-info-botoes">
+                    <a class="compraringresso" href="comprar_ingressos_swift.html"><i
+                            class="material-symbols-outlined">sell</i>Comprar
+                        Ingresso</a>
+                    <a class="vertrailer" target="_blank" href="https://www.youtube.com/watch?v=KudedLV0tP0"><i
+                            class="material-symbols-outlined">play_circle</i>Ver
+                        Trailer</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="filmes-em-cartaz-container">
+        <div id="myDIV" class="filmes-em-cartaz">
+            <div onclick="showbarbie()" class="filme-poster-container">
+                <div class="filme-poster active" style="
               background-image: url('imagem/barbie-poster.png');
             "></div>
-                    <div class="filme-poster-desc">
-                        <p>Barbie</p>
-                    </div>
+                <div class="filme-poster-desc">
+                    <p>Barbie</p>
                 </div>
+            </div>
 
-                <div onclick="showoppenheimer()" class="filme-poster-container">
-                    <div class="filme-poster"
-                        style="background-image: url('imagem/oppen-poster.jpg')"></div>
-                    <div class="filme-poster-desc">
-                        <p>Oppenheimer</p>
-                    </div>
+            <div onclick="showoppenheimer()" class="filme-poster-container">
+                <div class="filme-poster" style="background-image: url('imagem/oppen-poster.jpg')"></div>
+                <div class="filme-poster-desc">
+                    <p>Oppenheimer</p>
                 </div>
-                <div onclick="showmario()" class="filme-poster-container">
-                    <div class="filme-poster"
-                        style="background-image: url('imagem/mario-poster.jpg')"></div>
-                    <div class="filme-poster-desc">
-                        <p>Super Mario Bros. O Filme</p>
-                    </div>
+            </div>
+            <div onclick="showmario()" class="filme-poster-container">
+                <div class="filme-poster" style="background-image: url('imagem/mario-poster.jpg')"></div>
+                <div class="filme-poster-desc">
+                    <p>Super Mario Bros. O Filme</p>
                 </div>
-                <div onclick="showpaw()" class="filme-poster-container">
-                    <div class="filme-poster"
-                        style="background-image: url('imagem/swift-poster.webp')"></div>
-                    <div class="filme-poster-desc">
-                        <p>Taylor Swift - The Eras Tour</p>
-                    </div>
+            </div>
+            <div onclick="showpaw()" class="filme-poster-container">
+                <div class="filme-poster" style="background-image: url('imagem/swift-poster.webp')"></div>
+                <div class="filme-poster-desc">
+                    <p>Taylor Swift - The Eras Tour</p>
                 </div>
+            </div>
 
-                <div onclick="showfreira()" class="filme-poster-container">
-                    <div class="filme-poster" style="
+            <div onclick="showfreira()" class="filme-poster-container">
+                <div class="filme-poster" style="
               background-image: url('imagem/poltrona-a-freira-18jul18-2.jpg');
             "></div>
-                    <div class="filme-poster-desc">
-                        <p>A Freira 2</p>
-                    </div>
+                <div class="filme-poster-desc">
+                    <p>A Freira 2</p>
                 </div>
             </div>
         </div>
-        <script src="js/botoesAtivos.js"></script>
+    </div>
+    <script src="js/botoesAtivos.js"></script>
 
-        <h1>Filmes em Cartaz</h1>
+    <hr style="height:2px;border-width:0;color:goldenrod;background-color:goldenrod">
 
+    <h1>Filmes em Cartaz</h1>
 
+    <div class="carrossel-container">
 
-        <div class="carrossel-container">
+        <a id="botaoesquerda" class="botoescontrolleft" onclick="esquerda()"><ion-icon
+                name="chevron-back-outline"></ion-icon></a>
 
-            <a id="botaoesquerda" class="botoescontrolleft"onclick="esquerda()"><ion-icon name="chevron-back-outline"></ion-icon></a>
+        <div class="carrossel">
+            <span id="start"></span>
+            <div class="ingressos-container">
 
+                <h1>Barbie</h1>
 
-
-            <div class="carrossel">
-                <span id="start"></span>
-                <div class="ingressos-container">
-
-                    <h1>Barbie</h1>
-    
-                    <div style="background-image: url(imagem/barbie-poster2.webp);"
-                        class="ingresso-poster">
-                    </div>
-    
-                    <div class="ingresso-poster-botoes">
-                        <a class="compraringresso"
-                            href="comprar_ingressos_barbie.html"><i
-                                class="material-symbols-outlined">sell</i>Ingressos</a>
-    
-                    </div>
+                <div style="background-image: url(imagem/barbie-poster2.webp);" class="ingresso-poster">
                 </div>
-    
-                <div class="ingressos-container">
-                    <h1>Oppenheimer</h1>
-    
-                    <div style="background-image: url(imagem/oppen-poster2.jpg);"
-                        class="ingresso-poster">
-                    </div>
-    
-                    <div class="ingresso-poster-botoes">
-                        <a class="compraringresso"
-                            href="comprar_ingressos_oppen.html"><i
-                                class="material-symbols-outlined">sell</i>Ingressos</a>
-    
-                    </div>
-                </div>
-    
-                <div class="ingressos-container">
-    
-                    <h1>Taylor Swift: The Eras Tour</h1>
-    
-                    <div style="background-image: url(imagem/swift-poster2.png);"
-                        class="ingresso-poster">
-                    </div>
-    
-                    <div class="ingresso-poster-botoes">
-                        <a class="compraringresso"
-                            href="comprar_ingressos_swift.html"><i
-                                class="material-symbols-outlined">sell</i>Ingressos</a>
-                    </div>
-                </div>
-                <div class="ingressos-container">
 
-                    <h1>Super Mario Bros. O Filme</h1>
-    
-                    <div style="background-image: url(imagem/mario-poster.webp);"
-                        class="ingresso-poster">
-                    </div>
-    
-                    <div class="ingresso-poster-botoes">
-                        <a class="compraringresso"
-                            href="comprar_ingressos_mario.html"><i
-                                class="material-symbols-outlined">sell</i>Ingressos</a>
-    
-                    </div>
+                <div class="ingresso-poster-botoes">
+                    <a class="compraringresso" href="comprar_ingressos_barbie.html"><i
+                            class="material-symbols-outlined">sell</i>Ingressos</a>
+
                 </div>
-    
-                <div class="ingressos-container">
-                    <h1>Som da Liberdade</h1>
-    
-                    <div style="background-image: url(imagem/liberdade.jpg);"
-                        class="ingresso-poster">
-                    </div>
-    
-                    <div class="ingresso-poster-botoes">
-                        <a class="compraringresso"
-                            href="comprar_ingressos_liberdade.html"><i
-                                class="material-symbols-outlined">sell</i>Ingressos</a>
-    
-                    </div>
-                </div>
-    
-                <div class="ingressos-container">
-    
-                    <h1>A Freira 2</h1>
-    
-                    <div style="background-image: url(imagem/freira-poster.jpg);"
-                        class="ingresso-poster">
-                    </div>
-    
-                    <div class="ingresso-poster-botoes">
-                        <a class="compraringresso"
-                            href="comprar_ingressos_freira.html"><i
-                                class="material-symbols-outlined">sell</i>Ingressos</a>
-                    </div>
-                </div>
-                <span id="final"></span>
             </div>
 
-            <a id="botaodireita" class="botoescontrolright"onclick="scrollRight()"><ion-icon name="chevron-forward-outline"></ion-icon></a>
+            <div class="ingressos-container">
+                <h1>Oppenheimer</h1>
 
-         </div>
+                <div style="background-image: url(imagem/oppen-poster2.jpg);" class="ingresso-poster">
+                </div>
 
-        <div class="lanches-section">
+                <div class="ingresso-poster-botoes">
+                    <a class="compraringresso" href="comprar_ingressos_oppen.html"><i
+                            class="material-symbols-outlined">sell</i>Ingressos</a>
 
-            <div class="lanches-imagem">
-                <h1>Com fome?</h1>
-                <p>Faça seu pedido e retire no cinema</p>
+                </div>
             </div>
 
-            <div class="lanches-menu">
-                a
+            <div class="ingressos-container">
+
+                <h1>Taylor Swift: The Eras Tour</h1>
+
+                <div style="background-image: url(imagem/swift-poster2.png);" class="ingresso-poster">
+                </div>
+
+                <div class="ingresso-poster-botoes">
+                    <a class="compraringresso" href="comprar_ingressos_swift.html"><i
+                            class="material-symbols-outlined">sell</i>Ingressos</a>
+                </div>
+            </div>
+            <div class="ingressos-container">
+
+                <h1>Super Mario Bros. O Filme</h1>
+
+                <div style="background-image: url(imagem/mario-poster.webp);" class="ingresso-poster">
+                </div>
+
+                <div class="ingresso-poster-botoes">
+                    <a class="compraringresso" href="comprar_ingressos_mario.html"><i
+                            class="material-symbols-outlined">sell</i>Ingressos</a>
+
+                </div>
             </div>
 
+            <div class="ingressos-container">
+                <h1>Som da Liberdade</h1>
+
+                <div style="background-image: url(imagem/liberdade.jpg);" class="ingresso-poster">
+                </div>
+
+                <div class="ingresso-poster-botoes">
+                    <a class="compraringresso" href="comprar_ingressos_liberdade.html"><i
+                            class="material-symbols-outlined">sell</i>Ingressos</a>
+
+                </div>
+            </div>
+
+            <div class="ingressos-container">
+
+                <h1>A Freira 2</h1>
+
+                <div style="background-image: url(imagem/freira-poster.jpg);" class="ingresso-poster">
+                </div>
+
+                <div class="ingresso-poster-botoes">
+                    <a class="compraringresso" href="comprar_ingressos_freira.html"><i
+                            class="material-symbols-outlined">sell</i>Ingressos</a>
+                </div>
+            </div>
+            <span id="final"></span>
         </div>
 
+        <a id="botaodireita" class="botoescontrolright" onclick="scrollRight()"><ion-icon
+                name="chevron-forward-outline"></ion-icon></a>
 
-        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    </div>
 
-    </body>
+  
+    <hr style="margin-top:10vh;height:2px;border-width:0;color:goldenrod;background-color:goldenrod">
+    <div class="lanches-section">
+        
+        <div class="lanches-imagem">
+            <h1>Com fome?</h1>
+            <p>Faça o seu pedido e retire no cinema</p>
+            <img src="imagem/pipoca.png">
+        </div>
+
+        <div class="lanches-menu">
+            <h1>Confira nosso menu:</h1>
+
+           <div class="menu-row">
+            <div class="lanche-container">
+                <img src="imagem/PopcornCombo.png">
+                <p>Combo Pipoca + Refri</p>
+                <p>R$19,99</p>
+                <div class="comprarlanche">
+                    <p>Comprar</p>
+                    <i class="material-symbols-outlined">shopping_cart</i>
+                </div>
+            </div>
+
+            <div class="lanche-container">
+                <img src="imagem/pipoca.png">
+                <p>Combo Pipoca + Refri</p>
+                <p>R$19,99</p>
+                <div class="comprarlanche">
+                    <p>Comprar</p>
+                    <i class="material-symbols-outlined">shopping_cart</i>
+                </div>
+            </div>
+
+            <div class="lanche-container">
+                <img src="imagem/pipoca.png">
+                <p>Combo Pipoca + Refri</p>
+                <p>R$19,99</p>
+                <div class="comprarlanche">
+                    <p>Comprar</p>
+                    <i class="material-symbols-outlined">shopping_cart</i>
+                </div>
+            </div>
+           </div>
+
+
+
+
+
+           <div class="menu-row">
+
+            <h1>Monte seu Combo</h1>
+           
+
+        </div>
+    </div>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</body>
 
 </html>
