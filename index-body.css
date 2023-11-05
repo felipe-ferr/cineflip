@@ -210,8 +210,7 @@ h1 {
     flex-direction: row;
     width: 100%;
     box-sizing: border-box;
-    padding: 5vh;
-    background: linear-gradient(0deg, rgb(7, 13, 47) -16.9%, rgb(10, 9, 16) 119.9%);
+    background: linear-gradient(0deg, rgb(14, 17, 45) -16.9%, rgb(10, 9, 16) 119.9%);
     border-top: 1px solid goldenrod;
    
 }
@@ -222,6 +221,9 @@ h1 {
     align-items: center;
     width: 40%;
     flex-direction: column;
+    box-sizing: border-box;
+    padding: 5vh;
+    gap: 2vh;
    
 }
 .lanches-imagem img{
@@ -239,8 +241,23 @@ h1 {
     font-family: 'Montserrat', sans-serif;
     font-size: 1vw;
     color: white;
-    text-align: center;
+    text-align: justify;
     margin: 0;
+}
+.lista-vantagens{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 2vw;
+    width: 90%;
+    padding: 3vh;
+}
+.lista-vantagens p{
+    font-size: 1.2vw;
+}
+.lista-vantagens .material-symbols-outlined{
+    color: goldenrod;
+    font-size: 3vw;
 }
 .lanches-menu .lanches-nav{
     display: flex;
@@ -382,6 +399,9 @@ h1 {
     gap: 1vw;
     padding: 5vh;
     height: 1vh;
+}
+.montar-combo-btn:hover{
+    background-color: gold;
 }
 .montar-combo-btn .material-symbols-outlined{
     color: white;
