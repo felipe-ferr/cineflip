@@ -49,6 +49,21 @@ h1 {
 .botoescontrolright:hover ion-icon {
     transform: scale(1.1);
 }
+.marcadores{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 1vw;
+    margin-top: 2vh;
+}
+.marcadores .bola{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: gray;
+    transition-duration: 0.4s;
+}
 
 /* Hide scrollbar for Chrome, Safari and Opera */
 .carrossel::-webkit-scrollbar {
@@ -77,6 +92,7 @@ h1 {
     flex-wrap: nowrap;
     width: 100%;
     height: auto;
+    gap: 1vh;
 }
 .carrossel {
     margin-top: 15px;
@@ -306,13 +322,13 @@ h1 {
     color: white;
     text-align: center;
     margin: 0;
-    padding: 2vh;
 }
 .data p{
     box-sizing: border-box;
-    padding: 3vh;
+    padding: 1vh;
     transition-duration: 0.2s;
     font-weight: 600;
+    cursor: pointer;
 }
 .data .material-symbols-outlined{
     color: rgb(171, 171, 171);
@@ -341,4 +357,7 @@ h1 {
     appearance: none;
     margin: 0;
 
+}
+#promos{
+    display: none;
 }

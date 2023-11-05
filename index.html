@@ -13,6 +13,7 @@
 
     <script type="application/javascript" src="js/showHeaderFilmes.js"></script>
     <script type="application/javascript" src="js/carrossel.js"></script>
+    <script type="application/javascript" src="js/lanchesNavShow.js"></script>
 
     <title>CineFlip</title>
 </head>
@@ -327,7 +328,11 @@
                 name="chevron-forward-outline"></ion-icon></a>
 
     </div>
-    
+    <div class="marcadores">
+        <div style="background-color: goldenrod;" id="bola1" class="bola"></div>
+        <div id="bola2" class="bola"></div>
+    </div>
+
 
   
 
@@ -347,12 +352,12 @@
                     <p>Mais Pedidos</p>
                 </label>
                 <label class="data">
-                    <input checked onclick="showpromo()"type="radio" value="1" name="botao" />
+                    <input onclick="showpromos()"type="radio" value="1" name="botao" />
                     <p>Promoções Especiais</p>
                 </label>
             </div>
 
-           <div class="menu-row">
+           <div id="maispedidos" class="menu-row fade-in">
             <div class="lanche-container">
                 <img src="imagem/pipocarefri.svg">
                 <p>Combo Pipoca + Refri</p>
@@ -388,12 +393,37 @@
 
 
 
-           <div class="menu-row">
+           <div id="promos" class="menu-row fade-in">
+            <div class="lanche-container">
+                <img src="imagem/swift-pipoca.png">
+                <p>Combo Taylor Swift: The Eras Tour</p>
+                <p>R$30,00</p>
+                <div class="comprarlanche">
+                    <p>Comprar</p>
+                    <i class="material-symbols-outlined">shopping_cart</i>
+                </div>
+            </div>
 
-            <h1>Monte seu Combo</h1>
-           
+            <div class="lanche-container">
+                <img src="imagem/halloween.png">
+                <p>Balde Pipoca Especial Halloween</p>
+                <p>R$20,00</p>
+                <div class="comprarlanche">
+                    <p>Comprar</p>
+                    <i class="material-symbols-outlined">shopping_cart</i>
+                </div>
+            </div>
 
-        </div>
+            <div class="lanche-container">
+                <img src="imagem/mario-pipoca.png">
+                <p>Balde Pipoca Mario</p>
+                <p>R$29,99</p>
+                <div class="comprarlanche">
+                    <p>Comprar</p>
+                    <i class="material-symbols-outlined">shopping_cart</i>
+                </div>
+            </div>
+           </div>
     </div>
 
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
