@@ -1,3 +1,5 @@
+  //não está sendo usado
+  
   function scrollRight() {
         const element = document.getElementById("final");
         var botaoesquerda = document.getElementById("botaoesquerda");

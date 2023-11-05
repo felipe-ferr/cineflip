@@ -12,7 +12,6 @@
     <link rel="stylesheet" href="index-body.css" />
 
     <script type="application/javascript" src="js/showHeaderFilmes.js"></script>
-    <script type="application/javascript" src="js/carrossel.js"></script>
     <script type="application/javascript" src="js/carrosselshow.js"></script>
     <script type="application/javascript" src="js/lanchesNavShow.js"></script>
 
@@ -239,10 +238,10 @@
 
     <div class="carrossel-container">
 
-        <a id="botaoesquerda" class="botoescontrolleft" onclick="esquerda()"><ion-icon
+        <a style="opacity: 0.3;" id="botaoesquerda" class="botoescontrolleft" onclick="esquerda()"><ion-icon
                 name="chevron-back-outline"></ion-icon></a>
 
-                <div id="frame1" class="filmes-container">
+                <div id="frame1" class="filmes-container slide-in-right">
                     <div class="ingressos-container">
                         <h1>Oppenheimer</h1>
         
@@ -297,7 +296,7 @@
                 </div>
 
 
-                <div id="frame2" class="filmes-container">
+                <div id="frame2" class="filmes-container slide-in-left">
                     <div class="ingressos-container">
                         <h1>Som da Liberdade</h1>
         
@@ -320,7 +319,6 @@
                         <div class="ingresso-poster-botoes">
                             <a class="compraringresso" href="comprar_ingressos_freira.html"><i
                                     class="material-symbols-outlined">sell</i>Ingressos</a>
-        
                         </div>
                     </div>
 
@@ -350,6 +348,9 @@
                         </div>
                     </div>
                 </div>
+
+
+                
 
 
 

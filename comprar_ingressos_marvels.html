@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="comprar_ingressos.css" />
+
+    <script type="application/javascript" src="js/comprarIngressoItems.js"></script>
+
+    <title>CineFlip</title>
+</head>
+
+<body>
+
+   <div class="ingressos-header" style="background-image: linear-gradient(180deg, rgba(6,3,27,0.29744397759103647) 0%, #06031bc1 80%), url(imagem/marvels-header.jpg);">
+    <div class="navbarContainer" id="nav">
+        <div class="navbarlogo">
+            <a href="index.html"><img src="imagem/cineflip-logo.svg" /></a>
+        </div>
+
+        <div class="navbarlinks">
+            <a href="cartaz.html"><i class="material-symbols-outlined">movie</i>Filmes
+                em Cartaz</a>
+            <a href="lanches.html"><i class="material-symbols-outlined">fastfood</i>Lanches</a>
+            <a href="unidades.html"><i class="material-symbols-outlined">location_on</i>Unidades</a>
+            <a href="login.html"><i class="material-symbols-outlined">account_circle</i>Login</a>
+            <a href="cad_clientes.html"><i class="material-symbols-outlined">account_circle</i>Registrar</a>
+        </div>
+
+    </div>
+
+    <h1>As Marvels</h1>
+   </div>
+
+
+    <div class="container-geral">
+
+        <div class="sidebar-movie">
+            <div class="poster-info-container">
+                <div style="background-image: url(imagem/marvels-poster.jpg)" class="poster"></div>
+                <div class="info">
+                    <div class="ingressos-desc-filme-info">
+                        <p><img style="width: 20px; height: 20px" src="imagem/classificacao_livre.svg" />
+                        <p>Aventura/Ação</p>
+                        <p>
+                            <i style="font-size: 18px" class="material-symbols-outlined">schedule</i>1
+                            hora e 45 minutos
+                        </p>
+                        </p>
+                    </div>
+                    <h1>Data de Lançamento</h1>
+                    <p>9 de Novembro de 2023</p>
+                    <h1>Diretora</h1>
+                    <p>Nia DaCosta</p>
+                    <h1>Elenco</h1>
+                    <p>Brie Larson, Iman Vellani, Teyonah Parris</p>
+                    <h1>Roteiro</h1>
+                    <p>Nia DaCosta, Megan McDonnell, Elissa Karasik</p>
+                    <a class="vertrailer" target="_blank" href="https://www.youtube.com/watch?v=wS_qbDztgVY"><i
+                            class="material-symbols-outlined">play_circle</i>Ver
+                        Trailer</a>
+                </div>
+                
+
+            </div>
+            <p><span style="color:goldenrod">Sinopse:</span> The Marvels é um futuro filme estadunidense de super-herói baseado nas personagens Carol Danvers, Kamala Khan e Monica Rambeau, da Marvel Comics. Produzido pelo Marvel Studios e distribuído pela Walt Disney Studios Motion Pictures, será a sequência de Captain Marvel, uma continuação da série Ms. </p>
+        </div>
+
+        <form method="post" action="comprar_ingressos.php">
+
+            <input type="hidden" name="filme" value="As Marvels" id="filme">
+
+            <p style="color:grey">Escolha o Cinema:</p>
+            <div class="inputContainer">
+                <p style="color: white;">Cinema: </p>
+                <select name="cinema" required name="shopping">
+                    <option disabled="disabled" selected="selected"></option>
+                    <option name="cinema" value="Taguatinga Shopping">CineFlip Taguatinga Shopping</option>
+                    <option name="cinema" value="Terraço Shopping">CineFlip Terraço Shopping</option>
+                    <option name="cinema" value="Boulevard Shopping">CineFlip Boulevard Shopping</option>
+                    <option name="cinema" value="Park Shopping">CineFlip Park Shopping</option>
+                </select><i class="material-symbols-outlined">expand_more</i>
+            </div>
+
+            <p style="color:grey">Escolha uma data:</p>
+
+            <div class="data-container">
+
+                <label  class="data">
+                    <input id="input" onclick="mostrarIdioma()"type="radio" name="data" value="Segunda" />
+                    <p>Seg</p>
+                    <i class="material-symbols-outlined">calendar_month</i>
+                </label>
+                <label class="data">
+                    <input onclick="mostrarIdioma()"type="radio" name="data" value="Terça" />
+                    <p>Ter</p>
+                    <i class="material-symbols-outlined">calendar_month</i>
+                </label>
+                <label class="data">
+                    <input onclick="mostrarIdioma()"type="radio" name="data" value="Quarta" />
+                    <p>Qua</p>
+                    <i class="material-symbols-outlined">calendar_month</i>
+                </label>
+                <label class="data">
+                    <input onclick="mostrarIdioma()"type="radio" name="data" value="Quinta" />
+                    <p>Qui</p>
+                    <i class="material-symbols-outlined">calendar_month</i>
+                </label>
+                <label class="data">
+                    <input onclick="mostrarIdioma()"type="radio" name="data" value="Sexta" />
+                    <p>Sex</p>
+                    <i class="material-symbols-outlined">calendar_month</i>
+                </label>
+                <label class="data">
+                    <input onclick="mostrarIdioma()"type="radio" name="data" value="Sábado" />
+                    <p>Sab</p>
+                    <i class="material-symbols-outlined">calendar_month</i>
+                </label>
+                <label class="data">
+                    <input onclick="mostrarIdioma()"type="radio" name="data" value="Domingo" />
+                    <p>Dom</p>
+                    <i class="material-symbols-outlined">calendar_month</i>
+                </label>
+
+            </div>
+
+
+            <div id="mostraridioma" class="idioma-titulo-container fade-in">
+                <p>Escolha o idioma e a exibição</p>
+                <div class="idioma-container">
+                    <label class="idioma">
+                        <input onclick="mostrarHorarios()" type="radio" name="idioma" value="Legendado 2D" />
+                        <p>Legendado</p>
+                        <span class="tag">2D</span>
+                    </label>
+                    <label class="idioma">
+                        <input onclick="mostrarHorarios()" type="radio" name="idioma" value="Dublado 2D" />
+                        <p>Dublado</p>
+                        <span class="tag">2D</span>
+                    </label>
+                    <label class="idioma">
+                        <input onclick="mostrarHorarios()" type="radio" name="idioma" value="Legendado 3D" />
+                        <p>Legendado</p>
+                        <span class="tag">3D</span>
+                    </label>
+                    <label class="idioma">
+                        <input onclick="mostrarHorarios()" type="radio" name="idioma" value="Dublado 3D" />
+                        <p>Dublado</p>
+                        <span class="tag">3D</span>
+                    </label>
+                </div>
+            </div>
+
+            <div id="mostrarhorarios" class="horarios-titulo-container fade-in">
+                <p>Sessões Disponíveis:</p>
+                <div class="horarios-container">
+                    <label class="horario">
+                        <input onclick="mostrarTipoingresso()" type="radio" name="horario" value="15h30" />
+                        <p>15:30</p>
+                        <i class="material-symbols-outlined">schedule</i>
+                    </label>
+                    <label class="horario">
+                        <input onclick="mostrarTipoingresso()" type="radio" name="horario" value="16h00" />
+                        <p>16:00</p>
+                        <i class="material-symbols-outlined">schedule</i>
+                    </label>
+                    <label class="horario">
+                        <input onclick="mostrarTipoingresso()" type="radio" name="horario" value="20h30" />
+                        <p>20:30</p>
+                        <i class="material-symbols-outlined">schedule</i>
+                    </label>
+                    <label class="horario">
+                        <input onclick="mostrarTipoingresso()" type="radio" name="horario" value="22h00" />
+                        <p>22:00</p>
+                        <i class="material-symbols-outlined">schedule</i>
+                    </label>
+                </div>
+            </div>
+
+            <div id="mostrartipoingresso" class="tipoingresso-titulo-container fade-in">
+                <p>Tipo de Ingresso:</p>
+                <div class="tipoingresso-container">
+                    <label class="tipoingresso">
+                        <input onclick="mostrarAssentos()" type="radio" name="tipoIngresso" value="Meia" />
+                        <p>Meia</p>
+                        <p>R$15,00</p>
+                        <ion-icon name="ticket-outline"></ion-icon>
+                    </label>
+                    <label class="tipoingresso">
+                        <input onclick="mostrarAssentos()" type="radio" name="tipoIngresso" value="Inteira" />
+                        <p>Inteira</p>
+                        <p>R$30,00</p>
+                        <ion-icon name="ticket-outline"></ion-icon>
+                    </label>
+            </div>
+            </div>
+
+    
+            <div id="mostrarassentos" class="assentos-container">
+                <div class="tela">
+                    <p style="margin: 0;font-size: 0.9em" >Escolha os Assentos:</p>
+                    <img src="imagem/tela.svg">
+                    <p>Tela</p>
+                </div>
+                
+                <div class="linha-cadeira">
+                    <p>A</p>
+                    <input name="assento[]" type="checkbox" id="a1" value="a1" />
+                    <label for="a1"><p class="numeracao-cadeiras">1</p></label>
+                    <input name="assento[]" type="checkbox" id="a2" value="a2" />
+                    <label for="a2"><p class="numeracao-cadeiras">2</p></label>
+                    <input name="assento[]" type="checkbox" id="a3" value="a3" />
+                    <label for="a3"><p class="numeracao-cadeiras">3</p></label>
+                    <input name="assento[]" type="checkbox" id="a4" value="a4" />
+                    <label for="a4"><p class="numeracao-cadeiras">4</p></label>
+                    <input name="assento[]" type="checkbox" id="a5" value="a5" />
+                    <label for="a5"><p class="numeracao-cadeiras">5</p></label>
+                    <input name="assento[]" type="checkbox" id="a6" value="a6" />
+                    <label for="a6"><p class="numeracao-cadeiras">6</p></label>
+                    <input name="assento[]" type="checkbox" id="a7" value="a7" />
+                    <label for="a7"><p class="numeracao-cadeiras">7</p></label>
+                    <input name="assento[]" type="checkbox" id="a8" value="a8" />
+                    <label for="a8"><p class="numeracao-cadeiras">8</p></label>
+                    <input name="assento[]" type="checkbox" id="a9" value="a9" />
+                    <label for="a9"><p class="numeracao-cadeiras">9</p></label>
+                    <input name="assento[]" type="checkbox" id="a10" value="a10" />
+                    <label for="a10"><p class="numeracao-cadeiras">10</p></label>
+                    <input name="assento[]" type="checkbox" id="a11" value="a11" />
+                    <label for="a11"><p class="numeracao-cadeiras">11</p></label>
+                    <input name="assento[]" type="checkbox" id="a12" value="a12" />
+                    <label for="a12"><p class="numeracao-cadeiras">12</p></label>
+                    <input name="assento[]" type="checkbox" id="a13" value="a13" />
+                    <label for="a13"><p class="numeracao-cadeiras">13</p></label>
+                    <input name="assento[]" type="checkbox" id="a14" value="a14" />
+                    <label for="a14"><p class="numeracao-cadeiras">14</p></label>
+                    <input name="assento[]" type="checkbox" id="a15" value="a15" />
+                    <label for="a15"><p class="numeracao-cadeiras">15</p></label>
+                    <input name="assento[]" type="checkbox" id="a16" value="a16" />
+                    <label for="a16"><p class="numeracao-cadeiras">16</p></label>
+                    <p>A</p>
+                </div>
+                <div class="linha-cadeira">
+                    <p>B</p>
+                    <input name="assento[]" type="checkbox" id="b1" value="b1" />
+                    <label for="b1"></label>
+                    <input name="assento[]" type="checkbox" id="b2" value="b2" />
+                    <label for="b2"></label>
+                    <input name="assento[]" type="checkbox" id="b3" value="b3" />
+                    <label for="b3"></label>
+                    <input name="assento[]" type="checkbox" id="b4" value="b4" />
+                    <label for="b4"></label>
+                    <input name="assento[]" type="checkbox" id="b5" value="b5" />
+                    <label for="b5"></label>
+                    <input name="assento[]" type="checkbox" id="b6" value="b6" />
+                    <label for="b6"></label>
+                    <input name="assento[]" type="checkbox" id="b7" value="b7" />
+                    <label for="b7"></label>
+                    <input name="assento[]" type="checkbox" id="b8" value="b8" />
+                    <label for="b8"></label>
+                    <input name="assento[]" type="checkbox" id="b9" value="b9" />
+                    <label for="b9"></label>
+                    <input name="assento[]" type="checkbox" id="b10" value="b10" />
+                    <label for="b10"></label>
+                    <input name="assento[]" type="checkbox" id="b11" value="b11" />
+                    <label for="b11"></label>
+                    <input name="assento[]" type="checkbox" id="b12" value="b12" />
+                    <label for="b12"></label>
+                    <input name="assento[]" type="checkbox" id="b13" value="b13" />
+                    <label for="b13"></label>
+                    <input name="assento[]" type="checkbox" id="b14" value="b14" />
+                    <label for="b14"></label>
+                    <input name="assento[]" type="checkbox" id="b15" value="b15" />
+                    <label for="b15"></label>
+                    <input name="assento[]" type="checkbox" id="b16" value="b16" />
+                    <label for="b16"></label>
+                    <p>B</p>
+                </div>
+                <div class="linha-cadeira">
+                    <p>C</p>
+                    <input name="assento[]" type="checkbox" id="c1" value="c1" />
+                    <label for="c1"></label>
+                    <input name="assento[]" type="checkbox" id="c2" value="c2" />
+                    <label for="c2"></label>
+                    <input name="assento[]" type="checkbox" id="c3" value="c3" />
+                    <label for="c3"></label>
+                    <input name="assento[]" type="checkbox" id="c4" value="c4" />
+                    <label for="c4"></label>
+                    <input name="assento[]" type="checkbox" id="c5" value="c5" />
+                    <label for="c5"></label>
+                    <input name="assento[]" type="checkbox" id="c6" value="c6" />
+                    <label for="c6"></label>
+                    <input name="assento[]" type="checkbox" id="c7" value="c7" />
+                    <label for="c7"></label>
+                    <input name="assento[]" type="checkbox" id="c8" value="c8" />
+                    <label for="c8"></label>
+                    <input name="assento[]" type="checkbox" id="c9" value="c9" />
+                    <label for="c9"></label>
+                    <input name="assento[]" type="checkbox" id="c10" value="c10" />
+                    <label for="c10"></label>
+                    <input name="assento[]" type="checkbox" id="c11" value="c11" />
+                    <label for="c11"></label>
+                    <input name="assento[]" type="checkbox" id="c12" value="c12" />
+                    <label for="c12"></label>
+                    <input name="assento[]" type="checkbox" id="c13" value="c13" />
+                    <label for="c13"></label>
+                    <input name="assento[]" type="checkbox" id="c14" value="c14" />
+                    <label for="c14"></label>
+                    <input name="assento[]" type="checkbox" id="c15" value="c15" />
+                    <label for="c15"></label>
+                    <input name="assento[]" type="checkbox" id="c16" value="c16" />
+                    <label for="c16"></label>
+                    <p>C</p>
+                </div>
+                <div class="linha-cadeira">
+                    <p>D</p>
+                    <input name="assento[]" type="checkbox" id="d1" value="d1" />
+                    <label for="d1"></label>
+                    <input name="assento[]" type="checkbox" id="d2" value="d2" />
+                    <label for="d2"></label>
+                    <input name="assento[]" type="checkbox" id="d3" value="d3" />
+                    <label for="d3"></label>
+                    <input name="assento[]" type="checkbox" id="d4" value="d4" />
+                    <label for="d4"></label>
+                    <input name="assento[]" type="checkbox" id="d5" value="d5" />
+                    <label for="d5"></label>
+                    <input name="assento[]" type="checkbox" id="d6" value="d6" />
+                    <label for="d6"></label>
+                    <input name="assento[]" type="checkbox" id="d7" value="d7" />
+                    <label for="d7"></label>
+                    <input name="assento[]" type="checkbox" id="d8" value="d8" />
+                    <label for="d8"></label>
+                    <input name="assento[]" type="checkbox" id="d9" value="d9" />
+                    <label for="d9"></label>
+                    <input name="assento[]" type="checkbox" id="d10" value="d10" />
+                    <label for="d10"></label>
+                    <input name="assento[]" type="checkbox" id="d11" value="d11" />
+                    <label for="d11"></label>
+                    <input name="assento[]" type="checkbox" id="d12" value="d12" />
+                    <label for="d12"></label>
+                    <input name="assento[]" type="checkbox" id="d13" value="d13" />
+                    <label for="d13"></label>
+                    <input name="assento[]" type="checkbox" id="d14" value="d14" />
+                    <label for="d14"></label>
+                    <input name="assento[]" type="checkbox" id="d15" value="d15" />
+                    <label for="d15"></label>
+                    <input name="assento[]" type="checkbox" id="d16" value="d16" />
+                    <label for="d16"></label>
+                    <p>D</p>
+                </div>
+                <div class="linha-cadeira">
+                    <p>E</p>
+                    <input name="assento[]" type="checkbox" id="E1" value="E1" />
+                    <label for="E1"></label>
+                    <input name="assento[]" type="checkbox" id="E2" value="E2" />
+                    <label for="E2"></label>
+                    <input name="assento[]" type="checkbox" id="E3" value="E3" />
+                    <label for="E3"></label>
+                    <input name="assento[]" type="checkbox" id="E4" value="E4" />
+                    <label for="E4"></label>
+                    <input name="assento[]" type="checkbox" id="E5" value="E5" />
+                    <label for="E5"></label>
+                    <input name="assento[]" type="checkbox" id="E6" value="E6" />
+                    <label for="E6"></label>
+                    <input name="assento[]" type="checkbox" id="E7" value="E7" />
+                    <label for="E7"></label>
+                    <input name="assento[]" type="checkbox" id="E8" value="E8" />
+                    <label for="E8"></label>
+                    <input name="assento[]" type="checkbox" id="E9" value="E9" />
+                    <label for="E9"></label>
+                    <input name="assento[]" type="checkbox" id="E10" value="E10" />
+                    <label for="E10"></label>
+                    <input name="assento[]" type="checkbox" id="E11" value="E11" />
+                    <label for="E11"></label>
+                    <input name="assento[]" type="checkbox" id="E12" value="E12" />
+                    <label for="E12"></label>
+                    <input name="assento[]" type="checkbox" id="E13" value="E13" />
+                    <label for="E13"></label>
+                    <input name="assento[]" type="checkbox" id="E14" value="E14" />
+                    <label for="E14"></label>
+                    <input name="assento[]" type="checkbox" id="E15" value="E15" />
+                    <label for="E15"></label>
+                    <input name="assento[]" type="checkbox" id="E16" value="E16" />
+                    <label for="E16"></label>
+                    <p>E</p>
+                </div>
+
+
+
+
+
+           
+                <div style="margin-top: 5vh;" class="linha-cadeira">
+                    <p>F</p>
+                    <input name="assento[]" type="checkbox" id="f1" value="f1" />
+                    <label for="f1"><p class="numeracao-cadeiras">1</p></label>
+                    <input name="assento[]" type="checkbox" id="f2" value="f2" />
+                    <label for="f2"><p class="numeracao-cadeiras">2</p></label>
+                    <input name="assento[]" type="checkbox" id="f3" value="f3" />
+                    <label for="f3"><p class="numeracao-cadeiras">3</p></label>
+                    <input name="assento[]" type="checkbox" id="f4" value="f4" />
+                    <label for="f4"><p class="numeracao-cadeiras">4</p></label>
+                    <input name="assento[]" type="checkbox" id="f5" value="f5" />
+                    <label for="f5"><p class="numeracao-cadeiras">5</p></label>
+                    <input name="assento[]" type="checkbox" id="f6" value="f6" />
+                    <label for="f6"><p class="numeracao-cadeiras">6</p></label>
+                    <input name="assento[]" type="checkbox" id="f7" value="f7" />
+                    <label for="f7"><p class="numeracao-cadeiras">7</p></label>
+                    <input name="assento[]" type="checkbox" id="f8" value="f8" />
+                    <label for="f8"><p class="numeracao-cadeiras">8</p></label>
+                    <input name="assento[]" type="checkbox" id="f9" value="f9" />
+                    <label for="f9"><p class="numeracao-cadeiras">9</p></label>
+                    <input name="assento[]" type="checkbox" id="f10" value="f10" />
+                    <label for="f10"><p class="numeracao-cadeiras">10</p></label>
+                    <input name="assento[]" type="checkbox" id="f11" value="f11" />
+                    <label for="f11"><p class="numeracao-cadeiras">11</p></label>
+                    <input name="assento[]" type="checkbox" id="f12" value="f12" />
+                    <label for="f12"><p class="numeracao-cadeiras">12</p></label>
+                    <input name="assento[]" type="checkbox" id="f13" value="f13" />
+                    <label for="f13"><p class="numeracao-cadeiras">13</p></label>
+                    <input name="assento[]" type="checkbox" id="f14" value="f14" />
+                    <label for="f14"><p class="numeracao-cadeiras">14</p></label>
+                    <input name="assento[]" type="checkbox" id="f15" value="f15" />
+                    <label for="f15"><p class="numeracao-cadeiras">15</p></label>
+                    <input name="assento[]" type="checkbox" id="f16" value="f16" />
+                    <label for="f16"><p class="numeracao-cadeiras">16</p></label>
+                    <p>F</p>
+                </div>
+                <div class="linha-cadeira">
+                    <p>G</p>
+                    <input name="assento[]" type="checkbox" id="g1" value="g1" />
+                    <label for="g1"></label>
+                    <input name="assento[]" type="checkbox" id="g2" value="g2" />
+                    <label for="g2"></label>
+                    <input name="assento[]" type="checkbox" id="g3" value="g3" />
+                    <label for="g3"></label>
+                    <input name="assento[]" type="checkbox" id="g4" value="g4" />
+                    <label for="g4"></label>
+                    <input name="assento[]" type="checkbox" id="g5" value="g5" />
+                    <label for="g5"></label>
+                    <input name="assento[]" type="checkbox" id="g6" value="g6" />
+                    <label for="g6"></label>
+                    <input name="assento[]" type="checkbox" id="g7" value="g7" />
+                    <label for="g7"></label>
+                    <input name="assento[]" type="checkbox" id="g8" value="g8" />
+                    <label for="g8"></label>
+                    <input name="assento[]" type="checkbox" id="g9" value="g9" />
+                    <label for="g9"></label>
+                    <input name="assento[]" type="checkbox" id="g10" value="g10" />
+                    <label for="g10"></label>
+                    <input name="assento[]" type="checkbox" id="g11" value="g11" />
+                    <label for="g11"></label>
+                    <input name="assento[]" type="checkbox" id="g12" value="g12" />
+                    <label for="g12"></label>
+                    <input name="assento[]" type="checkbox" id="g13" value="g13" />
+                    <label for="g13"></label>
+                    <input name="assento[]" type="checkbox" id="g14" value="g14" />
+                    <label for="g14"></label>
+                    <input name="assento[]" type="checkbox" id="g15" value="g15" />
+                    <label for="g15"></label>
+                    <input name="assento[]" type="checkbox" id="g16" value="g16" />
+                    <label for="g16"></label>
+                    <p>G</p>
+                </div>
+                <div class="linha-cadeira">
+                    <p>H</p>
+                    <input name="assento[]" type="checkbox" id="h1" value="h1" />
+                    <label for="h1"></label>
+                    <input name="assento[]" type="checkbox" id="h2" value="h2" />
+                    <label for="h2"></label>
+                    <input name="assento[]" type="checkbox" id="h3" value="h3" />
+                    <label for="h3"></label>
+                    <input name="assento[]" type="checkbox" id="h4" value="h4" />
+                    <label for="h4"></label>
+                    <input name="assento[]" type="checkbox" id="h5" value="h5" />
+                    <label for="h5"></label>
+                    <input name="assento[]" type="checkbox" id="h6" value="h6" />
+                    <label for="h6"></label>
+                    <input name="assento[]" type="checkbox" id="h7" value="h7" />
+                    <label for="h7"></label>
+                    <input name="assento[]" type="checkbox" id="h8" value="h8" />
+                    <label for="h8"></label>
+                    <input name="assento[]" type="checkbox" id="h9" value="h9" />
+                    <label for="h9"></label>
+                    <input name="assento[]" type="checkbox" id="h10" value="h10" />
+                    <label for="h10"></label>
+                    <input name="assento[]" type="checkbox" id="h11" value="h11" />
+                    <label for="h11"></label>
+                    <input name="assento[]" type="checkbox" id="h12" value="h12" />
+                    <label for="h12"></label>
+                    <input name="assento[]" type="checkbox" id="h13" value="h13" />
+                    <label for="h13"></label>
+                    <input name="assento[]" type="checkbox" id="h14" value="h14" />
+                    <label for="h14"></label>
+                    <input name="assento[]" type="checkbox" id="h15" value="h15" />
+                    <label for="h15"></label>
+                    <input name="assento[]" type="checkbox" id="h16" value="h16" />
+                    <label for="h16"></label>
+                    <p>H</p>
+                </div>
+                <div class="linha-cadeira">
+                    <p>I</p>
+                    <input name="assento[]" type="checkbox" id="i1" value="i1" />
+                    <label for="i1"></label>
+                    <input name="assento[]" type="checkbox" id="i2" value="i2" />
+                    <label for="i2"></label>
+                    <input name="assento[]" type="checkbox" id="i3" value="i3" />
+                    <label for="i3"></label>
+                    <input name="assento[]" type="checkbox" id="i4" value="i4" />
+                    <label for="i4"></label>
+                    <input name="assento[]" type="checkbox" id="i5" value="i5" />
+                    <label for="i5"></label>
+                    <input name="assento[]" type="checkbox" id="i6" value="i6" />
+                    <label for="i6"></label>
+                    <input name="assento[]" type="checkbox" id="i7" value="i7" />
+                    <label for="i7"></label>
+                    <input name="assento[]" type="checkbox" id="i8" value="i8" />
+                    <label for="i8"></label>
+                    <input name="assento[]" type="checkbox" id="i9" value="i9" />
+                    <label for="i9"></label>
+                    <input name="assento[]" type="checkbox" id="i10" value="i10" />
+                    <label for="i10"></label>
+                    <input name="assento[]" type="checkbox" id="i11" value="i11" />
+                    <label for="i11"></label>
+                    <input name="assento[]" type="checkbox" id="i12" value="i12" />
+                    <label for="i12"></label>
+                    <input name="assento[]" type="checkbox" id="i13" value="i13" />
+                    <label for="i13"></label>
+                    <input name="assento[]" type="checkbox" id="i14" value="i14" />
+                    <label for="i14"></label>
+                    <input name="assento[]" type="checkbox" id="i15" value="i15" />
+                    <label for="i15"></label>
+                    <input name="assento[]" type="checkbox" id="i16" value="i16" />
+                    <label for="i16"></label>
+                    <p>I</p>
+                </div>
+                <div class="linha-cadeira">
+                    <p>J</p>
+                    <input name="assento[]" type="checkbox" id="j1" value="j1" />
+                    <label for="j1"></label>
+                    <input name="assento[]" type="checkbox" id="j2" value="j2" />
+                    <label for="j2"></label>
+                    <input name="assento[]" type="checkbox" id="j3" value="j3" />
+                    <label for="j3"></label>
+                    <input name="assento[]" type="checkbox" id="j4" value="j4" />
+                    <label for="j4"></label>
+                    <input name="assento[]" type="checkbox" id="j5" value="j5" />
+                    <label for="j5"></label>
+                    <input name="assento[]" type="checkbox" id="j6" value="j6" />
+                    <label for="j6"></label>
+                    <input name="assento[]" type="checkbox" id="j7" value="j7" />
+                    <label for="j7"></label>
+                    <input name="assento[]" type="checkbox" id="j8" value="j8" />
+                    <label for="j8"></label>
+                    <input name="assento[]" type="checkbox" id="j9" value="j9" />
+                    <label for="j9"></label>
+                    <input name="assento[]" type="checkbox" id="j10" value="j10" />
+                    <label for="j10"></label>
+                    <input name="assento[]" type="checkbox" id="j11" value="j11" />
+                    <label for="j11"></label>
+                    <input name="assento[]" type="checkbox" id="j12" value="j12" />
+                    <label for="j12"></label>
+                    <input name="assento[]" type="checkbox" id="j13" value="j13" />
+                    <label for="j13"></label>
+                    <input name="assento[]" type="checkbox" id="j14" value="j14" />
+                    <label for="j14"></label>
+                    <input name="assento[]" type="checkbox" id="j15" value="j15" />
+                    <label for="j15"></label>
+                    <input name="assento[]" type="checkbox" id="j16" value="j16" />
+                    <label for="j16"></label>
+                    <p>J</p>
+                </div>
+
+            </div>
+
+                <div id="mostrarpagamento" class="pagamento-titulo-container fade-in">
+                    <p>Método de Pagamento</p>
+                    <div class="pagamento-container">
+                        <label class="pagamento">
+                            <input type="radio" name="metodoPagamento" value="Pix" />
+                            <i class="material-symbols-outlined">payments</i>
+                            <p>Pix</p>
+                        </label>
+                        <label class="pagamento">
+                            <input type="radio" name="metodoPagamento" value="Cartão de Crédito" />
+                            <i class="material-symbols-outlined">credit_card</i>
+                            <p>Cartão de Crédito</p>
+                        </label>
+                        <label class="pagamento">
+                            <input type="radio" name="metodoPagamento" value="Boleto" />
+                            <i class="material-symbols-outlined">description</i>
+                            <p>Boleto</p>
+                        </label>
+                    </div>
+                </div>
+
+                <button id="botaosubmit" class="submit-ingresso" type="submit">Finalizar Pedido</button>
+
+        </form>
+
+    </div>
+
+
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
