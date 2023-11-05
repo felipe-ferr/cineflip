@@ -327,23 +327,34 @@
                 name="chevron-forward-outline"></ion-icon></a>
 
     </div>
+    
 
   
-    <hr style="margin-top:10vh;height:2px;border-width:0;color:goldenrod;background-color:goldenrod">
-    <div class="lanches-section">
+
+    <div style="margin-top: 10vh;" class="lanches-section">
         
         <div class="lanches-imagem">
             <h1>Com fome?</h1>
             <p>Faça o seu pedido e retire no cinema</p>
-            <img src="imagem/pipoca.png">
+            <img src="imagem/lanches-poster.svg">
         </div>
 
         <div class="lanches-menu">
-            <h1>Confira nosso menu:</h1>
+
+            <div class="lanches-nav">
+                <label class="data">
+                    <input checked onclick="showpedidos()"type="radio" value="1" name="botao" />
+                    <p>Mais Pedidos</p>
+                </label>
+                <label class="data">
+                    <input checked onclick="showpromo()"type="radio" value="1" name="botao" />
+                    <p>Promoções Especiais</p>
+                </label>
+            </div>
 
            <div class="menu-row">
             <div class="lanche-container">
-                <img src="imagem/PopcornCombo.png">
+                <img src="imagem/pipocarefri.svg">
                 <p>Combo Pipoca + Refri</p>
                 <p>R$19,99</p>
                 <div class="comprarlanche">
@@ -353,9 +364,9 @@
             </div>
 
             <div class="lanche-container">
-                <img src="imagem/pipoca.png">
-                <p>Combo Pipoca + Refri</p>
-                <p>R$19,99</p>
+                <img src="imagem/pipocadoce.svg">
+                <p> Pipoca Caramelizada + Refri</p>
+                <p>R$25,00</p>
                 <div class="comprarlanche">
                     <p>Comprar</p>
                     <i class="material-symbols-outlined">shopping_cart</i>
@@ -363,9 +374,9 @@
             </div>
 
             <div class="lanche-container">
-                <img src="imagem/pipoca.png">
-                <p>Combo Pipoca + Refri</p>
-                <p>R$19,99</p>
+                <img src="imagem/doce.svg">
+                <p>3 Pacotes M&M Grande</p>
+                <p>R$20,00</p>
                 <div class="comprarlanche">
                     <p>Comprar</p>
                     <i class="material-symbols-outlined">shopping_cart</i>
