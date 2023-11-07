@@ -1,0 +1,821 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Quicksand:wght@400&display=swap");
+
+body {
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+html{
+    height: 100%;
+}
+
+p {
+    margin: 0;
+}
+
+.ingressos-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50vh;
+    width: 100%;
+    background-size: 140% 140%; 
+    flex-direction: column;
+}
+.ingressos-header h1 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 4vw;
+    margin: 0;
+    text-align: left;
+    color: whitesmoke;
+    margin-left: -15vw;
+}
+.navbarContainer {
+    display: flex;
+    top: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    justify-content: space-between;
+    z-index: 3;
+    transition-duration: 0.4s;
+    padding: 1vh 0;
+    height: 12vh;
+}
+
+.navbarlogo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.navbarlogo img {
+    width: 10vw;
+}
+
+.navbarlinks {
+    display: flex;
+    width: 60%;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+}
+
+.navbarlinks a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: "Quicksand", sans-serif;
+    font-size: 1vw;
+    width: 100%;
+    height: 100%;
+    gap: 1vw;
+}
+
+.navbarlinks a:hover {
+    box-shadow: inset 0px -1px 0px 0px goldenrod;
+    color: goldenrod;;
+}
+
+
+
+.material-symbols-outlined {
+    color: goldenrod;;
+    font-size: 1.5vw;
+    font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+}
+
+.container-geral {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    height: auto;
+    padding: 2vh 3vw;
+    box-sizing: border-box;
+    background: rgb(6,3,27);
+    background: linear-gradient(179.4deg, rgb(10, 13, 32) -16.9%, rgb(17, 11, 56) 119.9%);
+    font-family: 'Quicksand', sans-serif;
+    background-size: 100% 100%;
+}
+
+.sidebar-movie {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 70%;
+    height: auto;
+    padding: 1vw;
+    box-sizing: border-box;
+    gap: 1vh;
+}
+
+.sidebar-movie p {
+    font-family: "Quicksand", sans-serif;
+    font-size: 0.9vw;
+    margin: 0;
+    text-align: left;
+    color: rgb(210, 210, 210);
+}
+
+
+.poster-info-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+}
+
+.poster-info-container .poster {
+    width: 80%;
+    background-size: 100% 100%;
+    height: 70vh;
+    border-radius: 10px;
+    margin-top: 2vh;
+}
+
+.poster-info-container .info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 50%;
+    height: 100%;
+    padding: 1vw;
+    box-sizing: border-box;
+    gap: 1vh;
+}
+
+.poster-info-container a {
+    background-color: inherit;
+    color: white;
+    padding: 1vh;
+    border-radius: 15px;
+    border: 0.3vh solid goldenrod;;
+    text-decoration: none;
+    font-family: "Quicksand", sans-serif;
+    transition-duration: 0.4s;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 0.8rem;
+    text-wrap: nowrap;
+}
+
+.poster-info-container p {
+    font-family: "Quicksand", sans-serif;
+    font-size: 1vw;
+    margin: 0;
+    text-align: left;
+    color: rgb(210, 210, 210);
+}
+
+.poster-info-container h1 {
+    font-family: "Quicksand", sans-serif;
+    font-size: 1vw;
+    margin: 0;
+    text-align: left;
+    color: goldenrod;
+}
+
+.ingressos-desc-filme-info {
+    grid-area: tags;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5vw;
+}
+
+.ingressos-desc-filme-info p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8em;
+    text-wrap: nowrap;
+}
+
+form {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    padding: 10vh;
+    gap: 2vh;
+}
+
+form p {
+    color: grey;
+}
+
+.data-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+
+}
+.data {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3vh 3vh;
+    background-color: #01001773;
+    transition-duration: 0.3s;
+    box-sizing: border-box;
+    cursor: pointer;
+    width: 100%;
+  
+
+}
+.data p{
+    color: rgb(171, 171, 171);
+    transition-duration: 0.3s;
+}
+.data .material-symbols-outlined{
+    color: rgb(171, 171, 171);
+    transition-duration: 0.3s;
+}
+.data input[type="radio"]:hover ~ .material-symbols-outlined{
+    color: goldenrod;;
+}
+.data input[type="radio"]:hover+p{
+    color: goldenrod;;
+}
+
+.data input[type="radio"]:checked ~ .material-symbols-outlined{
+    color: goldenrod;;
+}
+.data input[type="radio"]:checked+p{
+    color: goldenrod;;
+}
+
+
+.data input[type="radio"] {
+    -webkit-appearance: none;
+    appearance: none;
+    margin: 0;
+
+}
+.idioma-titulo-container{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 1vh;
+}
+
+.idioma-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.idioma {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3vh 3vh;
+background-color: #01001773;
+    transition-duration: 0.3s;
+    box-sizing: border-box;
+    cursor: pointer;
+    width: 100%;
+
+}
+.idioma p{
+    color: rgb(171, 171, 171);
+    transition-duration: 0.3s;
+}
+.idioma .material-symbols-outlined{
+    color: rgb(171, 171, 171);
+    transition-duration: 0.3s;
+}
+.idioma input[type="radio"]:hover ~ span{
+    color: goldenrod;;
+}
+.idioma input[type="radio"]:hover~p{
+    color: goldenrod;;
+}
+
+.idioma input[type="radio"]:checked ~ .material-symbols-outlined{
+    color: goldenrod;;
+}
+.idioma input[type="radio"]:checked+p{
+    color: goldenrod;;
+}
+
+
+.idioma input[type="radio"] {
+    -webkit-appearance: none;
+    appearance: none;
+    margin: 0;
+
+}
+
+.idioma-container span{
+    padding: 1vh 1vh;
+    color: grey;
+    transition-duration: 0.3s;
+}
+.idioma-container input[type="radio"]:checked ~ span{
+    color: goldenrod;;
+}
+
+
+.tipoingresso-titulo-container{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 1vh;
+}
+
+.tipoingresso-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.tipoingresso {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3vh 3vh;
+background-color: #01001773;
+    transition-duration: 0.3s;
+    box-sizing: border-box;
+    cursor: pointer;
+    width: 100%;
+
+}
+.tipoingresso p{
+    color: rgb(171, 171, 171);
+    transition-duration: 0.3s;
+}
+.tipoingresso ion-icon{
+    color: rgb(171, 171, 171);
+    transition-duration: 0.3s;
+    font-size: 1.5vw;
+}
+.tipoingresso input[type="radio"]:hover ~ span{
+    color: goldenrod;;
+}
+.tipoingresso input[type="radio"]:hover~p{
+    color: goldenrod;;
+}
+.tipoingresso input[type="radio"]:hover~ ion-icon{
+    color: goldenrod;;
+}
+
+.tipoingresso input[type="radio"]:checked ~ ion-icon{
+    color: goldenrod;;
+}
+.tipoingresso input[type="radio"]:checked ~ p{
+    color: goldenrod;;
+}
+
+
+.tipoingresso input[type="radio"] {
+    -webkit-appearance: none;
+    appearance: none;
+    margin: 0;
+
+}
+
+.tipoingresso-container span{
+    padding: 1vh 1vh;
+    color: grey;
+    transition-duration: 0.3s;
+}
+.tipoingresso-container input[type="radio"]:checked ~ span{
+    color: goldenrod;;
+}
+
+
+.horarios-titulo-container{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 1vh;
+}
+
+.horarios-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+   
+}
+
+.horario {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3vh 3vh;
+background-color: #01001773;
+    transition-duration: 0.3s;
+    box-sizing: border-box;
+    cursor: pointer;
+    width: 100%;
+    
+
+}
+.horario p{
+    color: rgb(171, 171, 171);
+    transition-duration: 0.3s;
+}
+.horario .material-symbols-outlined{
+    color: rgb(171, 171, 171);
+    transition-duration: 0.3s;
+}
+.horario input[type="radio"]:hover ~ span{
+    color: goldenrod;;
+}
+.horario input[type="radio"]:hover~p{
+    color: goldenrod;;
+}
+
+.horario input[type="radio"]:checked ~ .material-symbols-outlined{
+    color: goldenrod;;
+}
+.horario input[type="radio"]:hover ~ .material-symbols-outlined{
+    color: goldenrod;;
+}
+.horario input[type="radio"]:checked+p{
+    color: goldenrod;;
+}
+
+
+.horario input[type="radio"] {
+    -webkit-appearance: none;
+    appearance: none;
+    margin: 0;
+
+}
+
+.horario-container span{
+    background-color: #131212;
+    padding: 1vh 1vh;
+    color: grey;
+    transition-duration: 0.3s;
+}
+.horario-container input[type="radio"]:checked ~ span{
+    color: goldenrod;;
+}
+
+
+
+
+
+
+
+.pagamento-titulo-container{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 1vh;
+}
+
+.pagamento-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.pagamento {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 3vh 3vh;
+background-color: #01001773;
+    transition-duration: 0.3s;
+    box-sizing: border-box;
+    cursor: pointer;
+    width: 100%;
+    gap:1vw;
+
+}
+.pagamento p{
+    color: rgb(171, 171, 171);
+    transition-duration: 0.3s;
+}
+.pagamento .material-symbols-outlined{
+    color: rgb(171, 171, 171);
+    transition-duration: 0.3s;
+}
+.pagamento input[type="radio"]:hover ~ span{
+    color: goldenrod;;
+}
+.pagamento input[type="radio"]:hover~p{
+    color: goldenrod;;
+}
+.pagamento input[type="radio"]:hover~.material-symbols-outlined{
+    color: goldenrod;;
+}
+
+.pagamento input[type="radio"]:checked ~ .material-symbols-outlined{
+    color: goldenrod;;
+}
+.pagamento input[type="radio"]:checked~p{
+    color: goldenrod;;
+}
+
+
+.pagamento input[type="radio"] {
+    -webkit-appearance: none;
+    appearance: none;
+    margin: 0;
+
+}
+
+.pagamento-container span{
+    padding: 1vh 1vh;
+    color: grey;
+    transition-duration: 0.3s;
+}
+.pagamento-container input[type="radio"]:checked ~ span{
+    color: goldenrod;;
+}
+
+
+.inputContainer {
+    display: flex;
+    width: 60%;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+
+}
+
+.inputContainerCheckbox {
+    display: flex;
+    width: 100%;
+    position: relative;
+    align-items: center;
+    justify-content: flex-start;
+    box-sizing: border-box;
+
+}
+
+.inputContainerRow {
+    display: flex;
+    gap: 10px;
+}
+
+.inputContainer input {
+    background-color: rgba(48, 48, 48, 0.611);
+    border: none;
+    width: 100%;
+    height: 6vh;
+    position: relative;
+    color: white;
+    font-size: 1vw;
+    padding: 0px 30%;
+    border-radius: 10px;
+    transition-duration: 0.4s;
+}
+
+.inputContainer p {
+    position: absolute;
+    left: 0;
+    padding: 0px 2vh;
+    color: rgba(255, 255, 255, 0.411);
+    transition-duration: 0.3s;
+    font-size: 0.9rem;
+
+}
+
+.inputContainer i {
+    position: absolute;
+    right: 0;
+    padding: 0px 2vh;
+    color: white;
+    transition-duration: 0.3s;
+}
+
+.inputContainer input:focus {
+    background-color: rgba(33, 33, 33, 0.433);
+    outline: none;
+    box-shadow: inset 0px 0px 0px 2px goldenrod;;
+}
+
+.inputContainer input:focus~p {
+    transform: translateY(-1vh);
+    font-size: 0.7rem;
+}
+
+.inputContainer select {
+    appearance: none;
+    background-color: rgba(48, 48, 48, 0.611);
+    border: none;
+    width: 100%;
+    height: 6vh;
+    position: relative;
+    color: white;
+    font-size: 1rem;
+    padding: 0px 30%;
+    border-radius: 10px;
+    transition-duration: 0.4s;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.inputContainer select:focus {
+    background-color: rgba(33, 33, 33, 0.433);
+    outline: none;
+    box-shadow: inset 0px 0px 0px 2px goldenrod;;
+}
+
+
+.inputContainer select>option {
+    background-color: rgb(48, 48, 48);
+}
+
+
+.assentos-container {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    background-color: #01001773;
+    border-radius: 15px;
+    padding: 2vh;
+    box-sizing: border-box;
+}
+
+.tela {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 7vh;
+}
+
+.tela p {
+    font-size: 0.7rem;
+    color: gray;
+    margin-top: -7vh;
+}
+
+.tela img {
+    width: 90%;
+    height: 12vh;
+    margin-left: 2.2vh;
+    filter: drop-shadow(0px 3px 5px #d9d9d9);
+
+
+}
+.linha-numeros{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: auto;
+    width: 65%;
+}
+.linha-numeros p {
+    color: grey;
+    font-size: 0.8rem;
+    font-family: "Quicksand", sans-serif;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.5vw;
+}
+
+.linha-cadeira {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    width: 100%;
+}
+
+.linha-cadeira p {
+    color: goldenrod;;
+    font-size: 1rem;
+    font-family: "Quicksand", sans-serif;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.5vw;
+}
+.linha-cadeira .numeracao-cadeiras {
+    color: grey;
+    font-size: 0.8rem;
+    font-family: "Quicksand", sans-serif;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -7vh
+}
+
+.linha-cadeira input[type="checkbox"] {
+    display: none;
+}
+
+
+.linha-cadeira label {
+    -webkit-appearance: none !important;
+    -moz-appearance: none !important;
+    -o-appearance: none !important;
+    -ms-appearance: none !important;
+    appearance: none !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2vw;
+    height: 4vh;
+    background-image: url("imagem/poltrona-checked.svg");
+    background-size: 100% 100%;
+    cursor: pointer;
+
+}
+
+.linha-cadeira :checked+label {
+    width: 2vw;
+    height: 4vh;
+    background-image: url("imagem/poltrona-unchecked.svg");
+    background-size: 100% 100%;
+    cursor: pointer;
+}
+
+
+.submit-ingresso{
+    background-color: goldenrod;;
+    border-radius: 15px;
+    padding: 2vh;
+    border: none;
+    width: 100%;
+    font-size: 1rem;
+    display: none;
+}
+.submit-ingresso:hover{
+    outline: none;
+    cursor: pointer;
+    background-color: gold;
+}
+/* ----------------------------------------------
+ * Generated by Animista on 2023-10-22 20:35:7
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation fade-in
+ * ----------------------------------------
+ */
+ @-webkit-keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  
+  .fade-in {
+	-webkit-animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
