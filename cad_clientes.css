@@ -8,71 +8,7 @@ body{
 a{
     text-decoration: none;
 }
-/* container da barra de navegação */
-.navbarContainer{
-    display: flex;
-    width: 100%;
-    padding: 10px 0px;
-    z-index: 2;
-    position: absolute;
-    justify-content: flex-start;
-}
-.navbarlinks{
-    display: flex;
-    width: 100%;
-    justify-content: flex-start;
-    align-items: center;
-    height: 60px;
-}
-.navbarlinks a{
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    font-family: 'Quicksand', sans-serif;
-    width: 100%;
-    height: 100%;
-    gap:1vw;
-}
-.navbarlinks a:hover{
-    box-shadow: inset 0px -1px 0px 0px goldenrod;;
-    color:goldenrod;;
-}
-.navlogin-btn{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 20%;
-    height: 60px;
-}
-.navlogin-btn a{
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    font-family: 'Quicksand', sans-serif;
-    width: 50%;
-    height: 100%;
-    gap:15px;
-}
-.navlogin-btn a:hover{
-    box-shadow: inset 0px -1px 0px 0px goldenrod;;
-    color:goldenrod;;
-}
-.responsive-img{
-    max-width: 100%;
-    height: auto;
-}
-.material-symbols-outlined {
-    color: goldenrod;;;
-    font-variation-settings:
-    'FILL' 0,
-    'wght' 400,
-    'GRAD' 0,
-    'opsz' 24
-}
+
 .inputContainer .material-symbols-outlined {
     color: goldenrod;;;
     font-variation-settings:
@@ -81,6 +17,7 @@ a{
     'GRAD' 0,
     'opsz' 24
 }
+/* container para juntar o form e as imagens */
 .container-geral{
     display: flex;
     box-sizing: border-box;
@@ -90,9 +27,7 @@ a{
     background: linear-gradient(150deg, rgb(4, 2, 23) 0%, rgb(1, 20, 82) 100%);
     box-sizing: border-box;
 }
-label{
-    cursor: pointer;
-}
+/* container do formulario (tag form) */
 form{
     display: flex;
     gap: 15px;
@@ -110,9 +45,10 @@ form p{
     color: white;
     font-size: 1vw;
 }
+/* checkbox dos termos de uso */
 input[type=checkbox]{
-    width: 2vw;
-    height: 2vh;
+    width: 2.5vw;
+    height: 2.5vh;
 }
 form h1{
     color: white;
@@ -120,14 +56,16 @@ form h1{
     font-size: 3vw;
     margin: 0;
 }
+/* botao voltar para o inicio */
 .botaoinicio{
-    color: goldenrod;;;
+    color: goldenrod;
     font-family: 'Montserrat', sans-serif;
     font-size: 1.1vw;
     display: flex;
     align-items: center;
     justify-content: flex-start;
 }
+/* container campo de texto, ícone e texto */
 .inputContainer{
     display: flex;
     width: 100%;
@@ -135,8 +73,10 @@ form h1{
     align-items: center;
     justify-content: center;
     box-sizing: border-box;
+    cursor: text;
    
 }
+/* container checkbox e texto termos de uso */
 .inputContainerCheckbox{
     display: flex;
     width: 100%;
@@ -144,12 +84,19 @@ form h1{
     align-items: center;
     justify-content: flex-start;
     box-sizing: border-box;
-   
+    cursor: pointer;
+    z-index: 2;
 }
+/* pointer no label */
+.inputContainerCheckbox label{
+    cursor: pointer;
+}
+/* container para abrigar dois campos de texto na mesma linha (nome e cpf) */
 .inputContainerRow{
     display: flex;
     gap: 10px;
 }
+/* input de texto com width 100% para ocupar a div toda */
 .inputContainer input{
     background-color: rgba(48, 48, 48, 0.611);
     border: none;
@@ -162,6 +109,7 @@ form h1{
     border-radius: 10px;
     transition-duration: 0.4s;
 }
+/* nome no começo do input */
 .inputContainer p{
     position: absolute;
     left: 0;
@@ -175,25 +123,30 @@ form h1{
     pointer-events: none;
     
 }
+/* ícone no fim do input */
 .inputContainer i{
     position: absolute;
     right: 0;
     padding: 0px 2vh;
     color: white;
     transition-duration: 0.3s;
+    pointer-events: none;
 }
+/* diminuir padding quando o campo de texto estiver ativo */
 .inputContainer input:focus{
     background-color: #131313;
     outline: none;
     padding: 0px 10%;
-    box-shadow: inset 0px 0px 0px 2px goldenrod;;;
+    box-shadow: inset 0px 0px 0px 2px goldenrod;
 }
+/* aumentar padding de volta depois de clicar no campo de texto */
 .inputContainer input::after{
     background-color: #131313;
     outline: none;
     padding: 0px 20%;
-    box-shadow: inset 0px 0px 0px 2px goldenrod;;;
+    box-shadow: inset 0px 0px 0px 2px goldenrod;
 }
+/* diminuir e mover para cima o nome dos campos */
 .inputContainer input:focus ~ p{
     transform: translateY(-3vh);
     font-size: 0.7rem;
@@ -202,6 +155,7 @@ form h1{
     margin-left: 3%;
     border-radius: 5px;
 }
+/* config do botão de select */
 .inputContainer select{
     appearance: none;
     background-color: rgba(48, 48, 48, 0.611);
@@ -215,15 +169,19 @@ form h1{
     border-radius: 10px;
     transition-duration: 0.4s;
     font-family: 'Quicksand', sans-serif;
+    cursor: text;
 }
+/* botao de select ativo */
 .inputContainer select:focus{
     background-color: rgba(33, 33, 33, 0.433);
     outline: none;
     box-shadow: inset 0px 0px 0px 2px goldenrod;;;
 }
+/* mudar cor de fundo das opções */
 .inputContainer select > option{
     background-color: rgb(48, 48, 48);
 }
+/* botão de submit */
 .submit{
     background-color: goldenrod;;;
     color: black;
@@ -238,7 +196,7 @@ form h1{
     background-color: rgb(238, 188, 61);
     cursor: pointer;
 }
-
+/* container das imagens na direita */
 .imagens-container{
     display: flex;
     width: 100%;
@@ -247,6 +205,7 @@ form h1{
     background-size: 100% 100%;
     animation: background-change 22s infinite ease;
 }
+/* cor por cima do fundo */
 .imagens-container .gradient{
     display: flex;
     justify-content: flex-start;
@@ -256,20 +215,23 @@ form h1{
     justify-content: center;
     flex-direction: column;
 }
+/* botões de redes sociais */
 .social-media-container{
     display: flex;
     gap: 10px;
     align-items: center;
     justify-content: center;
 }
+/* icones redes sociais */
 .social-media-container ion-icon{
     color: white;
     font-size: 2vw;
     cursor: pointer;
 }
 .social-media-container ion-icon:hover{
-    color: goldenrod;;;
+    color: goldenrod;
 }
+/* container de contato */
 .contato-container{
     display: flex;
     gap: 15px;
@@ -289,6 +251,7 @@ form h1{
 
 
 
+/* animação dos gifs de fundo */
 @keyframes background-change {
     0% {
         background-image: url("https://iili.io/JFlNYhb.gif");
