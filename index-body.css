@@ -15,7 +15,7 @@ h1 {
   color: white;
   text-align: center;
 }
-
+/* botao de mover o carrossel pra direita */
 .botoescontrolleft {
   color: goldenrod;
   font-size: 55px;
@@ -27,11 +27,11 @@ h1 {
   border: none;
   cursor: pointer;
 }
-
+/* aumentar icone no hover */
 .botoescontrolleft:hover ion-icon {
   transform: scale(1.1);
 }
-
+/* botao de mover o carrossel pra esquerda */
 .botoescontrolright {
   color: goldenrod;
   font-size: 55px;
@@ -43,10 +43,11 @@ h1 {
   border: none;
   cursor: pointer;
 }
-
+/* aumentar icone no hover */
 .botoescontrolright:hover ion-icon {
   transform: scale(1.1);
 }
+/* container para as bolas embaixo do carrossel */
 .marcadores {
   display: flex;
   width: 100%;
@@ -55,6 +56,7 @@ h1 {
   gap: 1vw;
   margin-top: 5vh;
 }
+/* bolinhha embaixo do header */
 .marcadores .bola {
   width: 10px;
   height: 10px;
@@ -62,9 +64,11 @@ h1 {
   background-color: gray;
   transition-duration: 0.4s;
 }
+/* esconder a segunda parte do carrossel (aparece quando clica na seta) */
 #frame2 {
   display: none;
 }
+/* container do carrossel */
 .carrossel-container {
   display: flex;
   align-items: center;
@@ -74,6 +78,7 @@ h1 {
   gap: 2vh;
   overflow-x: hidden;
 }
+/* container dos filmes */
 .filmes-container {
   width: 100%;
   display: flex;
@@ -83,26 +88,7 @@ h1 {
   box-sizing: border-box;
   
 }
-
-.tags {
-  grid-area: tags;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 0.5vw;
-}
-
-.tags span {
-  font-family: "Quicksand", sans-serif;
-  font-size: 0.8rem;
-  color: white;
-  text-align: center;
-  border: 0.1vw solid grey;
-  padding: 0.7vh;
-  width: 100%;
-  border-radius: 5px;
-}
-
+/* container do titulo e da imagem e botão de comprar ingresso */
 .ingressos-container {
   display: flex;
   align-items: center;
@@ -112,10 +98,11 @@ h1 {
   height: auto;
   gap: 2vh;
 }
+/* tirar a margem automatica do p */
 .ingressos-container p {
   margin: 0;
 }
-
+/* titulo do filme */
 .ingressos-container h1 {
   font-family: "Montserrat", sans-serif;
   font-size: 1.2vw;
@@ -124,7 +111,7 @@ h1 {
   margin: 0;
   text-wrap: nowrap;
 }
-
+/* poster (imagem é linkada no html) */
 .ingressos-container .ingresso-poster {
   background-size: 100% 100%;
   display: flex;
@@ -134,20 +121,20 @@ h1 {
   width: 16vw;
   border-radius: 10px;
 }
-
+/* container pro botão */
 .ingresso-poster-botoes {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100%;
 }
-
+/* icone */
 .ingresso-poster-botoes .material-symbols-outlined {
   color: rgb(255, 255, 255);
   font-size: 1.5vw;
   font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
 }
-
+/* botao de comprar */
 .ingresso-poster-botoes .compraringresso {
   background-color: goldenrod;
   border-radius: 10px;
@@ -168,6 +155,7 @@ h1 {
   background-color: gold;
 }
 
+/* container da barra lateral e menu de lanches */
 .lanches-section {
   display: flex;
   align-items: flex-start;
@@ -175,14 +163,10 @@ h1 {
   flex-direction: row;
   width: 100%;
   box-sizing: border-box;
-  background: linear-gradient(
-    0deg,
-    rgb(14, 17, 45) -16.9%,
-    rgb(10, 9, 16) 119.9%
-  );
+  background: linear-gradient(0deg,rgb(14, 17, 45) -16.9%, rgb(10, 9, 16) 119.9%);
   border-top: 1px solid goldenrod;
 }
-
+/* barra lateral */
 .lanches-imagem {
   display: flex;
   justify-content: center;
@@ -193,10 +177,12 @@ h1 {
   padding: 5vh;
   gap: 2vh;
 }
+/* imagem abaixo do titulo */
 .lanches-imagem img {
   width: 100%;
   height: 60vh;
 }
+/* titulo */
 .lanches-imagem h1 {
   font-family: "Montserrat", sans-serif;
   font-size: 2vw;
@@ -204,6 +190,7 @@ h1 {
   text-align: center;
   margin: 0;
 }
+/* texto */
 .lanches-imagem p {
   font-family: "Montserrat", sans-serif;
   font-size: 1vw;
@@ -211,6 +198,7 @@ h1 {
   text-align: justify;
   margin: 0;
 }
+/* container da lista de vantagens embaixo da imagem */
 .lista-vantagens {
   display: flex;
   align-items: center;
@@ -219,13 +207,16 @@ h1 {
   width: 90%;
   padding: 3vh;
 }
+/* texto */
 .lista-vantagens p {
   font-size: 1.2vw;
 }
+/* icone */
 .lista-vantagens .material-symbols-outlined {
   color: goldenrod;
   font-size: 3vw;
 }
+/* barra de navegação do menu de lanches */
 .lanches-nav {
   display: flex;
   align-items: center;
@@ -235,16 +226,7 @@ h1 {
   box-sizing: border-box;
   padding: 0vh 5vw;
 }
-
-.menu-row {
-  display: flex;
-  width: 100%;
-  align-items: center;
-  justify-content: space-around;
-  box-sizing: border-box;
-  padding: 4vh;
-}
-
+/* container do menu */
 .lanches-menu {
   display: flex;
   width: 70%;
@@ -256,6 +238,15 @@ h1 {
   background-color: rgba(0, 0, 0, 0.447);
   box-sizing: border-box;
   padding: 5vh;
+}
+/* linha para os anuncios de pipoca */
+.menu-row {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-around;
+  box-sizing: border-box;
+  padding: 4vh;
 }
 .lanches-menu h1 {
   font-family: "Montserrat", sans-serif;
@@ -272,6 +263,7 @@ h1 {
   margin: 0;
   text-wrap: nowrap;
 }
+/* container para a imagem e o preço e botão */
 .lanche-container {
   display: flex;
   align-items: center;
@@ -280,10 +272,12 @@ h1 {
   width: 12vw;
   gap: 1vw;
 }
+/* imagem dos lanches */
 .lanche-container img {
   width: 100%;
   height: 20vh;
 }
+/* botao de comprar lanche */
 .lanche-container .comprarlanche {
   width: 100%;
   background-color: goldenrod;
@@ -302,11 +296,13 @@ h1 {
 .lanche-container .material-symbols-outlined {
   color: white;
 }
+/* imagem abaixo do menu */
 .imagem-monte-combo {
   width: 30vw;
   height: 50vh;
 }
 
+/* botao de radio para a barra de navegação (peguei do comprar_ingressos.css) */
 .data {
   font-family: "Quicksand", sans-serif;
   font-size: 1vw;
@@ -331,7 +327,7 @@ h1 {
 .data input[type="radio"]:hover + p {
   color: goldenrod;
 }
-
+/* deixar o icone e texto amarelo quando o botão está ativo */
 .data input[type="radio"]:checked ~ .material-symbols-outlined {
   color: goldenrod;
 }
@@ -340,15 +336,18 @@ h1 {
   box-shadow: inset 0px -3px 0px 0px goldenrod;
 }
 
+/* esconder o botao de rádio original do navegador */
 .data input[type="radio"] {
   -webkit-appearance: none;
   appearance: none;
   margin: 0;
 }
+/* esconder o segundo menu de promoções especiais (ativado no js) */
 #promos {
   display: none;
 }
 
+/* botao de montar combo */
 .montar-combo-btn {
   background-color: goldenrod;
   border-radius: 10px;
@@ -370,6 +369,8 @@ h1 {
   color: white;
 }
 
+
+/* animação do carrossel para a esquerda */
 .slide-in-left {
   -webkit-animation: slide-in-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)
     both;
@@ -401,6 +402,8 @@ h1 {
 }
 
 
+
+/* animação do carrossel para a direita */
 .slide-in-right {
 	-webkit-animation: slide-in-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 	        animation: slide-in-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;

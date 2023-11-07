@@ -62,6 +62,8 @@ body{
     'GRAD' 0,
     'opsz' 24
 }
+
+/* container do header */
 .header-container{
     display: flex;
     height: 75vh;
@@ -70,7 +72,7 @@ body{
     flex-direction: column;
 }
 
-
+/* container botões sinopse titulo e informações do filme */
 .header-filme-info{
     display: flex;
     flex-direction: column;
@@ -87,6 +89,7 @@ body{
     font-family: 'Quicksand', sans-serif;
     font-size: 1vw;
 }
+/* container da categoria e duração e classificação */
 .filme-categoria-duracao{
     display: flex;
     justify-content: left;
@@ -100,12 +103,14 @@ body{
     display: flex;
     gap: 5px;
 }
+/* container dos botões de comprar e ver trailer */
 .header-filme-info-botoes{
     display: flex;
     justify-content: flex-start;
     align-items: center;
     gap: 10px;
 }
+/* icone */
 .header-filme-info-botoes .material-symbols-outlined {
     color: rgb(255, 255, 255);
     font-size: 1.5vw;
@@ -115,6 +120,7 @@ body{
     'GRAD' 0,
     'opsz' 24
 }
+/* botao de comprar ingressos */
 .header-filme-info-botoes .compraringresso{
     background-color: goldenrod;;
     color:white;
@@ -134,6 +140,7 @@ body{
 .header-filme-info-botoes .compraringresso:hover{
     background-color: gold;
 }
+/* botao de ver trailer */
 .header-filme-info-botoes .vertrailer{
     background-color: inherit;
     color:white;
@@ -154,7 +161,7 @@ body{
 .header-filme-info-botoes .vertrailer:hover{
     background-color: rgba(30, 30, 30, 0.59);
 }
-
+/* container com o fundo da barbie */
 .header-barbie{
     background-image: radial-gradient(circle, rgba(87, 124, 0, 0) 0%, rgba(4,24,29,1) 100%), url("imagem/barbie-header.png");
     display: flex;
@@ -169,6 +176,7 @@ body{
     box-sizing: border-box;
     color: white;
 }
+/* container com o fundo do opppenheimer */
 .header-oppenheimer{
     background-image: radial-gradient(circle, rgba(255,255,255,0) 0%, rgba(4,24,29,1) 100%), url("imagem/oppenheimer-header.jpg");
     display: none;
@@ -183,6 +191,7 @@ body{
     box-sizing: border-box;
     color: white;
 }
+/* container com o fundo do mario */
 .header-mario{
     background-image: radial-gradient(circle, rgba(255,255,255,0) 0%, rgba(4,24,29,1) 100%), url("imagem/mario-header.png");
     display: none;
@@ -197,6 +206,7 @@ body{
     box-sizing: border-box;
     color: white;
 }
+/* container com o fundo da freira */
 .header-freira{
     background-image: radial-gradient(circle, rgba(255,255,255,0) 0%, rgba(4,24,29,1) 100%), url("imagem/freira-header.jpg");
     display: none;
@@ -211,6 +221,7 @@ body{
     box-sizing: border-box;
     color: white;
 }
+/* container com o fundo da taylor swift (ta paw pq eu ia por o filme da patrulha canina e desisti) */
 .header-paw{
     background-image: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(4,24,29,1) 100%), url("imagem/swift-header.webp");
     display: none;
@@ -225,7 +236,7 @@ body{
     box-sizing: border-box;
     color: white;
 }
-
+/* container dos filmes em cartaz abaixo do header (margin negativa para subir a div em cima do header) */
 .filmes-em-cartaz-container{
     display: flex;
     align-items: center;
@@ -236,6 +247,7 @@ body{
     z-index: 2;
 
 }
+/* container dos posters */
 .filmes-em-cartaz{
     display: flex;
     align-items: center;
@@ -248,6 +260,7 @@ body{
     border-radius: 10px;
    
 }
+/* container poster e titulo*/
 .filme-poster-container{
     background-size: 100% 100%;
     transition-duration: 0.4s;
@@ -257,11 +270,13 @@ body{
 .filme-poster-container:hover{
     cursor: pointer;
 }
-.filme-poster-container:hover > .filme-poster-desc{
+/* deixar texto amarelo no hover */
+.filme-poster-container:hover > .filme-poster-desc p{
     cursor: pointer;
     color: goldenrod;
  
 }
+/* poster com filtro cinza */
 .filme-poster{
     height: 18vh;
     background-size: 100% 100%;
@@ -270,9 +285,11 @@ body{
     filter:grayscale(90%);
     transition-duration: 0.4s;
 }
+/* remover filtro no hover */
 .filme-poster:hover{
     filter:grayscale(0%);
 }
+/* container do titulo do filme */
 .filme-poster-container .filme-poster-desc{
     display: flex;
     align-items: center;
@@ -287,8 +304,10 @@ body{
     font-family: 'Quicksand', sans-serif;
     font-size: 1vw;
     color: white;
+    transition-duration: 0.4s;
    
 }
+/* classe para o botão ativo selecionado no javascript(sem filtro cinza) */
 .active{
     display: flex;
     align-items: center;
@@ -316,6 +335,8 @@ body{
  * animation fade-in
  * ----------------------------------------
  */
+ 
+ /* animação para a troca de imagens do header */
  @-webkit-keyframes fade-in {
     0% {
       opacity: 0;
