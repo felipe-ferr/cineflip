@@ -3,9 +3,10 @@
 body {
     margin: 0;
     box-sizing: border-box;
-    
+
 }
-html{
+
+html {
     height: 100%;
 }
 
@@ -13,15 +14,18 @@ p {
     margin: 0;
 }
 
-.ingressos-header{
+/* header com a imagem do filme */
+.ingressos-header {
     display: flex;
     align-items: center;
     justify-content: space-between;
     height: 50vh;
     width: 100%;
-    background-size: 140% 140%; 
+    background-size: 140% 140%;
     flex-direction: column;
 }
+
+/* titulo do filme no header */
 .ingressos-header h1 {
     font-family: "Montserrat", sans-serif;
     font-size: 4vw;
@@ -30,6 +34,8 @@ p {
     color: whitesmoke;
     margin-left: -15vw;
 }
+
+/* container da barra de navegação */
 .navbarContainer {
     display: flex;
     top: 0;
@@ -78,17 +84,18 @@ p {
 
 .navbarlinks a:hover {
     box-shadow: inset 0px -1px 0px 0px goldenrod;
-    color: goldenrod;;
+    color: goldenrod;
 }
 
 
-
+/* icones da barra de navegação */
 .material-symbols-outlined {
-    color: goldenrod;;
+    color: goldenrod;
     font-size: 1.5vw;
     font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
 }
 
+/* container barra lateral e div principal */
 .container-geral {
     display: flex;
     justify-content: center;
@@ -97,12 +104,13 @@ p {
     height: auto;
     padding: 2vh 3vw;
     box-sizing: border-box;
-    background: rgb(6,3,27);
+    background: rgb(6, 3, 27);
     background: linear-gradient(179.4deg, rgb(10, 13, 32) -16.9%, rgb(17, 11, 56) 119.9%);
     font-family: 'Quicksand', sans-serif;
     background-size: 100% 100%;
 }
 
+/* barra lateral */
 .sidebar-movie {
     display: flex;
     justify-content: center;
@@ -123,7 +131,7 @@ p {
     color: rgb(210, 210, 210);
 }
 
-
+/* div das informações do filme com margin top negativo para ela ficar por cima do header */
 .poster-info-container {
     display: flex;
     flex-direction: column;
@@ -133,6 +141,7 @@ p {
     margin-top: -30vh;
 }
 
+/* imagem do poster (imagem de fundo linkada no html) */
 .poster-info-container .poster {
     width: 80%;
     background-size: 100% 100%;
@@ -141,6 +150,7 @@ p {
     margin-top: 2vh;
 }
 
+/* container das informações do filme embaixo do poster */
 .poster-info-container .info {
     display: flex;
     flex-direction: column;
@@ -153,12 +163,13 @@ p {
     gap: 1vh;
 }
 
+/* botão de ver trailer */
 .poster-info-container a {
     background-color: inherit;
     color: white;
     padding: 1vh;
     border-radius: 15px;
-    border: 0.3vh solid goldenrod;;
+    border: 0.3vh solid goldenrod;
     text-decoration: none;
     font-family: "Quicksand", sans-serif;
     transition-duration: 0.4s;
@@ -169,6 +180,7 @@ p {
     text-wrap: nowrap;
 }
 
+/* texto */
 .poster-info-container p {
     font-family: "Quicksand", sans-serif;
     font-size: 1vw;
@@ -177,6 +189,7 @@ p {
     color: rgb(210, 210, 210);
 }
 
+/* titulo */
 .poster-info-container h1 {
     font-family: "Quicksand", sans-serif;
     font-size: 1vw;
@@ -185,6 +198,7 @@ p {
     color: goldenrod;
 }
 
+/* imagens de duração e genero e classificação do filme */
 .ingressos-desc-filme-info {
     grid-area: tags;
     display: flex;
@@ -201,6 +215,7 @@ p {
     text-wrap: nowrap;
 }
 
+/* formulário para comprar ingressos (tag form) */
 form {
     display: flex;
     justify-content: flex-start;
@@ -216,12 +231,14 @@ form p {
     color: grey;
 }
 
+/* container para escolher a data */
 .data-container {
     display: flex;
     width: 100%;
     justify-content: space-around;
 
 }
+/* container texto e icone */
 .data {
     display: flex;
     flex-direction: column;
@@ -233,39 +250,43 @@ form p {
     box-sizing: border-box;
     cursor: pointer;
     width: 100%;
-  
-
 }
-.data p{
+/* texto */
+.data p {
     color: rgb(171, 171, 171);
     transition-duration: 0.3s;
 }
-.data .material-symbols-outlined{
+/* icone */
+.data .material-symbols-outlined {
     color: rgb(171, 171, 171);
     transition-duration: 0.3s;
 }
-.data input[type="radio"]:hover ~ .material-symbols-outlined{
-    color: goldenrod;;
+/* mudar a cor do icone ao passar o mouse por cima */
+.data input[type="radio"]:hover~.material-symbols-outlined {
+    color: goldenrod;
 }
-.data input[type="radio"]:hover+p{
-    color: goldenrod;;
+/* mudar a cor do texto ao passar o mouse por cima */
+.data input[type="radio"]:hover+p {
+    color: goldenrod
+}
+/* mudar a cor do icone quando ativar o botão*/
+.data input[type="radio"]:checked~.material-symbols-outlined {
+    color: goldenrod
+}
+/* mudar a cor do texto quando ativar o botão*/
+.data input[type="radio"]:checked+p {
+    color: goldenrod
 }
 
-.data input[type="radio"]:checked ~ .material-symbols-outlined{
-    color: goldenrod;;
-}
-.data input[type="radio"]:checked+p{
-    color: goldenrod;;
-}
-
-
+/* esconder o botao de radio original */
 .data input[type="radio"] {
     -webkit-appearance: none;
     appearance: none;
     margin: 0;
 
 }
-.idioma-titulo-container{
+/* todos os containers repetem as configs acima (com algumas configs diferentes apenas) */
+.idioma-titulo-container {
     display: none;
     flex-direction: column;
     justify-content: center;
@@ -274,7 +295,7 @@ form p {
     gap: 1vh;
 }
 
-.idioma-container{
+.idioma-container {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -288,33 +309,38 @@ form p {
     justify-content: center;
     align-items: center;
     padding: 3vh 3vh;
-background-color: #01001773;
+    background-color: #01001773;
     transition-duration: 0.3s;
     box-sizing: border-box;
     cursor: pointer;
     width: 100%;
 
 }
-.idioma p{
+
+.idioma p {
     color: rgb(171, 171, 171);
     transition-duration: 0.3s;
-}
-.idioma .material-symbols-outlined{
-    color: rgb(171, 171, 171);
-    transition-duration: 0.3s;
-}
-.idioma input[type="radio"]:hover ~ span{
-    color: goldenrod;;
-}
-.idioma input[type="radio"]:hover~p{
-    color: goldenrod;;
 }
 
-.idioma input[type="radio"]:checked ~ .material-symbols-outlined{
-    color: goldenrod;;
+.idioma .material-symbols-outlined {
+    color: rgb(171, 171, 171);
+    transition-duration: 0.3s;
 }
-.idioma input[type="radio"]:checked+p{
-    color: goldenrod;;
+
+.idioma input[type="radio"]:hover~span {
+    color: goldenrod;
+}
+
+.idioma input[type="radio"]:hover~p {
+    color: goldenrod;
+}
+
+.idioma input[type="radio"]:checked~.material-symbols-outlined {
+    color: goldenrod;
+}
+
+.idioma input[type="radio"]:checked+p {
+    color: goldenrod;
 }
 
 
@@ -324,18 +350,19 @@ background-color: #01001773;
     margin: 0;
 
 }
-
-.idioma-container span{
+/* tag de 3d ou 2d */
+.idioma-container span {
     padding: 1vh 1vh;
     color: grey;
     transition-duration: 0.3s;
 }
-.idioma-container input[type="radio"]:checked ~ span{
-    color: goldenrod;;
+
+.idioma-container input[type="radio"]:checked~span {
+    color: goldenrod;
 }
 
 
-.tipoingresso-titulo-container{
+.tipoingresso-titulo-container {
     display: none;
     flex-direction: column;
     justify-content: center;
@@ -344,7 +371,7 @@ background-color: #01001773;
     gap: 1vh;
 }
 
-.tipoingresso-container{
+.tipoingresso-container {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -358,37 +385,43 @@ background-color: #01001773;
     justify-content: center;
     align-items: center;
     padding: 3vh 3vh;
-background-color: #01001773;
+    background-color: #01001773;
     transition-duration: 0.3s;
     box-sizing: border-box;
     cursor: pointer;
     width: 100%;
 
 }
-.tipoingresso p{
+
+.tipoingresso p {
     color: rgb(171, 171, 171);
     transition-duration: 0.3s;
 }
-.tipoingresso ion-icon{
+
+.tipoingresso ion-icon {
     color: rgb(171, 171, 171);
     transition-duration: 0.3s;
     font-size: 1.5vw;
 }
-.tipoingresso input[type="radio"]:hover ~ span{
-    color: goldenrod;;
-}
-.tipoingresso input[type="radio"]:hover~p{
-    color: goldenrod;;
-}
-.tipoingresso input[type="radio"]:hover~ ion-icon{
-    color: goldenrod;;
+
+.tipoingresso input[type="radio"]:hover~span {
+    color: goldenrod;
 }
 
-.tipoingresso input[type="radio"]:checked ~ ion-icon{
-    color: goldenrod;;
+.tipoingresso input[type="radio"]:hover~p {
+    color: goldenrod;
 }
-.tipoingresso input[type="radio"]:checked ~ p{
-    color: goldenrod;;
+
+.tipoingresso input[type="radio"]:hover~ion-icon {
+    color: goldenrod;
+}
+
+.tipoingresso input[type="radio"]:checked~ion-icon {
+    color: goldenrod;
+}
+
+.tipoingresso input[type="radio"]:checked~p {
+    color: goldenrod;
 }
 
 
@@ -399,17 +432,18 @@ background-color: #01001773;
 
 }
 
-.tipoingresso-container span{
+.tipoingresso-container span {
     padding: 1vh 1vh;
     color: grey;
     transition-duration: 0.3s;
 }
-.tipoingresso-container input[type="radio"]:checked ~ span{
-    color: goldenrod;;
+
+.tipoingresso-container input[type="radio"]:checked~span {
+    color: goldenrod;
 }
 
 
-.horarios-titulo-container{
+.horarios-titulo-container {
     display: none;
     flex-direction: column;
     justify-content: center;
@@ -418,13 +452,13 @@ background-color: #01001773;
     gap: 1vh;
 }
 
-.horarios-container{
+.horarios-container {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
     width: 100%;
-   
+
 }
 
 .horario {
@@ -433,37 +467,48 @@ background-color: #01001773;
     justify-content: center;
     align-items: center;
     padding: 3vh 3vh;
-background-color: #01001773;
+    background-color: #01001773;
     transition-duration: 0.3s;
     box-sizing: border-box;
     cursor: pointer;
     width: 100%;
-    
+
 
 }
-.horario p{
+
+.horario p {
     color: rgb(171, 171, 171);
     transition-duration: 0.3s;
 }
-.horario .material-symbols-outlined{
+
+.horario .material-symbols-outlined {
     color: rgb(171, 171, 171);
     transition-duration: 0.3s;
 }
-.horario input[type="radio"]:hover ~ span{
-    color: goldenrod;;
-}
-.horario input[type="radio"]:hover~p{
-    color: goldenrod;;
+
+.horario input[type="radio"]:hover~span {
+    color: goldenrod;
+
 }
 
-.horario input[type="radio"]:checked ~ .material-symbols-outlined{
-    color: goldenrod;;
+.horario input[type="radio"]:hover~p {
+    color: goldenrod;
+
 }
-.horario input[type="radio"]:hover ~ .material-symbols-outlined{
-    color: goldenrod;;
+
+.horario input[type="radio"]:checked~.material-symbols-outlined {
+    color: goldenrod;
+
 }
-.horario input[type="radio"]:checked+p{
-    color: goldenrod;;
+
+.horario input[type="radio"]:hover~.material-symbols-outlined {
+    color: goldenrod;
+
+}
+
+.horario input[type="radio"]:checked+p {
+    color: goldenrod;
+
 }
 
 
@@ -474,14 +519,16 @@ background-color: #01001773;
 
 }
 
-.horario-container span{
+.horario-container span {
     background-color: #131212;
     padding: 1vh 1vh;
     color: grey;
     transition-duration: 0.3s;
 }
-.horario-container input[type="radio"]:checked ~ span{
-    color: goldenrod;;
+
+.horario-container input[type="radio"]:checked~span {
+    color: goldenrod;
+    
 }
 
 
@@ -490,7 +537,7 @@ background-color: #01001773;
 
 
 
-.pagamento-titulo-container{
+.pagamento-titulo-container {
     display: none;
     flex-direction: column;
     justify-content: center;
@@ -499,7 +546,7 @@ background-color: #01001773;
     gap: 1vh;
 }
 
-.pagamento-container{
+.pagamento-container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -513,37 +560,48 @@ background-color: #01001773;
     justify-content: flex-start;
     align-items: center;
     padding: 3vh 3vh;
-background-color: #01001773;
+    background-color: #01001773;
     transition-duration: 0.3s;
     box-sizing: border-box;
     cursor: pointer;
     width: 100%;
-    gap:1vw;
+    gap: 1vw;
 
 }
-.pagamento p{
+
+.pagamento p {
     color: rgb(171, 171, 171);
     transition-duration: 0.3s;
 }
-.pagamento .material-symbols-outlined{
+
+.pagamento .material-symbols-outlined {
     color: rgb(171, 171, 171);
     transition-duration: 0.3s;
 }
-.pagamento input[type="radio"]:hover ~ span{
-    color: goldenrod;;
-}
-.pagamento input[type="radio"]:hover~p{
-    color: goldenrod;;
-}
-.pagamento input[type="radio"]:hover~.material-symbols-outlined{
-    color: goldenrod;;
+
+.pagamento input[type="radio"]:hover~span {
+    color: goldenrod;
+    
 }
 
-.pagamento input[type="radio"]:checked ~ .material-symbols-outlined{
-    color: goldenrod;;
+.pagamento input[type="radio"]:hover~p {
+    color: goldenrod;
+    
 }
-.pagamento input[type="radio"]:checked~p{
-    color: goldenrod;;
+
+.pagamento input[type="radio"]:hover~.material-symbols-outlined {
+    color: goldenrod;
+    
+}
+
+.pagamento input[type="radio"]:checked~.material-symbols-outlined {
+    color: goldenrod;
+    
+}
+
+.pagamento input[type="radio"]:checked~p {
+    color: goldenrod;
+    
 }
 
 
@@ -554,16 +612,18 @@ background-color: #01001773;
 
 }
 
-.pagamento-container span{
+.pagamento-container span {
     padding: 1vh 1vh;
     color: grey;
     transition-duration: 0.3s;
 }
-.pagamento-container input[type="radio"]:checked ~ span{
-    color: goldenrod;;
+
+.pagamento-container input[type="radio"]:checked~span {
+    color: goldenrod;
+    
 }
 
-
+/* containers para o botão de select (copiei tudo do cad_clients.css e colei aqui msm) */
 .inputContainer {
     display: flex;
     width: 60%;
@@ -623,7 +683,8 @@ background-color: #01001773;
 .inputContainer input:focus {
     background-color: rgba(33, 33, 33, 0.433);
     outline: none;
-    box-shadow: inset 0px 0px 0px 2px goldenrod;;
+    box-shadow: inset 0px 0px 0px 2px goldenrod;
+
 }
 
 .inputContainer input:focus~p {
@@ -649,7 +710,7 @@ background-color: #01001773;
 .inputContainer select:focus {
     background-color: rgba(33, 33, 33, 0.433);
     outline: none;
-    box-shadow: inset 0px 0px 0px 2px goldenrod;;
+    box-shadow: inset 0px 0px 0px 2px goldenrod;
 }
 
 
@@ -657,7 +718,7 @@ background-color: #01001773;
     background-color: rgb(48, 48, 48);
 }
 
-
+/* container da escolha de assento */
 .assentos-container {
     display: none;
     align-items: center;
@@ -669,7 +730,7 @@ background-color: #01001773;
     padding: 2vh;
     box-sizing: border-box;
 }
-
+/* div para o desenho da tela */
 .tela {
     display: flex;
     width: 100%;
@@ -678,13 +739,13 @@ background-color: #01001773;
     flex-direction: column;
     margin-bottom: 7vh;
 }
-
+/* nome tela com margem negativa para ficar perto da tela */
 .tela p {
     font-size: 0.7rem;
     color: gray;
     margin-top: -7vh;
 }
-
+/* config da imagem da tela com filtro de sombra e margin pq a imagem não é centralizada */
 .tela img {
     width: 90%;
     height: 12vh;
@@ -693,13 +754,15 @@ background-color: #01001773;
 
 
 }
-.linha-numeros{
+/* container pros números em cima dos primeiros assentos */
+.linha-numeros {
     display: flex;
     align-items: center;
     justify-content: space-around;
     height: auto;
     width: 65%;
 }
+/* numero */
 .linha-numeros p {
     color: grey;
     font-size: 0.8rem;
@@ -710,7 +773,7 @@ background-color: #01001773;
     justify-content: center;
     width: 1.5vw;
 }
-
+/* container da fileira de assentos */
 .linha-cadeira {
     display: flex;
     align-items: center;
@@ -718,9 +781,9 @@ background-color: #01001773;
     height: auto;
     width: 100%;
 }
-
+/* letras ao lado das cadeiras */
 .linha-cadeira p {
-    color: goldenrod;;
+    color: goldenrod;
     font-size: 1rem;
     font-family: "Quicksand", sans-serif;
     margin: 0;
@@ -729,6 +792,7 @@ background-color: #01001773;
     justify-content: center;
     width: 1.5vw;
 }
+/* numeros logo acima do assento (com margin negativa) */
 .linha-cadeira .numeracao-cadeiras {
     color: grey;
     font-size: 0.8rem;
@@ -739,12 +803,12 @@ background-color: #01001773;
     justify-content: center;
     margin-top: -7vh
 }
-
+/* esconder checkbox original do navegador */
 .linha-cadeira input[type="checkbox"] {
     display: none;
 }
 
-
+/* imagem da poltrona desmarcada (poltrona-checked) substituindo o checkbox original*/
 .linha-cadeira label {
     -webkit-appearance: none !important;
     -moz-appearance: none !important;
@@ -756,23 +820,23 @@ background-color: #01001773;
     justify-content: center;
     width: 2vw;
     height: 4vh;
-    background-image: url("imagem/poltrona-checked.svg");
-    background-size: 100% 100%;
-    cursor: pointer;
-
-}
-
-.linha-cadeira :checked+label {
-    width: 2vw;
-    height: 4vh;
     background-image: url("imagem/poltrona-unchecked.svg");
     background-size: 100% 100%;
     cursor: pointer;
+
+}
+/* troca de imagem depois de ativar o checkbox (poltrona-unchecked) */
+.linha-cadeira :checked+label {
+    width: 2vw;
+    height: 4vh;
+    background-image: url("imagem/poltrona-checked.svg");
+    background-size: 100% 100%;
+    cursor: pointer;
 }
 
-
-.submit-ingresso{
-    background-color: goldenrod;;
+/* botao de enviar */
+.submit-ingresso {
+    background-color: goldenrod;
     border-radius: 15px;
     padding: 2vh;
     border: none;
@@ -780,11 +844,13 @@ background-color: #01001773;
     font-size: 1rem;
     display: none;
 }
-.submit-ingresso:hover{
+
+.submit-ingresso:hover {
     outline: none;
     cursor: pointer;
     background-color: gold;
 }
+
 /* ----------------------------------------------
  * Generated by Animista on 2023-10-22 20:35:7
  * Licensed under FreeBSD License.
@@ -797,25 +863,31 @@ background-color: #01001773;
  * animation fade-in
  * ----------------------------------------
  */
- @-webkit-keyframes fade-in {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
-  @keyframes fade-in {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
 
-  
-  .fade-in {
-	-webkit-animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-	        animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+
+ /* animação quando clica nos botoes */
+@-webkit-keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+.fade-in {
+    -webkit-animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 }
