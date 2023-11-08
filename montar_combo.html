@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="montar_combo.css" />
 
     <script type="application/javascript" src="js/comprarIngressoItems.js"></script>
+    <script type="application/javascript" src="js/botaoNumber.js"></script>
 
     <title>CineFlip</title>
 </head>
@@ -50,8 +51,13 @@
          
         </div>
 
-        <form method="post" action="comprar_ingressos.php">
+        <form method="post" action="">
 
+            <div class="number-input">
+                <button type="button" onclick="this.parentNode.querySelector('input[type=number]').stepDown()" ></button>
+                <input class="quantity" min="0" name="quantity" value="0" type="number">
+                <button type="button" onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"></button>
+              </div>
            
 
                 <button id="botaosubmit" class="submit-ingresso" type="submit">Finalizar Pedido</button>
