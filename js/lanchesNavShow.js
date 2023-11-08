@@ -1,26 +1,26 @@
-function showpedidos(){
+function showpedidos() {
     var pedidos = document.getElementById('maispedidos');
     var promos = document.getElementById('promos');
 
-    if (pedidos.style.display === "none"){
+    if (pedidos.style.display === "none") {
         pedidos.style.display = "flex";
         promos.style.display = "none";
     }
-    else{
+    else {
         pedidos.style.display = "flex";
         promos.style.display = "none";
     }
 }
 
-function showpromos(){
+function showpromos() {
     var pedidos = document.getElementById('maispedidos');
     var promos = document.getElementById('promos');
 
-    if (promos.style.display === "none"){
+    if (promos.style.display === "none") {
         promos.style.display = "flex";
         pedidos.style.display = "none";
     }
-    else{
+    else {
         promos.style.display = "flex";
         pedidos.style.display = "none";
     }
