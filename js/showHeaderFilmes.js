@@ -1,4 +1,4 @@
-function showbarbie(){
+function showbarbie() {
 
     var oppen = document.getElementById("oppenfilme");
     var barbie = document.getElementById("barbiefilme");
@@ -6,14 +6,14 @@ function showbarbie(){
     var freira = document.getElementById("freirafilme");
     var paw = document.getElementById("pawfilme");
 
-    if (barbie.style.display === "none"){
+    if (barbie.style.display === "none") {
         barbie.style.display = "flex";
         oppen.style.display = "none";
         mario.style.display = "none";
         freira.style.display = "none";
         paw.style.display = "none";
     }
-    else{
+    else {
         oppen.style.display = "none";
         mario.style.display = "none";
         freira.style.display = "none";
@@ -22,7 +22,7 @@ function showbarbie(){
     }
 }
 
-function showoppenheimer(){
+function showoppenheimer() {
 
     var oppen = document.getElementById("oppenfilme");
     var barbie = document.getElementById("barbiefilme");
@@ -30,14 +30,14 @@ function showoppenheimer(){
     var freira = document.getElementById("freirafilme");
     var paw = document.getElementById("pawfilme");
 
-    if (oppen.style.display === "none"){
+    if (oppen.style.display === "none") {
         oppen.style.display = "flex";
         barbie.style.display = "none";
         mario.style.display = "none";
         freira.style.display = "none";
         paw.style.display = "none";
     }
-    else{
+    else {
         barbie.style.display = "none";
         freira.style.display = "none";
         mario.style.display = "none";
@@ -45,7 +45,7 @@ function showoppenheimer(){
         oppen.style.display = "flex";
     }
 }
-function showmario(){
+function showmario() {
 
     var oppen = document.getElementById("oppenfilme");
     var barbie = document.getElementById("barbiefilme");
@@ -53,14 +53,14 @@ function showmario(){
     var freira = document.getElementById("freirafilme");
     var paw = document.getElementById("pawfilme");
 
-    if (mario.style.display === "none"){
+    if (mario.style.display === "none") {
         mario.style.display = "flex";
         barbie.style.display = "none";
         oppen.style.display = "none";
         freira.style.display = "none";
         paw.style.display = "none";
     }
-    else{
+    else {
         barbie.style.display = "none";
         freira.style.display = "none";
         oppen.style.display = "none";
@@ -68,7 +68,7 @@ function showmario(){
         mario.style.display = "flex";
     }
 }
-function showfreira(){
+function showfreira() {
 
     var oppen = document.getElementById("oppenfilme");
     var barbie = document.getElementById("barbiefilme");
@@ -76,14 +76,14 @@ function showfreira(){
     var freira = document.getElementById("freirafilme");
     var paw = document.getElementById("pawfilme");
 
-    if (freira.style.display === "none"){
+    if (freira.style.display === "none") {
         freira.style.display = "flex";
         barbie.style.display = "none";
         oppen.style.display = "none";
         mario.style.display = "none";
         paw.style.display = "none";
     }
-    else{
+    else {
         barbie.style.display = "none";
         mario.style.display = "none";
         oppen.style.display = "none";
@@ -91,7 +91,7 @@ function showfreira(){
         freira.style.display = "flex";
     }
 }
-function showpaw(){
+function showpaw() {
 
     var oppen = document.getElementById("oppenfilme");
     var barbie = document.getElementById("barbiefilme");
@@ -99,14 +99,14 @@ function showpaw(){
     var freira = document.getElementById("freirafilme");
     var paw = document.getElementById("pawfilme");
 
-    if (paw.style.display === "none"){
+    if (paw.style.display === "none") {
         paw.style.display = "flex";
         barbie.style.display = "none";
         mario.style.display = "none";
         freira.style.display = "none";
         oppen.style.display = "none";
     }
-    else{
+    else {
         barbie.style.display = "none";
         freira.style.display = "none";
         mario.style.display = "none";
@@ -116,4 +116,3 @@ function showpaw(){
 }
 
 
-  
