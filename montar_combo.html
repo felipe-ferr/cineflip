@@ -53,14 +53,44 @@
 
         <form method="post" action="">
 
-            <div class="number-input">
-                <button type="button" onclick="this.parentNode.querySelector('input[type=number]').stepDown()" ></button>
-                <input class="quantity" min="0" name="quantity" value="0" type="number">
-                <button type="button" onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"></button>
-              </div>
-           
+            <div class="item-row">
 
-                <button id="botaosubmit" class="submit-ingresso" type="submit">Finalizar Pedido</button>
+                <div class="item-container">
+                    <img src="imagem/pipocadoce.svg">
+                    <p>Pipoca</p>
+                    <p>R$6,50</p>
+                    <div class="number-input">
+                        <button type="button" onclick="this.parentNode.querySelector('input[type=number]').stepDown()" ><i class="material-symbols-outlined">remove</i></button>
+                        <input class="quantity" min="0" name="quantity" value="0" type="number">
+                        <button type="button" onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"><i class="material-symbols-outlined">add</i></button>
+                      </div>
+                </div>
+
+                <div class="item-container">
+                    <img src="imagem/pipocadoce.svg">
+                    <p>Pipoca</p>
+                    <p>R$6,50</p>
+                    <div class="number-input">
+                        <button type="button" onclick="this.parentNode.querySelector('input[type=number]').stepDown()" ><i class="material-symbols-outlined">remove</i></button>
+                        <input class="quantity" min="0" name="quantity" value="0" type="number">
+                        <button type="button" onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"><i class="material-symbols-outlined">add</i></button>
+                      </div>
+                </div>
+
+                <div class="item-container">
+                    <img src="imagem/pipocadoce.svg">
+                    <p>Pipoca</p>
+                    <p>R$6,50</p>
+                    <div class="number-input">
+                        <button type="button" onclick="this.parentNode.querySelector('input[type=number]').stepDown()" ><i class="material-symbols-outlined">remove</i></button>
+                        <input class="quantity" min="0" name="quantity" value="0" type="number">
+                        <button type="button" onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"><i class="material-symbols-outlined">add</i></button>
+                      </div>
+                </div>
+
+            </div>
+
+              
 
         </form>
 
