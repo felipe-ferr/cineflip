@@ -195,19 +195,25 @@ form {
 }
 form p {
   color: white;
+  margin: 0;
 }
 .item-row {
   display: flex;
   width: 100%;
   justify-content: space-around;
   align-items: center;
+  height: auto;
+  padding: 2vh;
+  box-sizing: border-box;
 }
+
 .item-container {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   gap: 1vh;
+  height: auto;
 }
 .img-texto-container {
   display: flex;
@@ -224,18 +230,26 @@ form p {
   flex-direction: column;
   box-sizing: border-box;
   gap: 1vh;
+  width: 100%;
 }
-.img-texto-container .imagem {
+
+.img-texto-container .texto p{
+  margin: 0;
+  font-size: 0.8rem;
+}
+.imagem {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 20vh;
   background-color: rgb(8, 10, 27);
   border-radius: 20px;
+  box-sizing: border-box;
+  padding: 2vh;
+  width: 15vw;
 }
-.item-container .imagem img {
-  width: 80%;
-  height: 80%;
+.imagem img {
+  max-width: 5rem;
+  max-height: 5rem;
 }
 
 input[type="number"] {
@@ -268,8 +282,8 @@ input[type="number"]::-webkit-outer-spin-button {
   cursor: pointer;
   margin: 0;
   position: relative;
-  width: 2vw;
-  height: 4vh;
+  width: 1.5vw;
+  height: 3.5vh;
 }
 .number-input .material-symbols-outlined {
   color: goldenrod;
