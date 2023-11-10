@@ -229,8 +229,8 @@ form p {
   justify-content: space-between;
   flex-direction: column;
   box-sizing: border-box;
-  gap: 1vh;
-  width: 100%;
+  gap: 2vh;
+  width: 90%;
 }
 
 .img-texto-container .texto p{
