@@ -1,7 +1,7 @@
-function showpedidos() {
-    var pedidos = document.getElementById('maispedidos');
-    var promos = document.getElementById('promos');
+var pedidos = document.getElementById('maispedidos');
+var promos = document.getElementById('promos');
 
+function showpedidos() {
     if (pedidos.style.display === "none") {
         pedidos.style.display = "flex";
         promos.style.display = "none";
@@ -13,9 +13,6 @@ function showpedidos() {
 }
 
 function showpromos() {
-    var pedidos = document.getElementById('maispedidos');
-    var promos = document.getElementById('promos');
-
     if (promos.style.display === "none") {
         promos.style.display = "flex";
         pedidos.style.display = "none";

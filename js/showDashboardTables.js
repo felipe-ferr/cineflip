@@ -1,6 +1,7 @@
+var clientes = document.getElementById('cliente');
+var ingressos = document.getElementById('ingresso');
+
 function showclientes() {
-    var clientes = document.getElementById('cliente');
-    var ingressos = document.getElementById('ingresso');
 
     if (clientes.style.display === "none") {
         clientes.style.display = "flex";
@@ -13,8 +14,6 @@ function showclientes() {
 }
 
 function showingressos() {
-    var clientes = document.getElementById('cliente');
-    var ingressos = document.getElementById('ingresso');
 
     if (ingressos.style.display === "none") {
         ingressos.style.display = "flex";
