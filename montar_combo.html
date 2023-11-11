@@ -9,7 +9,6 @@
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="montar_combo.css" />
 
-    <script type="application/javascript" src="js/botaoNumber.js"></script>
     <script type="application/javascript" src="js/resumo-pedido.js"></script>
 
 
@@ -37,24 +36,27 @@
 
     <div class="container-geral">
 
-        <div class="sidebar-movie">
-
-
-            <div class="poster-info-container">
-                <div class="info">
+        <div class="sidebar">
 
                     <h1>Resumo do Pedido:</h1>
 
-                    <div class="resumo-pipoca-single">
-                        <p>Pedido: <span id="nomepedido"></span></p>
-                        <p>Quantidade: <span id="numeropedido"></span></p>
+                    <div id="pipoca-simples" class="resumo-pipoca">
+                        <img src="imagem/popcorn-single.png">
+                        <p>Pedido: <span id="nome-pedido-pipoca-simples"></span></p>
+                        <p>Quantidade: <span id="numero-pedido-pipoca-simples"></span></p>
+                        <p>Valor: R$<span id="valor-pedido-pipoca-simples"></span></p>
                     </div>
 
-                </div>
-
-            </div>
+                    <div id="pipoca-caramelizada" class="resumo-caramelizada">
+                        <img src="imagem/pipoca-caramelizada.png">
+                        <p>Pedido: <span id="nome-pedido-pipoca-caramelizada"></span></p>
+                        <p>Quantidade: <span id="numero-pedido-pipoca-caramelizada"></span></p>
+                        <p>Valor: R$<span id="valor-pedido-pipoca-caramelizada"></span></p>
+                    </div>
 
         </div>
+
+    
 
         <form method="post" action="">
 
@@ -66,18 +68,49 @@
                         <img src="imagem/popcorn-single.png">
                     </div>
 
-                    <p id="titulopedido" title="Pipoca Pequena">Pipoca Pequena</p>
-                    <p>R$6,50</p>
+                    <p id="titulo-pedido-pipoca-simples" title="Pipoca Simples">Pipoca Simples</p>
+                    <p id="valor-pipoca-simples" title="6.00">R$6,00</p>
+
+
                     <div class="number-input">
                         <button type="button"
-                            onclick="this.parentNode.querySelector('input[type=number]').stepDown();mostrarNumero();mostrarNme()"><i
+                            onclick="this.parentNode.querySelector('input[type=number]').stepDown();mostrarNumeroPipocaSimples();mostrarNomePipocaSimples()"><i
                                 class="material-symbols-outlined">do_not_disturb_on</i></button>
-                        <input id="numeropipoca" class="quantity" min="0" name="quantity" value="0" type="number">
+                        <input id="numero-pipoca-simples" class="quantity" min="0" name="quantity" value="0" type="number">
 
-                        <button type="button" onclick="this.parentNode.querySelector('input[type=number]').stepUp();mostrarNumero();mostrarNome()"
+                        <button type="button" onclick="this.parentNode.querySelector('input[type=number]').stepUp();mostrarNumeroPipocaSimples();mostrarNomePipocaSimples()"
                             class="plus"><i class="material-symbols-outlined">add_circle</i></button>
                     </div>
+    
                 </div>
+
+                <div class="item-container">
+
+                    <div class="imagem">
+                        <img src="imagem/pipoca-caramelizada.png">
+                    </div>
+
+                    <p id="titulo-pedido-pipoca-caramelizada" title="Pipoca Caramelizada">Pipoca Caramelizada</p>
+                    <p id="valor-pipoca-caramelizada" title="8.00">R$8,00</p>
+
+
+                    <div class="number-input">
+                        <button type="button"
+                            onclick="this.parentNode.querySelector('input[type=number]').stepDown();mostrarNumeroPipocaCaramelizada();mostrarNomePipocaCaramelizada()"><i
+                                class="material-symbols-outlined">do_not_disturb_on</i></button>
+                        <input id="numero-pipoca-caramelizada" class="quantity" min="0" name="quantity" value="0" type="number">
+
+                        <button type="button" onclick="this.parentNode.querySelector('input[type=number]').stepUp();mostrarNumeroPipocaCaramelizada();mostrarNomePipocaCaramelizada()"
+                            class="plus"><i class="material-symbols-outlined">add_circle</i></button>
+                    </div>
+    
+                </div>
+
+
+
+             
+
+        
 
             </div>
 
