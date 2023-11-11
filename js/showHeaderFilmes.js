@@ -19,6 +19,7 @@ function showbarbie() {
 function showoppenheimer() {
 
     if (oppen.style.display === "none") {
+        oppen.style.display = "flex";
         mario.style.display = barbie.style.display = freira.style.display = paw.style.display = "none";
     }
     else {
