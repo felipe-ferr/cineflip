@@ -9,9 +9,9 @@
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="montar_combo.css" />
 
-    <script type="application/javascript" src="js/comprarIngressoItems.js"></script>
     <script type="application/javascript" src="js/botaoNumber.js"></script>
-   
+    <script type="application/javascript" src="js/resumo-pedido.js"></script>
+
 
     <title>CineFlip</title>
 </head>
@@ -41,10 +41,14 @@
 
 
             <div class="poster-info-container">
-                <div style="background-image: url(imagem/pipocarefri.svg);" class="poster"></div>
                 <div class="info">
 
-                    <h1>Resumo do Pedido</h1>
+                    <h1>Resumo do Pedido:</h1>
+
+                    <div class="resumo-pipoca-single">
+                        <p>Pedido: <span id="nomepedido"></span></p>
+                        <p>Quantidade: <span id="numeropedido"></span></p>
+                    </div>
 
                 </div>
 
@@ -54,147 +58,37 @@
 
         <form method="post" action="">
 
-                <div class="item-row">
+            <div class="item-row">
 
-                    <div class="item-container">
-                        <div class="img-texto-container">
-                            <div class="imagem">
-                                <img src="imagem/popcorn-single.png">
-                            </div>
-    
-                            <div class="texto">
-                                <p>Pipoca Pequena</p>
-                                <p>R$6,50</p>
-                                <div class="number-input">
-                                    <button type="button"
-                                        onclick="this.parentNode.querySelector('input[type=number]').stepDown()"><i
-                                            class="material-symbols-outlined">remove</i></button>
-                                    <input class="quantity" min="0" name="quantity" value="0" type="number">
-                                    <button type="button"
-                                        onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
-                                        class="plus"><i class="material-symbols-outlined">add</i></button>
-                                </div>
-                            </div>
-                        </div>
+                <div class="item-container">
+
+                    <div class="imagem">
+                        <img src="imagem/popcorn-single.png">
                     </div>
-    
-                    <div class="item-container">
-                        <div class="img-texto-container">
-                            <div class="imagem">
-                                <img src="imagem/popcorn-single.png">
-                            </div>
-    
-                            <div class="texto">
-                                <p>Pipoca Média</p>
-                                <p>R$8,50</p>
-                                <div class="number-input">
-                                    <button type="button"
-                                        onclick="this.parentNode.querySelector('input[type=number]').stepDown()"><i
-                                            class="material-symbols-outlined">remove</i></button>
-                                    <input class="quantity" min="0" name="quantity" value="0" type="number">
-                                    <button type="button"
-                                        onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
-                                        class="plus"><i class="material-symbols-outlined">add</i></button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-    
-                    <div class="item-container">
-                        <div class="img-texto-container">
-                            <div class="imagem">
-                                <img src="imagem/popcorn-single.png">
-                            </div>
-    
-                            <div class="texto">
-                                <p>Pipoca Grande</p>
-                                <p>R$10,00</p>
-                                <div class="number-input">
-                                    <button type="button"
-                                        onclick="this.parentNode.querySelector('input[type=number]').stepDown()"><i
-                                            class="material-symbols-outlined">remove</i></button>
-                                    <input class="quantity" min="0" name="quantity" value="0" type="number">
-                                    <button type="button"
-                                        onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
-                                        class="plus"><i class="material-symbols-outlined">add</i></button>
-                                </div>
-                            </div>
-                        </div>
+
+                    <p id="titulopedido" title="Pipoca Pequena">Pipoca Pequena</p>
+                    <p>R$6,50</p>
+                    <div class="number-input">
+                        <button type="button"
+                            onclick="this.parentNode.querySelector('input[type=number]').stepDown();mostrarNumero();mostrarNme()"><i
+                                class="material-symbols-outlined">do_not_disturb_on</i></button>
+                        <input id="numeropipoca" class="quantity" min="0" name="quantity" value="0" type="number">
+
+                        <button type="button" onclick="this.parentNode.querySelector('input[type=number]').stepUp();mostrarNumero();mostrarNome()"
+                            class="plus"><i class="material-symbols-outlined">add_circle</i></button>
                     </div>
                 </div>
 
-                 <div class="item-row">
-
-                    <div class="item-container">
-                        <div class="img-texto-container">
-                            <div class="imagem">
-                                <img src="imagem/pipoca-caramelizada.png">
-                            </div>
-    
-                            <div class="texto">
-                                <p>Pipoca Caramelizada Pequena</p>
-                                <p>R$6,50</p>
-                                <div class="number-input">
-                                    <button type="button"
-                                        onclick="this.parentNode.querySelector('input[type=number]').stepDown()"><i
-                                            class="material-symbols-outlined">remove</i></button>
-                                    <input class="quantity" min="0" name="quantity" value="0" type="number">
-                                    <button type="button"
-                                        onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
-                                        class="plus"><i class="material-symbols-outlined">add</i></button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-    
-                    <div class="item-container">
-                        <div class="img-texto-container">
-                            <div class="imagem">
-                                <img src="imagem/pipoca-caramelizada.png">
-                            </div>
-    
-                            <div class="texto">
-                                <p>Pipoca Caramelizada Média</p>
-                                <p>R$8,50</p>
-                                <div class="number-input">
-                                    <button type="button"
-                                        onclick="this.parentNode.querySelector('input[type=number]').stepDown()"><i
-                                            class="material-symbols-outlined">remove</i></button>
-                                    <input class="quantity" min="0" name="quantity" value="0" type="number">
-                                    <button type="button"
-                                        onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
-                                        class="plus"><i class="material-symbols-outlined">add</i></button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-    
-                    <div class="item-container">
-                        <div class="img-texto-container">
-                            <div class="imagem">
-                                <img src="imagem/pipoca-caramelizada.png">
-                            </div>
-    
-                            <div class="texto">
-                                <p>Pipoca Caramelizada Grande</p>
-                                <p>R$10,00</p>
-                                <div class="number-input">
-                                    <button type="button"
-                                        onclick="this.parentNode.querySelector('input[type=number]').stepDown()"><i
-                                            class="material-symbols-outlined">remove</i></button>
-                                    <input class="quantity" min="0" name="quantity" value="0" type="number">
-                                    <button type="button"
-                                        onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
-                                        class="plus"><i class="material-symbols-outlined">add</i></button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-          
+            </div>
 
 
-        </form>
+    </div>
+
+
+
+
+
+    </form>
 
     </div>
 

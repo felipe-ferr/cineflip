@@ -100,13 +100,14 @@ p {
 .sidebar-movie {
   display: flex;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   flex-direction: column;
-  width: 30%;
+  width: 60vw;
   height: auto;
   padding: 1vw;
   box-sizing: border-box;
   gap: 1vh;
+  background-color: rgb(8, 10, 27);
 }
 .sidebar-movie p {
   font-family: "Quicksand", sans-serif;
@@ -115,74 +116,14 @@ p {
   text-align: left;
   color: rgb(210, 210, 210);
 }
-.poster-info-container {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  width: 100%;
-}
-.poster-info-container .poster {
-  width: 80%;
-  background-size: 100% 100%;
-  height: 70vh;
-  border-radius: 10px;
-  margin-top: 2vh;
-}
-.poster-info-container .info {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  width: 50%;
-  height: 100%;
-  padding: 1vw;
-  box-sizing: border-box;
-  gap: 1vh;
-}
-.poster-info-container a {
-  background-color: inherit;
-  color: white;
-  padding: 1vh;
-  border-radius: 15px;
-  border: 0.3vh solid goldenrod;
-  text-decoration: none;
+.sidebar-movie h1 {
   font-family: "Quicksand", sans-serif;
-  transition-duration: 0.4s;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  font-size: 0.8rem;
-  text-wrap: nowrap;
-}
-.poster-info-container p {
-  font-family: "Quicksand", sans-serif;
-  font-size: 1vw;
+  font-size: 2vw;
   margin: 0;
   text-align: left;
   color: rgb(210, 210, 210);
 }
-.poster-info-container h1 {
-  font-family: "Quicksand", sans-serif;
-  font-size: 1vw;
-  margin: 0;
-  text-align: left;
-  color: goldenrod;
-}
-.ingressos-desc-filme-info {
-  grid-area: tags;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 0.5vw;
-}
-.ingressos-desc-filme-info p {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 0.8em;
-  text-wrap: nowrap;
-}
+
 form {
   display: flex;
   justify-content: center;
@@ -214,24 +155,13 @@ form p {
   flex-direction: column;
   gap: 1vh;
   height: auto;
-}
-.img-texto-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: row;
-  height: 15vh;
-  gap: 1vw;
-}
-.img-texto-container .texto {
-  display: flex;
-  align-content: space-around;
-  justify-content: space-between;
-  flex-direction: column;
+  background-color: rgb(8, 10, 27);
+  border-radius: 20px;
+  padding: 2vh;
   box-sizing: border-box;
-  gap: 2vh;
-  width: 90%;
 }
+
+
 
 .img-texto-container .texto p{
   margin: 0;
@@ -241,15 +171,12 @@ form p {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: rgb(8, 10, 27);
-  border-radius: 20px;
   box-sizing: border-box;
   padding: 2vh;
-  width: 15vw;
 }
 .imagem img {
-  max-width: 5rem;
-  max-height: 5rem;
+  max-width: 6rem;
+  max-height: 6rem;
 }
 
 input[type="number"] {
@@ -277,8 +204,6 @@ input[type="number"]::-webkit-outer-spin-button {
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: inset 0px 0px 0px 2px goldenrod;
-  border-radius: 50%;
   cursor: pointer;
   margin: 0;
   position: relative;
@@ -287,56 +212,21 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 .number-input .material-symbols-outlined {
   color: goldenrod;
-  font-size: 1.3vw;
+  font-size: 1.7vw;
 }
 .number-input input[type="number"] {
   font-family: sans-serif;
-  color: whitesmoke;
+  color: goldenrod;
   background-color: transparent;
   border: none;
   font-size: 1vw;
   width: 3vw;
   height: 100%;
-  padding: 1vh;
   font-weight: bold;
   text-align: center;
+
 }
 .number-input input[type="number"]:focus {
   outline: none;
 }
 
-/* Style the buttons that are used to open and close the accordion panel */
-.accordion {
-  background-color: #eee;
-  color: #444;
-  cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  text-align: left;
-  border: none;
-  outline: none;
-  transition: 0.4s;
-}
-
-/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-.active, .accordion:hover {
-  background-color: #ccc;
-}
-
-/* Style the accordion panel. Note: hidden by default */
-.panel {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.2s ease-out;
-}
-.accordion:after {
-  content: '\02795'; /* Unicode character for "plus" sign (+) */
-  font-size: 13px;
-  color: #777;
-  float: right;
-  margin-left: 5px;
-}
-
-.active:after {
-  content: "\2796"; /* Unicode character for "minus" sign (-) */
-}
