@@ -8,6 +8,10 @@ hr {
   width: 90%;
   border-top: 0.1vw solid white;
 }
+a{
+  text-decoration: none;
+  color: inherit;
+}
 
 h1 {
   font-family: "Montserrat", sans-serif;
@@ -97,6 +101,14 @@ h1 {
   background-size: 100% 100%;
   height: auto;
   gap: 2vh;
+  transition-duration: 0.3s;
+}
+.ingressos-container:hover{
+  filter: brightness(115%);
+}
+.ingressos-container:hover ~ .compraringresso{
+  background-color: gold;
+
 }
 /* tirar a margem automatica do p */
 .ingressos-container p {
@@ -130,13 +142,14 @@ h1 {
 }
 /* icone */
 .ingresso-poster-botoes .material-symbols-outlined {
-  color: rgb(255, 255, 255);
+  color: goldenrod;
   font-size: 1.5vw;
   font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
 }
 /* botao de comprar */
 .ingresso-poster-botoes .compraringresso {
-  background-color: goldenrod;
+  box-shadow: inset 0px 0px 0px 1px goldenrod;
+  background-color: transparent;
   border-radius: 10px;
   color: white;
   text-decoration: none;
@@ -153,6 +166,7 @@ h1 {
 
 .ingresso-poster-botoes .compraringresso:hover {
   background-color: gold;
+  color: rgb(10, 9, 16);
 }
 
 /* container da barra lateral e menu de lanches */
@@ -214,7 +228,7 @@ h1 {
 /* icone */
 .lista-vantagens .material-symbols-outlined {
   color: goldenrod;
-  font-size: 3vw;
+  font-size: 2vw;
 }
 /* barra de navegação do menu de lanches */
 .lanches-nav {
