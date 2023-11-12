@@ -115,12 +115,11 @@ p {
   width: 30%;
   padding: 5vh;
   box-sizing: border-box;
-  gap: 1vh;
+  gap: 2vh;
 }
-.sidebar .bottom-nav p{
+.sidebar .textonav{
   font-family: "Quicksand", sans-serif;
   font-size: 1.1vw;
-  margin: 1;
   color: rgb(210, 210, 210);
   width: 100%;
   display: flex;
@@ -189,6 +188,97 @@ p {
   margin: 0;
   text-align: left;
   color: rgb(210, 210, 210);
+}
+
+.pagamento-titulo-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 1vh;
+}
+
+.pagamento-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  width: 100%;
+  gap: 1vw;
+}
+
+.pagamento {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 1vh 1vh;
+  transition-duration: 0.3s;
+  box-sizing: border-box;
+  cursor: pointer;
+  width: 100%;
+  gap: 1vw;
+}
+.texto-pagamento{
+  font-family: "Quicksand", sans-serif;
+  font-size: 0.7vw;
+  margin: 0;
+  display: flex;
+  justify-content: flex-start;
+  width: 60%;
+  color: rgb(210, 210, 210);
+  text-wrap: nowrap;
+}
+
+.pagamento .material-symbols-outlined {
+  color: rgb(171, 171, 171);
+  transition-duration: 0.3s;
+}
+
+.pagamento input[type="radio"]:hover~span {
+  color: goldenrod;
+  
+}
+
+.pagamento input[type="radio"]:hover~p {
+  color: goldenrod;
+  
+}
+
+.pagamento input[type="radio"]:hover~.material-symbols-outlined {
+  color: goldenrod;
+  
+}
+
+.pagamento input[type="radio"]:checked~.material-symbols-outlined {
+  color: goldenrod;
+  
+}
+
+.pagamento input[type="radio"]:checked~p {
+  color: goldenrod;
+  
+}
+
+
+.pagamento input[type="radio"] {
+  -webkit-appearance: none;
+  appearance: none;
+  margin: 0;
+
+}
+
+.pagamento-container span {
+  padding: 1vh 1vh;
+  color: grey;
+  transition-duration: 0.3s;
+}
+
+.pagamento-container input[type="radio"]:checked~span {
+  color: goldenrod;
+  
 }
 
 form {

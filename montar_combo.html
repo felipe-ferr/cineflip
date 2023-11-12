@@ -128,7 +128,27 @@
                     </div>
 
                     <div class="bottom-nav">
-                        <p onclick="valorfinal()" >Valor Total: &nbsp<span class="texto-valor" id="valor-total"></span></p>
+                        <div id="mostrarpagamento" class="pagamento-titulo-container fade-in">
+                            <p class="textonav">Método de Pagamento</p>
+                            <div class="pagamento-container">
+                                <label class="pagamento">
+                                    <input type="radio" name="metodoPagamento" value="Pix" />
+                                    <i class="material-symbols-outlined">payments</i>
+                                    <p class="texto-pagamento">Pix</p>
+                                </label>
+                                <label class="pagamento">
+                                    <input type="radio" name="metodoPagamento" value="Cartão de Crédito" />
+                                    <i class="material-symbols-outlined">credit_card</i>
+                                    <p class="texto-pagamento">Cartão de Crédito</p>
+                                </label>
+                                <label class="pagamento">
+                                    <input type="radio" name="metodoPagamento" value="Boleto" />
+                                    <i class="material-symbols-outlined">description</i>
+                                    <p class="texto-pagamento">Boleto</p>
+                                </label>
+                            </div>
+                        </div>
+                        <p class="textonav">Valor Total: &nbsp<span class="texto-valor" id="valor-total"></span></p>
                         <button type="submit" form="formulario">Finalizar Pedido</button>
                     </div>
 
