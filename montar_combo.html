@@ -40,18 +40,46 @@
 
                     <h1>Resumo do Pedido:</h1>
 
-                    <div id="pipoca-simples" class="resumo-pipoca">
-                        <img src="imagem/popcorn-single.png">
-                        <p>Pedido: <span id="nome-pedido-pipoca-simples"></span></p>
-                        <p>Quantidade: <span id="numero-pedido-pipoca-simples"></span></p>
+                    <div id="pipoca-simples" class="resumo-pipoca slide-in-left">
+                        <img src="imagem/pipoca-simples.svg">
+                        <p><span id="nome-pedido-pipoca-simples"></span></p>
+                        <p>Quantidade: <span id="numero-pedido-pipoca-simples"> </span></p>
                         <p>Valor: R$<span id="valor-pedido-pipoca-simples"></span></p>
                     </div>
 
-                    <div id="pipoca-caramelizada" class="resumo-caramelizada">
-                        <img src="imagem/pipoca-caramelizada.png">
-                        <p>Pedido: <span id="nome-pedido-pipoca-caramelizada"></span></p>
+                    <div id="pipoca-caramelizada" class="resumo-caramelizada slide-in-left">
+                        <img src="imagem/pipoca-caramelizada.svg">
+                        <p><span id="nome-pedido-pipoca-caramelizada"></span></p>
                         <p>Quantidade: <span id="numero-pedido-pipoca-caramelizada"></span></p>
                         <p>Valor: R$<span id="valor-pedido-pipoca-caramelizada"></span></p>
+                    </div>
+
+                    <div id="pipoca-chocolate" class="resumo-chocolate slide-in-left">
+                        <img src="imagem/chocolate-pipoca.svg">
+                        <p><span id="nome-pedido-pipoca-chocolate"></span></p>
+                        <p>Quantidade: <span id="numero-pedido-pipoca-chocolate"></span></p>
+                        <p>Valor: R$<span id="valor-pedido-pipoca-chocolate"></span></p>
+                    </div>
+
+                    <div id="coca" class="resumo-coca slide-in-left">
+                        <img src="imagem/coca.svg">
+                        <p><span id="nome-pedido-coca"></span></p>
+                        <p>Quantidade: <span id="numero-pedido-coca"></span></p>
+                        <p>Valor: R$<span id="valor-pedido-coca"></span></p>
+                    </div>
+
+                    <div id="fanta" class="resumo-fanta slide-in-left">
+                        <img src="imagem/fanta.svg">
+                        <p><span id="nome-pedido-fanta"></span></p>
+                        <p>Quantidade: <span id="numero-pedido-fanta"></span></p>
+                        <p>Valor: R$<span id="valor-pedido-fanta"></span></p>
+                    </div>
+
+                    <div id="pepsi" class="resumo-pepsi slide-in-left">
+                        <img src="imagem/pepsi.svg">
+                        <p><span id="nome-pedido-pepsi"></span></p>
+                        <p>Quantidade: <span id="numero-pedido-pepsi"></span></p>
+                        <p>Valor: R$<span id="valor-pedido-pepsi"></span></p>
                     </div>
 
         </div>
@@ -60,12 +88,17 @@
 
         <form method="post" action="">
 
+            <div class="titulo-container">
+                <i class="material-symbols-outlined">fastfood</i>
+                <h1>Pipocas</h1>
+            </div>
+
             <div class="item-row">
 
                 <div class="item-container">
 
                     <div class="imagem">
-                        <img src="imagem/popcorn-single.png">
+                        <img src="imagem/pipoca-simples.svg">
                     </div>
 
                     <p id="titulo-pedido-pipoca-simples" title="Pipoca Simples">Pipoca Simples</p>
@@ -87,7 +120,7 @@
                 <div class="item-container">
 
                     <div class="imagem">
-                        <img src="imagem/pipoca-caramelizada.png">
+                        <img src="imagem/pipoca-caramelizada.svg">
                     </div>
 
                     <p id="titulo-pedido-pipoca-caramelizada" title="Pipoca Caramelizada">Pipoca Caramelizada</p>
@@ -106,11 +139,102 @@
     
                 </div>
 
+                <div class="item-container">
+
+                    <div class="imagem">
+                        <img src="imagem/chocolate-pipoca.svg">
+                    </div>
+
+                    <p id="titulo-pedido-pipoca-chocolate" title="Pipoca de Chocolate">Pipoca de Chocolate</p>
+                    <p id="valor-pipoca-chocolate" title="9.00">R$9,00</p>
 
 
-             
+                    <div class="number-input">
+                        <button type="button"
+                            onclick="this.parentNode.querySelector('input[type=number]').stepDown();mostrarNumeroPipocaChocolate();mostrarNomePipocaChocolate()"><i
+                                class="material-symbols-outlined">do_not_disturb_on</i></button>
+                        <input id="numero-pipoca-chocolate" class="quantity" min="0" name="quantity" value="0" type="number">
 
-        
+                        <button type="button" onclick="this.parentNode.querySelector('input[type=number]').stepUp();mostrarNomePipocaChocolate();mostrarNumeroPipocaChocolate()"
+                            class="plus"><i class="material-symbols-outlined">add_circle</i></button>
+                    </div>
+    
+                </div>
+
+            </div>
+
+            <div class="titulo-container">
+                <i class="material-symbols-outlined">local_bar</i>
+                <h1>Bebidas</h1>
+            </div>
+
+            <div class="item-row">
+
+                <div class="item-container">
+
+                    <div class="imagem">
+                        <img src="imagem/coca.svg">
+                    </div>
+
+                    <p id="titulo-pedido-coca" title="Coca-Cola 600ml">Coca-Cola 600ml</p>
+                    <p id="valor-coca" title="6.00">R$5,00</p>
+
+
+                    <div class="number-input">
+                        <button type="button"
+                            onclick="this.parentNode.querySelector('input[type=number]').stepDown();mostrarNumeroCoca();mostrarNomeCoca()"><i
+                                class="material-symbols-outlined">do_not_disturb_on</i></button>
+                        <input id="numero-coca" class="quantity" min="0" name="quantity" value="0" type="number">
+
+                        <button type="button" onclick="this.parentNode.querySelector('input[type=number]').stepUp();mostrarNumeroCoca();mostrarNomeCoca()"
+                            class="plus"><i class="material-symbols-outlined">add_circle</i></button>
+                    </div>
+    
+                </div>
+
+                <div class="item-container">
+
+                    <div class="imagem">
+                        <img src="imagem/fanta.svg">
+                    </div>
+
+                    <p id="titulo-pedido-fanta" title="Fanta Laranja 600ml">Fanta Laranja 600ml</p>
+                    <p id="valor-fanta" title="4.00">R$4,00</p>
+
+
+                    <div class="number-input">
+                        <button type="button"
+                            onclick="this.parentNode.querySelector('input[type=number]').stepDown();mostrarNumeroFanta();mostrarNomeFanta()"><i
+                                class="material-symbols-outlined">do_not_disturb_on</i></button>
+                        <input id="numero-fanta" class="quantity" min="0" name="quantity" value="0" type="number">
+
+                        <button type="button" onclick="this.parentNode.querySelector('input[type=number]').stepUp();mostrarNumeroFanta();mostrarNomeFanta()"
+                            class="plus"><i class="material-symbols-outlined">add_circle</i></button>
+                    </div>
+    
+                </div>
+
+                <div class="item-container">
+
+                    <div class="imagem">
+                        <img src="imagem/pepsi.svg">
+                    </div> 
+
+                    <p id="titulo-pedido-pepsi" title="Pepsi 600ml">Pepsi 600ml</p>
+                    <p id="valor-pepsi" title="5.00">R$5,00</p>
+
+
+                    <div class="number-input">
+                        <button type="button"
+                            onclick="this.parentNode.querySelector('input[type=number]').stepDown();mostrarNumeroPepsi();mostrarNomePepsi()"><i
+                                class="material-symbols-outlined">do_not_disturb_on</i></button>
+                        <input id="numero-pepsi" class="quantity" min="0" name="quantity" value="0" type="number">
+
+                        <button type="button" onclick="this.parentNode.querySelector('input[type=number]').stepUp();mostrarNumeroPepsi();mostrarNomePepsi()"
+                            class="plus"><i class="material-symbols-outlined">add_circle</i></button>
+                    </div>
+    
+                </div>
 
             </div>
 
