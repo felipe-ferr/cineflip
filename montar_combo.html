@@ -9,13 +9,13 @@
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="montar_combo.css" />
 
-    <script type="application/javascript" src="js/resumo-pedido.js"></script>
+  
 
 
     <title>CineFlip</title>
 </head>
 
-<body>
+<body onload="mostrarNumeroPipocaSimples()">
 
     <div class="navbarContainer" id="nav">
         <div class="navbarlogo">
@@ -43,50 +43,101 @@
                     <div id="pipoca-simples" class="resumo-pipoca slide-in-left">
                         <img src="imagem/pipoca-simples.svg">
                         <p><span id="nome-pedido-pipoca-simples"></span></p>
-                        <p>Quantidade: <span id="numero-pedido-pipoca-simples"> </span></p>
+                        <p>Quantidade:&nbsp<span id="numero-pedido-pipoca-simples"> </span></p>
                         <p>Valor: R$<span id="valor-pedido-pipoca-simples"></span></p>
                     </div>
 
                     <div id="pipoca-caramelizada" class="resumo-caramelizada slide-in-left">
                         <img src="imagem/pipoca-caramelizada.svg">
                         <p><span id="nome-pedido-pipoca-caramelizada"></span></p>
-                        <p>Quantidade: <span id="numero-pedido-pipoca-caramelizada"></span></p>
+                        <p>Quantidade:&nbsp<span id="numero-pedido-pipoca-caramelizada"></span></p>
                         <p>Valor: R$<span id="valor-pedido-pipoca-caramelizada"></span></p>
                     </div>
 
                     <div id="pipoca-chocolate" class="resumo-chocolate slide-in-left">
                         <img src="imagem/chocolate-pipoca.svg">
                         <p><span id="nome-pedido-pipoca-chocolate"></span></p>
-                        <p>Quantidade: <span id="numero-pedido-pipoca-chocolate"></span></p>
+                        <p>Quantidade:&nbsp<span id="numero-pedido-pipoca-chocolate"></span></p>
                         <p>Valor: R$<span id="valor-pedido-pipoca-chocolate"></span></p>
                     </div>
 
                     <div id="coca" class="resumo-coca slide-in-left">
                         <img src="imagem/coca.svg">
                         <p><span id="nome-pedido-coca"></span></p>
-                        <p>Quantidade: <span id="numero-pedido-coca"></span></p>
+                        <p>Quantidade:&nbsp<span id="numero-pedido-coca"></span></p>
                         <p>Valor: R$<span id="valor-pedido-coca"></span></p>
                     </div>
 
                     <div id="fanta" class="resumo-fanta slide-in-left">
                         <img src="imagem/fanta.svg">
                         <p><span id="nome-pedido-fanta"></span></p>
-                        <p>Quantidade: <span id="numero-pedido-fanta"></span></p>
+                        <p>Quantidade:&nbsp<span id="numero-pedido-fanta"></span></p>
                         <p>Valor: R$<span id="valor-pedido-fanta"></span></p>
                     </div>
 
                     <div id="pepsi" class="resumo-pepsi slide-in-left">
                         <img src="imagem/pepsi.svg">
                         <p><span id="nome-pedido-pepsi"></span></p>
-                        <p>Quantidade: <span id="numero-pedido-pepsi"></span></p>
+                        <p>Quantidade:&nbsp<span id="numero-pedido-pepsi"></span></p>
                         <p>Valor: R$<span id="valor-pedido-pepsi"></span></p>
                     </div>
+
+                    <div id="mm" class="resumo-mm slide-in-left">
+                        <img src="imagem/mm.svg">
+                        <p><span id="nome-pedido-mm"></span></p>
+                        <p>Quantidade:&nbsp<span id="numero-pedido-mm"></span></p>
+                        <p>Valor: R$<span id="valor-pedido-mm"></span></p>
+                    </div>
+
+                    <div id="kitkat" class="resumo-kitkat slide-in-left">
+                        <img src="imagem/kitkat.svg">
+                        <p><span id="nome-pedido-kitkat"></span></p>
+                        <p>Quantidade:&nbsp<span id="numero-pedido-kitkat"></span></p>
+                        <p>Valor: R$<span id="valor-pedido-kitkat"></span></p>
+                    </div>
+
+                    <div id="sorvete" class="resumo-sorvete slide-in-left">
+                        <img src="imagem/guaranasorvete.svg">
+                        <p><span id="nome-pedido-sorvete"></span></p>
+                        <p>Quantidade:&nbsp<span id="numero-pedido-sorvete"></span></p>
+                        <p>Valor: R$<span id="valor-pedido-sorvete"></span></p>
+                    </div>
+
+                    <div id="swift" class="resumo-swift slide-in-left">
+                        <img src="imagem/swift-pipoca.svg">
+                        <p><span id="nome-pedido-swift"></span></p>
+                        <p>Quantidade:&nbsp<span id="numero-pedido-swift"></span></p>
+                        <p>Valor: R$<span id="valor-pedido-swift"></span></p>
+                    </div>
+
+                    <div id="halloween" class="resumo-halloween slide-in-left">
+                        <img src="imagem/halloween.svg">
+                        <p><span id="nome-pedido-halloween"></span></p>
+                        <p>Quantidade:&nbsp<span id="numero-pedido-halloween"></span></p>
+                        <p>Valor: R$<span id="valor-pedido-halloween"></span></p>
+                    </div>
+
+                    <div id="mario" class="resumo-mario slide-in-left">
+                        <img src="imagem/mario-pipoca.svg">
+                        <p><span id="nome-pedido-mario"></span></p>
+                        <p>Quantidade:&nbsp<span id="numero-pedido-mario"></span></p>
+                        <p>Valor: R$<span id="valor-pedido-mario"></span></p>
+                    </div>
+
+                    <div class="bottom-nav">
+                        <p onclick="valorfinal()" >Valor Total: &nbsp<span class="texto-valor" id="valor-total"></span></p>
+                        <button type="submit" form="formulario">Finalizar Pedido</button>
+                    </div>
+
+         
+
+
 
         </div>
 
     
 
-        <form method="post" action="">
+        <form id="formulario" method="post" action="">
 
             <div class="titulo-container">
                 <i class="material-symbols-outlined">fastfood</i>
@@ -107,11 +158,11 @@
 
                     <div class="number-input">
                         <button type="button"
-                            onclick="this.parentNode.querySelector('input[type=number]').stepDown();mostrarNumeroPipocaSimples();mostrarNomePipocaSimples()"><i
+                            onclick="this.parentNode.querySelector('input[type=number]').stepDown();mostrarNumeroPipocaSimples();mostrarNomePipocaSimples();valorfinal()"><i
                                 class="material-symbols-outlined">do_not_disturb_on</i></button>
                         <input id="numero-pipoca-simples" class="quantity" min="0" name="quantity" value="0" type="number">
 
-                        <button type="button" onclick="this.parentNode.querySelector('input[type=number]').stepUp();mostrarNumeroPipocaSimples();mostrarNomePipocaSimples()"
+                        <button type="button" onclick="this.parentNode.querySelector('input[type=number]').stepUp();mostrarNumeroPipocaSimples();mostrarNomePipocaSimples();valorfinal()"
                             class="plus"><i class="material-symbols-outlined">add_circle</i></button>
                     </div>
     
@@ -129,11 +180,11 @@
 
                     <div class="number-input">
                         <button type="button"
-                            onclick="this.parentNode.querySelector('input[type=number]').stepDown();mostrarNumeroPipocaCaramelizada();mostrarNomePipocaCaramelizada()"><i
+                            onclick="this.parentNode.querySelector('input[type=number]').stepDown();mostrarNumeroPipocaCaramelizada();mostrarNomePipocaCaramelizada();valorfinal()"><i
                                 class="material-symbols-outlined">do_not_disturb_on</i></button>
                         <input id="numero-pipoca-caramelizada" class="quantity" min="0" name="quantity" value="0" type="number">
 
-                        <button type="button" onclick="this.parentNode.querySelector('input[type=number]').stepUp();mostrarNumeroPipocaCaramelizada();mostrarNomePipocaCaramelizada()"
+                        <button type="button" onclick="this.parentNode.querySelector('input[type=number]').stepUp();mostrarNumeroPipocaCaramelizada();mostrarNomePipocaCaramelizada();valorfinal()"
                             class="plus"><i class="material-symbols-outlined">add_circle</i></button>
                     </div>
     
@@ -151,11 +202,11 @@
 
                     <div class="number-input">
                         <button type="button"
-                            onclick="this.parentNode.querySelector('input[type=number]').stepDown();mostrarNumeroPipocaChocolate();mostrarNomePipocaChocolate()"><i
+                            onclick="this.parentNode.querySelector('input[type=number]').stepDown();mostrarNumeroPipocaChocolate();mostrarNomePipocaChocolate();valorfinal()"><i
                                 class="material-symbols-outlined">do_not_disturb_on</i></button>
                         <input id="numero-pipoca-chocolate" class="quantity" min="0" name="quantity" value="0" type="number">
 
-                        <button type="button" onclick="this.parentNode.querySelector('input[type=number]').stepUp();mostrarNomePipocaChocolate();mostrarNumeroPipocaChocolate()"
+                        <button type="button" onclick="this.parentNode.querySelector('input[type=number]').stepUp();mostrarNomePipocaChocolate();mostrarNumeroPipocaChocolate();valorfinal()"
                             class="plus"><i class="material-symbols-outlined">add_circle</i></button>
                     </div>
     
@@ -182,11 +233,11 @@
 
                     <div class="number-input">
                         <button type="button"
-                            onclick="this.parentNode.querySelector('input[type=number]').stepDown();mostrarNumeroCoca();mostrarNomeCoca()"><i
+                            onclick="this.parentNode.querySelector('input[type=number]').stepDown();mostrarNumeroCoca();mostrarNomeCoca();valorfinal()"><i
                                 class="material-symbols-outlined">do_not_disturb_on</i></button>
                         <input id="numero-coca" class="quantity" min="0" name="quantity" value="0" type="number">
 
-                        <button type="button" onclick="this.parentNode.querySelector('input[type=number]').stepUp();mostrarNumeroCoca();mostrarNomeCoca()"
+                        <button type="button" onclick="this.parentNode.querySelector('input[type=number]').stepUp();mostrarNumeroCoca();mostrarNomeCoca();valorfinal()"
                             class="plus"><i class="material-symbols-outlined">add_circle</i></button>
                     </div>
     
@@ -204,11 +255,11 @@
 
                     <div class="number-input">
                         <button type="button"
-                            onclick="this.parentNode.querySelector('input[type=number]').stepDown();mostrarNumeroFanta();mostrarNomeFanta()"><i
+                            onclick="this.parentNode.querySelector('input[type=number]').stepDown();mostrarNumeroFanta();mostrarNomeFanta();valorfinal()"><i
                                 class="material-symbols-outlined">do_not_disturb_on</i></button>
                         <input id="numero-fanta" class="quantity" min="0" name="quantity" value="0" type="number">
 
-                        <button type="button" onclick="this.parentNode.querySelector('input[type=number]').stepUp();mostrarNumeroFanta();mostrarNomeFanta()"
+                        <button type="button" onclick="this.parentNode.querySelector('input[type=number]').stepUp();mostrarNumeroFanta();mostrarNomeFanta();valorfinal()"
                             class="plus"><i class="material-symbols-outlined">add_circle</i></button>
                     </div>
     
@@ -226,11 +277,11 @@
 
                     <div class="number-input">
                         <button type="button"
-                            onclick="this.parentNode.querySelector('input[type=number]').stepDown();mostrarNumeroPepsi();mostrarNomePepsi()"><i
+                            onclick="this.parentNode.querySelector('input[type=number]').stepDown();mostrarNumeroPepsi();mostrarNomePepsi();valorfinal()"><i
                                 class="material-symbols-outlined">do_not_disturb_on</i></button>
                         <input id="numero-pepsi" class="quantity" min="0" name="quantity" value="0" type="number">
 
-                        <button type="button" onclick="this.parentNode.querySelector('input[type=number]').stepUp();mostrarNumeroPepsi();mostrarNomePepsi()"
+                        <button type="button" onclick="this.parentNode.querySelector('input[type=number]').stepUp();mostrarNumeroPepsi();mostrarNomePepsi();valorfinal()"
                             class="plus"><i class="material-symbols-outlined">add_circle</i></button>
                     </div>
     
@@ -238,19 +289,167 @@
 
             </div>
 
+            <div class="titulo-container">
+                <i class="material-symbols-outlined">cake</i>
+                <h1>Doces</h1>
+            </div>
+
+            <div class="item-row">
+
+                <div class="item-container">
+
+                    <div class="imagem">
+                        <img src="imagem/mm.svg">
+                    </div>
+
+                    <p id="titulo-pedido-mm" title="Pacote MM Grande">Pacote MM Grande</p>
+                    <p id="valor-mm" title="6.00">R$6,00</p>
+
+
+                    <div class="number-input">
+                        <button type="button"
+                            onclick="this.parentNode.querySelector('input[type=number]').stepDown();mostrarNumeroMM();mostrarNomeMM();valorfinal()"><i
+                                class="material-symbols-outlined">do_not_disturb_on</i></button>
+                        <input id="numero-mm" class="quantity" min="0" name="quantity" value="0" type="number">
+
+                        <button type="button" onclick="this.parentNode.querySelector('input[type=number]').stepUp();mostrarNumeroMM();mostrarNomeMM();valorfinal()"
+                            class="plus"><i class="material-symbols-outlined">add_circle</i></button>
+                    </div>
+    
+                </div>
+
+                <div class="item-container">
+
+                    <div class="imagem">
+                        <img src="imagem/kitkat.svg">
+                    </div>
+
+                    <p id="titulo-pedido-kitkat" title="KitKat 100g">KitKat 100g</p>
+                    <p id="valor-kitkat" title="2.00">R$2,00</p>
+
+
+                    <div class="number-input">
+                        <button type="button"
+                            onclick="this.parentNode.querySelector('input[type=number]').stepDown();mostrarNumeroKitkat();mostrarNomeKitkat();valorfinal()"><i
+                                class="material-symbols-outlined">do_not_disturb_on</i></button>
+                        <input id="numero-kitkat" class="quantity" min="0" name="quantity" value="0" type="number">
+
+                        <button type="button" onclick="this.parentNode.querySelector('input[type=number]').stepUp();mostrarNumeroKitkat();mostrarNomeKitkat();valorfinal()"
+                            class="plus"><i class="material-symbols-outlined">add_circle</i></button>
+                    </div>
+    
+                </div>
+
+                <div class="item-container">
+
+                    <div class="imagem">
+                        <img src="imagem/guaranasorvete.svg">
+                    </div> 
+
+                    <p id="titulo-pedido-sorvete" title="Sorvete com Guaraná">Sorvete com Guaraná</p>
+                    <p id="valor-sorvete" title="10.00">R$10,00</p>
+
+
+                    <div class="number-input">
+                        <button type="button"
+                            onclick="this.parentNode.querySelector('input[type=number]').stepDown();mostrarNumeroSorvete();mostrarNomeSorvete();valorfinal()"><i
+                                class="material-symbols-outlined">do_not_disturb_on</i></button>
+                        <input id="numero-sorvete" class="quantity" min="0" name="quantity" value="0" type="number">
+
+                        <button type="button" onclick="this.parentNode.querySelector('input[type=number]').stepUp();mostrarNumeroSorvete();mostrarNomeSorvete();valorfinal()"
+                            class="plus"><i class="material-symbols-outlined">add_circle</i></button>
+                    </div>
+    
+                </div>
+
+            </div>
+
+            <div class="titulo-container">
+                <i class="material-symbols-outlined">stars</i>
+                <h1>Especiais</h1>
+            </div>
+
+            <div class="item-row">
+
+                <div class="item-container">
+
+                    <div class="imagem">
+                        <img src="imagem/swift-pipoca.svg">
+                    </div>
+
+                    <p id="titulo-pedido-swift" title="Pipoca Taylor Swift">Pipoca Taylor Swift</p>
+                    <p id="valor-swift" title="7.00">R$7,00</p>
+
+
+                    <div class="number-input">
+                        <button type="button"
+                            onclick="this.parentNode.querySelector('input[type=number]').stepDown();mostrarNumeroSwift();mostrarNomeSwift();valorfinal()"><i
+                                class="material-symbols-outlined">do_not_disturb_on</i></button>
+                        <input id="numero-swift" class="quantity" min="0" name="quantity" value="0" type="number">
+
+                        <button type="button" onclick="this.parentNode.querySelector('input[type=number]').stepUp();mostrarNumeroSwift();mostrarNomeSwift();valorfinal()"
+                            class="plus"><i class="material-symbols-outlined">add_circle</i></button>
+                    </div>
+    
+                </div>
+
+                <div class="item-container">
+
+                    <div class="imagem">
+                        <img src="imagem/halloween.svg">
+                    </div>
+
+                    <p id="titulo-pedido-halloween" title="halloween 100g">Pipoca Halloween</p>
+                    <p id="valor-halloween" title="7.00">R$7,00</p>
+
+
+                    <div class="number-input">
+                        <button type="button"
+                            onclick="this.parentNode.querySelector('input[type=number]').stepDown();mostrarNumeroHalloween();mostrarNomeHalloween();valorfinal()"><i
+                                class="material-symbols-outlined">do_not_disturb_on</i></button>
+                        <input id="numero-halloween" class="quantity" min="0" name="quantity" value="0" type="number">
+
+                        <button type="button" onclick="this.parentNode.querySelector('input[type=number]').stepUp();mostrarNumeroHalloween();mostrarNomeHalloween();valorfinal()"
+                            class="plus"><i class="material-symbols-outlined">add_circle</i></button>
+                    </div>
+    
+                </div>
+
+                <div class="item-container">
+
+                    <div class="imagem">
+                        <img src="imagem/mario-pipoca.svg">
+                    </div> 
+
+                    <p id="titulo-pedido-mario" title="Pipoca Mario">Pipoca Mario</p>
+                    <p id="valor-mario" title="9.00">R$9,00</p>
+
+
+                    <div class="number-input">
+                        <button type="button"
+                            onclick="this.parentNode.querySelector('input[type=number]').stepDown();mostrarNumeroMario();mostrarNomeMario();valorfinal()"><i
+                                class="material-symbols-outlined">do_not_disturb_on</i></button>
+                        <input id="numero-mario" class="quantity" min="0" name="quantity" value="0" type="number">
+
+                        <button type="button" onclick="this.parentNode.querySelector('input[type=number]').stepUp();mostrarNumeroMario();mostrarNomeMario();valorfinal()"
+                            class="plus"><i class="material-symbols-outlined">add_circle</i></button>
+                    </div>
+    
+                </div>
+
+            </div>
+
+            
 
     </div>
-
-
-
 
 
     </form>
 
-    </div>
 
 
 
+    <script type="application/javascript" src="js/resumo-pedido.js"></script>
 
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
