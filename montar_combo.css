@@ -14,16 +14,8 @@ html {
 p {
   margin: 0;
 }
-.ingressos-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: 50vh;
-  width: 100%;
-  background-size: 140% 140%;
-  flex-direction: column;
-}
-.ingressos-header h1 {
+
+.combos-header h1 {
   font-family: "Montserrat", sans-serif;
   font-size: 4vw;
   margin: 0;
@@ -130,12 +122,18 @@ p {
   font-size: 1.1vw;
   margin: 1;
   color: rgb(210, 210, 210);
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 .texto-valor{
   font-family: "Quicksand", sans-serif;
   font-size: 1.1vw;
   margin: 0;
   color: goldenrod;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
 }
 .sidebar .bottom-nav button{
   margin: 0;
@@ -149,6 +147,9 @@ p {
   border-radius: 30px;
   font-family: "Quicksand", sans-serif;
   font-size: 1vw;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 .sidebar .bottom-nav button:hover{
   outline: none;

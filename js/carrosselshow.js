@@ -1,12 +1,11 @@
-var esquerda = document.getElementById("frame1");
-var direita = document.getElementById("frame2");
-
-var botaoesquerda = document.getElementById("botaoesquerda");
-var botaodireita = document.getElementById("botaodireita");
-var bola1 = document.getElementById("bola1");
-var bola2 = document.getElementById("bola2");
-
 function esquerda() {
+  let esquerda = document.getElementById("frame1");
+  let direita = document.getElementById("frame2");
+
+  let botaoesquerda = document.getElementById("botaoesquerda");
+  let botaodireita = document.getElementById("botaodireita");
+  let bola1 = document.getElementById("bola1");
+  let bola2 = document.getElementById("bola2");
   if (esquerda.style.display === "none") {
     esquerda.style.display = "flex";
     direita.style.display = "none";
@@ -25,6 +24,13 @@ function esquerda() {
 }
 
 function scrollRight() {
+  let esquerda = document.getElementById("frame1");
+  let direita = document.getElementById("frame2");
+
+  let botaoesquerda = document.getElementById("botaoesquerda");
+  let botaodireita = document.getElementById("botaodireita");
+  let bola1 = document.getElementById("bola1");
+  let bola2 = document.getElementById("bola2");
   if (direita.style.display === "none") {
     direita.style.display = "flex";
     esquerda.style.display = "none";
