@@ -26,10 +26,8 @@ function mostrarNumeroPipocaSimples(){
     document.getElementById("valor-pedido-pipoca-simples").innerHTML = pipoca;
 
 
-
-
     if (document.getElementById("numero-pipoca-simples").value < 1){
-        document.getElementById("pipoca-simples").classList.add("slide-out-left");
+        document.getElementById("pipoca-simples").style.display = "none";
     }
 }
 
