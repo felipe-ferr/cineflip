@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 30/10/2023 às 02:57
+-- Tempo de geração: 13/11/2023 às 02:10
 -- Versão do servidor: 10.4.28-MariaDB
 -- Versão do PHP: 8.2.4
 
@@ -71,7 +71,23 @@ CREATE TABLE `ingressos` (
 INSERT INTO `ingressos` (`id`, `filme`, `cinema`, `data`, `idioma`, `horario`, `tipoIngresso`, `assento`, `metodoPagamento`) VALUES
 (316, 'Oppenheimer', 'Terraço Shopping', 'Segunda', 'Legendado 3D', '15h30', 'Me', 'E5,E6', 'Cartão de Crédito'),
 (317, 'Oppenheimer', 'Terraço Shopping', 'Segunda', 'Legendado 2D', '15h30', 'Me', 'E5,E6', 'Cartão de Crédito'),
-(318, 'Oppenheimer', 'Terraço Shopping', 'Quarta', 'Dublado 2D', '16h00', 'In', 'E5,E6', 'Cartão de Crédito');
+(318, 'Oppenheimer', 'Terraço Shopping', 'Quarta', 'Dublado 2D', '16h00', 'In', 'E5,E6', 'Cartão de Crédito'),
+(319, 'Five Nights at Freddys', 'Taguatinga Shopping', 'Quinta', 'Dublado 2D', '16h00', 'Me', 'b7,b8', 'Pix'),
+(320, 'Taylor Swift: The Eras Tour', 'Boulevard Shopping', 'Quarta', 'Dublado 2D', '21h00', 'In', 'a8,a9', 'Pix'),
+(321, 'Super Mario Bros. O Filme', 'Taguatinga Shopping', 'Quinta', 'Dublado 2D', '16h00', 'Me', 'd10,d11', 'Boleto'),
+(322, 'Super Mario Bros. O Filme', 'Taguatinga Shopping', 'Quinta', 'Dublado 2D', '16h00', 'Me', 'd10,d11', 'Boleto');
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura para tabela `pedidos`
+--
+
+CREATE TABLE `pedidos` (
+  `id` int(11) NOT NULL,
+  `pedido` varchar(200) NOT NULL,
+  `metodoPagamento` varchar(200) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
 --
 -- Índices para tabelas despejadas
@@ -90,6 +106,12 @@ ALTER TABLE `ingressos`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Índices de tabela `pedidos`
+--
+ALTER TABLE `pedidos`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- AUTO_INCREMENT para tabelas despejadas
 --
 
@@ -103,7 +125,13 @@ ALTER TABLE `clientes`
 -- AUTO_INCREMENT de tabela `ingressos`
 --
 ALTER TABLE `ingressos`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=319;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=323;
+
+--
+-- AUTO_INCREMENT de tabela `pedidos`
+--
+ALTER TABLE `pedidos`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=55;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
