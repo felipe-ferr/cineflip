@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="admin_login.css">
-    <link rel="stylesheet" href="index-header.css">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
@@ -15,20 +14,16 @@
 
 <body>
 
-    <div style="position:relative" class="navbarContainer">
-
+    <div class="navbarContainer" id="nav">
         <div class="navbarlogo">
-            <a href="index.html"><img src="imagem/cineflip-logo.svg"></a>
+            <a href="index.html"><img src="imagem/cineflip-logo.svg" /></a>
         </div>
 
         <div class="navbarlinks">
-            <a href="cartaz.html"><i class="material-symbols-outlined">movie</i>Filmes
+            <a href="#"><i class="material-symbols-outlined">movie</i>Filmes
                 em Cartaz</a>
-            <a href="lanches.html"><i class="material-symbols-outlined">fastfood</i>Lanches</a>
+            <a href="montar_combo.html"><i class="material-symbols-outlined">fastfood</i>Lanches</a>
             <a href="unidades.html"><i class="material-symbols-outlined">location_on</i>Unidades</a>
-        </div>
-
-        <div class="navlogin-btn">
             <a href="login.html"><i class="material-symbols-outlined">account_circle</i>Login</a>
             <a href="cad_clientes.html"><i class="material-symbols-outlined">account_circle</i>Registrar</a>
         </div>
@@ -42,21 +37,21 @@
                 <div id="dash-nav" class="dashboard-nav">
 
 
-                <label class="data">
-                    <input checked onclick="showclientes()"type="radio" value="1" name="botao" />
-                    <p>Clientes</p>
-                </label>
+                    <label class="data">
+                        <input checked onclick="showclientes()" type="radio" value="1" name="botao" />
+                        <p>Clientes</p>
+                    </label>
 
-                <label class="data">
-                    <input onclick="showingressos()"type="radio" value="2"name="botao"/>
-                    <p>Ingressos</p>
-                </label>
+                    <label class="data">
+                        <input onclick="showingressos()" type="radio" value="2" name="botao" />
+                        <p>Ingressos</p>
+                    </label>
 
 
-                <label class="data">
-                    <input onclick="showpedidos()"type="radio" value="3"name="botao"/>
-                    <p>Pedidos</p>
-                </label>
+                    <label class="data">
+                        <input onclick="showpedidos()" type="radio" value="3" name="botao" />
+                        <p>Pedidos</p>
+                    </label>
 
 
                 </div>
@@ -222,8 +217,67 @@
 
             </div>
 
+            <div class="tables">
+                <?php
+                $con = mysqli_connect("127.0.0.1", "root", "", "cinema");
+                if (mysqli_connect_errno()) {
+                    echo "Failed to connect to MySQL: " . mysqli_connect_error();
+                }
+                $result = mysqli_query($con, "SELECT * FROM pedidos");
+                ?>
+                <div style="overflow-x:auto" id="pedido" class="container-pedidos">
+                    <table>
+                        <caption>Lista de Pedidos</caption>
+                        <tr>
+                            <th>Id</th>
+                            <th>Pedido</th>
+                            <th>Método de Pagamento</th>
+                            <th>Deletar</th>
+                            <th>Alt</th>
+                        </tr>
+
+                        <?php
+                        while ($row = mysqli_fetch_array($result)) {
+                            ?>
+
+                            <tr>
+                                <td>
+                                    <?php echo $row['id']; ?>
+                                </td>
+                                <td>
+                                    <?php echo $row['pedido'] ?>
+                                </td>
+                                <td>
+                                    <?php echo $row['metodoPagamento'] ?>
+                                </td>
+                                <td>
+                                    <form action="realizadelpedidos.php" method="post">
+                                        <input type="hidden" name="id" value="<?php echo $row["id"] ?>">
+                                        <button type="submit" name="botdelpedido" value="ok" id="del"><i
+                                                class="material-symbols-outlined">delete</i>Deletar</button>
+                                    </form>
+
+                                </td>
+                                <td>
+                                    <form action="formaltpedidos.php" method="post">
+                                        <input type="hidden" name="id" value="<?php echo $row["id"] ?>">
+                                        <button type="submit" name="botaltpedido" value="ok" id="alt"><i
+                                                class="material-symbols-outlined">edit</i>Alterar</button>
+                                    </form>
+                                </td>
+                            </tr>
+                            <?php
+                        }
+                        mysqli_close($con);
+                        ?>
+
+                    </table>
+                </div>
+
+            </div>
+
         </div>
 
-        
-    <script src="js/dashboardBotoesAtivos.js"></script>
-  </body>
+
+        <script src="js/dashboardBotoesAtivos.js"></script>
+</body>
