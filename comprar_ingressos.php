@@ -140,7 +140,7 @@
             <h2 class="detalhes">Experimente nossos combos!</h2>
 
           
-           <a>Visitar Loja</a>
+           <a href="montar_combo.html">Visitar Loja</a>
         </div>
   
 

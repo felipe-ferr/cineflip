@@ -1,7 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Quicksand:wght@400&display=swap');
 body{
     margin: 0;
-    background: linear-gradient(150deg, rgb(2, 1, 11) 0%, rgb(1, 16, 66) 100%);
+    background: linear-gradient(
+        179.4deg,
+        rgb(6, 8, 20) -16.9%,
+        rgb(14, 9, 46) 119.9%
+      );
 }
 .navbarContainer {
     display: flex;
@@ -213,7 +217,11 @@ h1{
     box-sizing: border-box;
     padding: 15vh 0px;
     height: 100vh;
-    background-color: rgb(30, 30, 30);
+    background: linear-gradient(
+    179.4deg,
+    rgb(6, 8, 20) -16.9%,
+    rgb(14, 9, 46) 119.9%
+  );
 }
 .container-desenho-form{
     display: flex;
