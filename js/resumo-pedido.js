@@ -25,6 +25,10 @@ function mostrarNumeroPipocaSimples(){
     globalThis.pipoca = pipoca * input;
     document.getElementById("valor-pedido-pipoca-simples").innerHTML = pipoca;
 
+    if (document.getElementById("numero-pipoca-simples").value > 0){
+        document.getElementById("input-pipoca").disabled = false;
+    }
+    
 
     if (document.getElementById("numero-pipoca-simples").value < 1){
         document.getElementById("pipoca-simples").style.display = "none";
@@ -54,6 +58,11 @@ function mostrarNumeroPipocaCaramelizada(){
     document.getElementById("valor-pedido-pipoca-caramelizada").innerHTML = caramelizada;
 
 
+    if (document.getElementById("numero-pipoca-caramelizada").value > 0){
+        document.getElementById("input-caramelizada").disabled = false;
+    }
+    
+
     if (document.getElementById("numero-pipoca-caramelizada").value < 1){
         document.getElementById("pipoca-caramelizada").classList.add("slide-out-left");
     }
@@ -80,6 +89,10 @@ function mostrarNumeroPipocaChocolate(){
     globalThis.choco = choco * input;
     document.getElementById("valor-pedido-pipoca-chocolate").innerHTML = choco;
 
+    if (document.getElementById("numero-pipoca-chocolate").value > 0){
+        document.getElementById("input-chocolate").disabled = false;
+    }
+    
 
     if (document.getElementById("numero-pipoca-chocolate").value < 1){
         document.getElementById("pipoca-chocolate").classList.add("slide-out-left");
@@ -106,8 +119,11 @@ function mostrarNumeroCoca(){
 
     globalThis.coca = coca * input;
     document.getElementById("valor-pedido-coca").innerHTML = coca;
-    
 
+    if (document.getElementById("numero-coca").value > 0){
+        document.getElementById("input-coca").disabled = false;
+    }
+    
     if (document.getElementById("numero-coca").value < 1){
         document.getElementById("coca").classList.add("slide-out-left");
     }
@@ -134,6 +150,10 @@ function mostrarNumeroFanta(){
     globalThis.fanta = fanta * input;
     document.getElementById("valor-pedido-fanta").innerHTML = fanta;
 
+    if (document.getElementById("numero-fanta").value > 0){
+        document.getElementById("input-fanta").disabled = false;
+    }
+    
 
     if (document.getElementById("numero-fanta").value < 1){
         document.getElementById("fanta").classList.add("slide-out-left");
@@ -160,10 +180,17 @@ function mostrarNumeroPepsi(){
     globalThis.pepsi = pepsi * input;
     document.getElementById("valor-pedido-pepsi").innerHTML = pepsi;
 
+    
+    if (document.getElementById("numero-pepsi").value > 0){
+        document.getElementById("input-pepsi").disabled = false;
+    }
+    
 
     if (document.getElementById("numero-pepsi").value < 1){
         document.getElementById("pepsi").classList.add("slide-out-left");
     }
+    
+
 }
 
 function mostrarNomePepsi(){
@@ -187,7 +214,10 @@ function mostrarNumeroMM(){
     globalThis.mm = mm * input;
     document.getElementById("valor-pedido-mm").innerHTML = mm;
 
-
+    if (document.getElementById("numero-mm").value > 0){
+        document.getElementById("input-mm").disabled = false;
+    }
+    
     if (document.getElementById("numero-mm").value < 1){
         document.getElementById("mm").classList.add("slide-out-left");
     }
@@ -214,6 +244,10 @@ function mostrarNumeroKitkat(){
     globalThis.kitkat = kitkat * input;
     document.getElementById("valor-pedido-kitkat").innerHTML = kitkat;
 
+    if (document.getElementById("numero-kitkat").value > 0){
+        document.getElementById("input-kitkat").disabled = false;
+    }
+    
 
     if (document.getElementById("numero-kitkat").value < 1){
         document.getElementById("kitkat").classList.add("slide-out-left");
@@ -241,6 +275,10 @@ function mostrarNumeroSorvete(){
     globalThis.sorvete = sorvete * input;
     document.getElementById("valor-pedido-sorvete").innerHTML = sorvete;
 
+    if (document.getElementById("numero-sorvete").value > 0){
+        document.getElementById("input-sorvete").disabled = false;
+    }
+    
 
     if (document.getElementById("numero-sorvete").value < 1){
         document.getElementById("sorvete").classList.add("slide-out-left");
@@ -268,6 +306,10 @@ function mostrarNumeroSwift(){
     globalThis.swift = swift * input;
     document.getElementById("valor-pedido-swift").innerHTML = swift;
 
+    if (document.getElementById("numero-swift").value > 0){
+        document.getElementById("input-swift").disabled = false;
+    }
+    
 
 
     if (document.getElementById("numero-swift").value < 1){
@@ -295,7 +337,10 @@ function mostrarNumeroHalloween(){
     globalThis.halloween = halloween * input;
     document.getElementById("valor-pedido-halloween").innerHTML = halloween;
     
-
+    if (document.getElementById("numero-halloween").value > 0){
+        document.getElementById("input-halloween").disabled = false;
+    }
+    
 
     if (document.getElementById("numero-halloween").value < 1){
         document.getElementById("halloween").classList.add("slide-out-left");
@@ -322,7 +367,10 @@ function mostrarNumeroMario(){
     globalThis.mario = mario * input;
     document.getElementById("valor-pedido-mario").innerHTML = mario;
 
-
+    if (document.getElementById("numero-mario").value > 0){
+        document.getElementById("input-mario").disabled = false;
+    }
+    
 
     if (document.getElementById("numero-mario").value < 1){
         document.getElementById("mario").classList.add("slide-out-left");
