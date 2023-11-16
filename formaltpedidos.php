@@ -28,7 +28,7 @@
                 <input type="hidden" name="id" value="<?php echo $row['id']; ?>">
 
                 <div class="inputContainer">
-                        <input required type="text"name="metodoPagamento"value="<?php echo $row['pedido'];?>"><p>Pedido:</p><i class="material-symbols-outlined">credit_card</i>
+                        <input required type="text"name="pedido"value="<?php echo $row['pedido'];?>"><p>Pedido:</p><i class="material-symbols-outlined">credit_card</i>
                 </div>
                 
                 <div class="inputContainer">
