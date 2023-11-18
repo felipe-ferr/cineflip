@@ -293,75 +293,20 @@ h1 {
   width: 100%;
   height: 20vh;
 }
-/* botao de comprar lanche */
-.lanche-container .comprarlanche {
-  width: 100%;
-  background-color: goldenrod;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 2vh;
-  box-sizing: border-box;
-  border-radius: 10px;
-  transition-duration: 0.3s;
-}
-.lanche-container .comprarlanche:hover {
-  cursor: pointer;
-  background-color: gold;
-}
-.lanche-container .material-symbols-outlined {
-  color: white;
-}
-/* imagem abaixo do menu */
+/* imagem do menu */
 .imagem-monte-combo {
   width: 30vw;
   height: 50vh;
 }
 
-/* botao de radio para a barra de navegação (peguei do comprar_ingressos.css) */
-.data {
-  font-family: "Quicksand", sans-serif;
-  font-size: 1vw;
-  color: white;
+.lanche-container .titulo-item{
+  font-family: "Montserrat", sans-serif;
+  font-size: 2vw;
+  color: goldenrod;
   text-align: center;
   margin: 0;
 }
-.data p {
-  box-sizing: border-box;
-  padding: 2vh;
-  transition-duration: 0.2s;
-  font-weight: 600;
-  cursor: pointer;
-}
-.data .material-symbols-outlined {
-  color: rgb(171, 171, 171);
-  transition-duration: 0.5s;
-}
-.data input[type="radio"]:hover ~ .material-symbols-outlined {
-  color: goldenrod;
-}
-.data input[type="radio"]:hover + p {
-  color: goldenrod;
-}
-/* deixar o icone e texto amarelo quando o botão está ativo */
-.data input[type="radio"]:checked ~ .material-symbols-outlined {
-  color: goldenrod;
-}
-.data input[type="radio"]:checked + p {
-  color: goldenrod;
-  box-shadow: inset 0px -3px 0px 0px goldenrod;
-}
 
-/* esconder o botao de rádio original do navegador */
-.data input[type="radio"] {
-  -webkit-appearance: none;
-  appearance: none;
-  margin: 0;
-}
-/* esconder o segundo menu de promoções especiais (ativado no js) */
-#promos {
-  display: none;
-}
 
 /* botao de montar combo */
 .montar-combo-btn {
@@ -375,7 +320,7 @@ h1 {
   align-items: center;
   justify-content: center;
   gap: 1vw;
-  padding: 5vh;
+  padding: 3vh 10vw;
   height: 1vh;
 }
 .montar-combo-btn:hover {

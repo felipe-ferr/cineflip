@@ -104,8 +104,7 @@ p {
     height: auto;
     padding: 2vh 3vw;
     box-sizing: border-box;
-    background: rgb(6, 3, 27);
-    background: linear-gradient(179.4deg, rgb(10, 13, 32) -16.9%, rgb(17, 11, 56) 119.9%);
+    background: rgb(12, 12, 12);
     font-family: 'Quicksand', sans-serif;
     background-size: 100% 100%;
 }
@@ -245,7 +244,7 @@ form p {
     justify-content: center;
     align-items: center;
     padding: 3vh 3vh;
-    background-color: #01001773;
+    background-color: rgb(19, 19, 19);;
     transition-duration: 0.3s;
     box-sizing: border-box;
     cursor: pointer;
@@ -309,7 +308,7 @@ form p {
     justify-content: center;
     align-items: center;
     padding: 3vh 3vh;
-    background-color: #01001773;
+    background-color: rgb(19, 19, 19);;
     transition-duration: 0.3s;
     box-sizing: border-box;
     cursor: pointer;
@@ -385,7 +384,7 @@ form p {
     justify-content: center;
     align-items: center;
     padding: 3vh 3vh;
-    background-color: #01001773;
+    background-color: rgb(19, 19, 19);;
     transition-duration: 0.3s;
     box-sizing: border-box;
     cursor: pointer;
@@ -467,7 +466,7 @@ form p {
     justify-content: center;
     align-items: center;
     padding: 3vh 3vh;
-    background-color: #01001773;
+    background-color: rgb(19, 19, 19);;
     transition-duration: 0.3s;
     box-sizing: border-box;
     cursor: pointer;
@@ -560,7 +559,7 @@ form p {
     justify-content: flex-start;
     align-items: center;
     padding: 3vh 3vh;
-    background-color: #01001773;
+    background-color: rgb(19, 19, 19);;
     transition-duration: 0.3s;
     box-sizing: border-box;
     cursor: pointer;
@@ -725,7 +724,7 @@ form p {
     justify-content: center;
     flex-direction: column;
     width: 100%;
-    background-color: #01001773;
+    background-color: rgb(19, 19, 19);;
     border-radius: 15px;
     padding: 2vh;
     box-sizing: border-box;

@@ -2,11 +2,7 @@
 
 body{
     margin: 0;
-    background: linear-gradient(
-    179.4deg,
-    rgb(6, 8, 20) -16.9%,
-    rgb(14, 9, 46) 119.9%
-  );
+    background: rgb(12, 12, 12);
 }
 
 /* container da barra de navegaÃ§Ã£o */
