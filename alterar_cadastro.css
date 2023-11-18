@@ -1,308 +1,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Quicksand:wght@400&display=swap');
-
 body{
     margin: 0;
-    overflow-x: hidden;
-    height: 100vh;
-}
-a{
-    text-decoration: none;
-}
-/* container da barra de navegação */
-.navbarContainer{
-    display: flex;
-    width: 100%;
-    padding: 10px 0px;
-    z-index: 2;
-    position: absolute;
-    justify-content: flex-start;
-}
-.navbarlinks{
-    display: flex;
-    width: 100%;
-    justify-content: flex-start;
-    align-items: center;
-    height: 60px;
-}
-.navbarlinks a{
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    font-family: 'Quicksand', sans-serif;
-    width: 100%;
-    height: 100%;
-    gap:1vw;
-}
-.navbarlinks a:hover{
-    box-shadow: inset 0px -1px 0px 0px rgb(255, 225, 0);
-    color:rgb(255, 225, 0);
-}
-.navlogin-btn{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 20%;
-    height: 60px;
-}
-.navlogin-btn a{
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    font-family: 'Quicksand', sans-serif;
-    width: 50%;
-    height: 100%;
-    gap:15px;
-}
-.navlogin-btn a:hover{
-    box-shadow: inset 0px -1px 0px 0px rgb(255, 225, 0);
-    color:rgb(255, 225, 0);
-}
-.responsive-img{
-    max-width: 100%;
-    height: auto;
-}
-.material-symbols-outlined {
-    color: goldenrod;
-    font-variation-settings:
-    'FILL' 0,
-    'wght' 400,
-    'GRAD' 0,
-    'opsz' 24
-}
-.inputContainer .material-symbols-outlined {
-    color: goldenrod;
-    font-variation-settings:
-    'FILL' 0,
-    'wght' 400,
-    'GRAD' 0,
-    'opsz' 24
+
 }
 .container-geral{
     display: flex;
-    box-sizing: border-box;
-    width: 100vw;
-    height: 100%;
-    font-family: 'Quicksand', sans-serif;
-    background-color: #1e1e1e;
-    box-sizing: border-box;
-}
-label{
-    cursor: pointer;
-}
-form{
-    display: flex;
-    gap: 15px;
-    padding-top: 5vh;
-    padding-left: 10vh;
-    padding-right: 10vh;
-    padding-bottom: 10vh;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    height: 100vh;
     flex-direction: column;
-    background-color: rgba(0, 0, 0, 0.379);
-    width:50vw;
-    height: auto;
+    gap: 1vh;
 }
-form p{
-    color: white;
-    font-size: 1vw;
-}
-input[type=checkbox]{
-    width: 2vw;
-    height: 2vh;
-}
-form h1{
-    color: white;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 3vw;
-    margin: 0;
-}
-.botaoinicio{
-    color: goldenrod;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1.1vw;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-}
-.inputContainer{
-    display: flex;
-    width: 100%;
-    position: relative;
-    align-items: center;
-    justify-content: center;
-    box-sizing: border-box;
-   
-}
-.inputContainerCheckbox{
-    display: flex;
-    width: 100%;
-    position: relative;
-    align-items: center;
-    justify-content: flex-start;
-    box-sizing: border-box;
-   
-}
-.inputContainerRow{
-    display: flex;
-    gap: 10px;
-}
-.inputContainer input{
-    background-color: rgba(48, 48, 48, 0.611);
-    border: none;
-    width: 100%;
-    height: 6vh;
-    position: relative;
-    color: white;
-    font-size: 1vw;
-    padding: 0px 20%;
-    border-radius: 10px;
-    transition-duration: 0.4s;
-}
-.inputContainer p{
-    position: absolute;
-    left: 0;
-    padding: 0px 2vh;
-    color: rgba(255, 255, 255, 0.411);
-    transition-duration: 0.3s;
-    font-size: 0.9rem;
-    
-}
-.inputContainer i{
-    position: absolute;
-    right: 0;
-    padding: 0px 2vh;
-    color: white;
-    transition-duration: 0.3s;
-}
-.inputContainer input:focus{
-    background-color: rgba(33, 33, 33, 0.433);
-    outline: none;
-    box-shadow: inset 0px 0px 0px 2px goldenrod;
-}
-.inputContainer input:focus ~ p{
-    transform: translateY(-1vh);
-    font-size: 0.7rem;
-}
-.inputContainer select{
-    appearance: none;
-    background-color: rgba(48, 48, 48, 0.611);
-    border: none;
-    width: 100%;
-    height: 6vh;
-    position: relative;
-    color: white;
-    font-size: 1rem;
-    padding: 0px 30%;
-    border-radius: 10px;
-    transition-duration: 0.4s;
-    font-family: 'Quicksand', sans-serif;
-}
-.inputContainer select:focus{
-    background-color: rgba(33, 33, 33, 0.433);
-    outline: none;
-    box-shadow: inset 0px 0px 0px 2px goldenrod;
-}
-.submit{
-    background-color: goldenrod;
-    color: black;
-    font-size: 1rem;
-    font-family: 'Quicksand', sans-serif;
-    border: none;
-    border-radius: 50px;
-    padding: 2vh;
-    transition-duration: 0.2s;
-}
-.submit:hover{
-    background-color: rgb(238, 188, 61);
-    cursor: pointer;
-}
-
-.imagens-container{
-    display: flex;
-    width: 100%;
-    height: auto;
-    position: relative;
-    background-size: 100% 100%;
-    animation: background-change 22s infinite ease;
-}
-.imagens-container .gradient{
-    display: flex;
-    justify-content: flex-start;
-    background-color: rgba(31, 31, 31, 0.838);
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
-.social-media-container{
-    display: flex;
-    gap: 10px;
-    align-items: center;
-    justify-content: center;
-}
-.social-media-container ion-icon{
-    color: white;
+.container-geral h2{
     font-size: 2vw;
-    cursor: pointer;
-}
-.social-media-container ion-icon:hover{
-    color: goldenrod;
-}
-.contato-container{
-    display: flex;
-    gap: 15px;
-    align-items: center;
-    justify-content: center;
+    font-family: 'Quicksand',sans-serif;
     color: white;
-    width: 100%;
-    margin-top: 50px;
 }
-.contato-container .contato{
+a{
+    font-size: 2vw;
+    font-family: 'Quicksand',sans-serif;
+    color: white;
+    background-color: goldenrod;
+    padding: 1vw;
+    border-radius: 15px;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
-    gap: 10px;
+    text-decoration: none;
+    padding: 3vh;
 }
-
-
-
-
-@keyframes background-change {
-    0% {
-        background-image: url("video/gif4-fundo-register.gif");
-        background-size: cover cover;
-    }
-    10% {
-        background-image: url("video/gif4-fundo-register.gif");
-        background-size: cover cover;
-    }
-    40%{
-        background-image: url("video/gif2-fundo-register.gif");
-        background-size: cover cover;
-    }
-    75%{
-        background-image: url("video/gif3-fundo-register.gif");
-        background-size: cover cover;
-    }
-    100%{
-        background-image: url("video/gif1-fundo-register.gif");
-        background-size: cover cover;
-    }
-
- 
-
-   
-    
-    
-}
-
-@media screen and (max-width: 800px){
-    .imagens-container{
-        display: none;
-    }
-}
-
-

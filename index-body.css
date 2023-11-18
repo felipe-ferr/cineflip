@@ -148,7 +148,7 @@ h1 {
 }
 /* botao de comprar */
 .ingresso-poster-botoes .compraringresso {
-  box-shadow: inset 0px 0px 0px 1px goldenrod;
+  box-shadow: inset 0px 0px 0px 2px goldenrod;
   background-color: transparent;
   border-radius: 10px;
   color: white;
@@ -165,9 +165,11 @@ h1 {
 }
 
 .ingresso-poster-botoes .compraringresso:hover {
-  background-color: gold;
+  background-color: goldenrod;
   color: rgb(10, 9, 16);
 }
+
+
 
 /* container da barra lateral e menu de lanches */
 .lanches-section {
@@ -177,7 +179,7 @@ h1 {
   flex-direction: row;
   width: 100%;
   box-sizing: border-box;
-  background: linear-gradient(0deg,rgb(14, 17, 45) -16.9%, rgb(10, 9, 16) 119.9%);
+  background: linear-gradient(0deg,rgb(15, 18, 36) -16.9%, rgb(10, 9, 16) 119.9%);
   border-top: 1px solid goldenrod;
 }
 /* barra lateral */

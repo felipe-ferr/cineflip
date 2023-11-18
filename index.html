@@ -11,8 +11,6 @@
     <link rel="stylesheet" href="index-header.css" />
     <link rel="stylesheet" href="index-body.css" />
 
-
-
     <title>CineFlip</title>
 </head>
 
@@ -28,7 +26,7 @@
                     em Cartaz</a>
                 <a href="montar_combo.html"><i class="material-symbols-outlined">fastfood</i>Lanches</a>
                 <a href="unidades.html"><i class="material-symbols-outlined">location_on</i>Unidades</a>
-                <a href="login.html"><i class="material-symbols-outlined">account_circle</i>Login</a>
+                <a href="admin_login.php"><i class="material-symbols-outlined">account_circle</i>Admin</a>
                 <a href="cad_clientes.html"><i class="material-symbols-outlined">account_circle</i>Registrar</a>
             </div>
 
@@ -228,7 +226,7 @@
             </div>
         </div>
     </div>
-    
+
     <script src="js/botoesAtivos.js"></script>
 
     <hr style="height:2px;border-width:0;color:goldenrod;background-color:goldenrod">
@@ -238,163 +236,154 @@
     <div class="carrossel-container">
 
         <a style="opacity: 0.3;" id="botaoesquerda" class="botoescontrolleft" onclick="esquerda()"><ion-icon
-                name="arrow-back-outline"></ion-icon></a>
+                name="chevron-back-outline"></ion-icon></a>
 
-                <div id="frame1" class="filmes-container slide-in-left">
-                    <a href="comprar_ingressos_oppen.html">
-                        <div class="ingressos-container">
-                            <h1>Oppenheimer</h1>
-            
-                            <div style="background-image: url(imagem/oppen-poster2.jpg);" class="ingresso-poster">
-                            </div>
-            
-                            <div class="ingresso-poster-botoes">
-                                <a class="compraringresso" href="comprar_ingressos_oppen.html"><i
-                                        class="material-symbols-outlined">sell</i>Ingressos</a>
-            
-                            </div>
-                        </div>
-                    </a>
+        <div id="frame1" class="filmes-container slide-in-left">
+            <a href="comprar_ingressos_oppen.html">
+                <div class="ingressos-container">
+                    <h1>Oppenheimer</h1>
 
-                    <a href="comprar_ingressos_mario.html">
-                        <div class="ingressos-container">
-                            <h1>Super Mario Bros. O Filme</h1>
-            
-                            <div style="background-image: url(imagem/mario-poster.webp);" class="ingresso-poster">
-                            </div>
-            
-                            <div class="ingresso-poster-botoes">
-                                <a class="compraringresso" href="comprar_ingressos_mario.html"><i
-                                        class="material-symbols-outlined">sell</i>Ingressos</a>
-            
-                            </div>
-                        </div>
-                    </a>
-
-                    <a href="comprar_ingressos_barbie.html">
-                        <div class="ingressos-container">
-                            <h1>Barbie</h1>
-            
-                            <div style="background-image: url(imagem/barbie-poster2.webp);" class="ingresso-poster">
-                            </div>
-            
-                            <div class="ingresso-poster-botoes">
-                                <a class="compraringresso" href="comprar_ingressos_barbie.html"><i
-                                        class="material-symbols-outlined">sell</i>Ingressos</a>
-            
-                            </div>
-                        </div>
-                    </a>
-
-                   <a href="comprar_ingressos_swift.html">
-                    <div class="ingressos-container">
-                        <h1>Taylor Swift: The Eras Tour</h1>
-        
-                        <div style="background-image: url(imagem/swift-poster2.png);" class="ingresso-poster">
-                        </div>
-        
-                        <div class="ingresso-poster-botoes">
-                            <a class="compraringresso" href="comprar_ingressos_swift.html"><i
-                                    class="material-symbols-outlined">sell</i>Ingressos</a>
-        
-                        </div>
+                    <div style="background-image: url(imagem/oppen-poster2.jpg);" class="ingresso-poster">
                     </div>
-                   </a>
 
-                </div>
+                    <div class="ingresso-poster-botoes">
+                        <a class="compraringresso" href="comprar_ingressos_oppen.html"><i
+                                class="material-symbols-outlined">sell</i>Ingressos</a>
 
-
-                <div id="frame2" class="filmes-container slide-in-right">
-                <a href="comprar_ingressos_liberdade.html">
-                    <div class="ingressos-container">
-                        <h1>Som da Liberdade</h1>
-        
-                        <div style="background-image: url(imagem/liberdade.jpg);" class="ingresso-poster">
-                        </div>
-        
-                        <div class="ingresso-poster-botoes">
-                            <a class="compraringresso" href="comprar_ingressos_liberdade.html"><i
-                                    class="material-symbols-outlined">sell</i>Ingressos</a>
-        
-                        </div>
                     </div>
-                </a>
-
-                    <a href="comprar_ingressos_freira.html">
-                        <div class="ingressos-container">
-                            <h1>A Freira 2</h1>
-            
-                            <div style="background-image: url(imagem/freira-poster.jpg);" class="ingresso-poster">
-                            </div>
-            
-                            <div class="ingresso-poster-botoes">
-                                <a class="compraringresso" href="comprar_ingressos_freira.html"><i
-                                        class="material-symbols-outlined">sell</i>Ingressos</a>
-                            </div>
-                        </div>
-                    </a>
-
-                    <a href="comprar_ingressos_fnaf.html">
-                        <div class="ingressos-container">
-                            <h1>Five Nights at Freddy's</h1>
-            
-                            <div style="background-image: url(imagem/fnaf-poster.webp);" class="ingresso-poster">
-                            </div>
-            
-                            <div class="ingresso-poster-botoes">
-                                <a class="compraringresso" href="comprar_ingressos_fnaf.html"><i
-                                        class="material-symbols-outlined">sell</i>Ingressos</a>
-            
-                            </div>
-                        </div>
-                    </a>
-
-                    <a href="comprar_ingressos_marvels.html">
-                        <div class="ingressos-container">
-                            <h1>As Marvels</h1>
-            
-                            <div style="background-image: url(imagem/marvels-poster.jpg);" class="ingresso-poster">
-                            </div>
-            
-                            <div class="ingresso-poster-botoes">
-                                <a class="compraringresso" href="comprar_ingressos_marvels.html"><i
-                                        class="material-symbols-outlined">sell</i>Ingressos</a>
-            
-                            </div>
-                        </div>
-                    </a>
-                    
                 </div>
+            </a>
 
+            <a href="comprar_ingressos_mario.html">
+                <div class="ingressos-container">
+                    <h1>Super Mario Bros. O Filme</h1>
 
-                
+                    <div style="background-image: url(imagem/mario-poster.webp);" class="ingresso-poster">
+                    </div>
 
+                    <div class="ingresso-poster-botoes">
+                        <a class="compraringresso" href="comprar_ingressos_mario.html"><i
+                                class="material-symbols-outlined">sell</i>Ingressos</a>
 
+                    </div>
+                </div>
+            </a>
 
-                
+            <a href="comprar_ingressos_barbie.html">
+                <div class="ingressos-container">
+                    <h1>Barbie</h1>
 
+                    <div style="background-image: url(imagem/barbie-poster2.webp);" class="ingresso-poster">
+                    </div>
+
+                    <div class="ingresso-poster-botoes">
+                        <a class="compraringresso" href="comprar_ingressos_barbie.html"><i
+                                class="material-symbols-outlined">sell</i>Ingressos</a>
+
+                    </div>
+                </div>
+            </a>
+
+            <a href="comprar_ingressos_swift.html">
+                <div class="ingressos-container">
+                    <h1>Taylor Swift: The Eras Tour</h1>
+
+                    <div style="background-image: url(imagem/swift-poster2.png);" class="ingresso-poster">
+                    </div>
+
+                    <div class="ingresso-poster-botoes">
+                        <a class="compraringresso" href="comprar_ingressos_swift.html"><i
+                                class="material-symbols-outlined">sell</i>Ingressos</a>
+
+                    </div>
+                </div>
+            </a>
+
+        </div>
+
+        <div id="frame2" class="filmes-container slide-in-right">
+            <a href="comprar_ingressos_liberdade.html">
+                <div class="ingressos-container">
+                    <h1>Som da Liberdade</h1>
+
+                    <div style="background-image: url(imagem/liberdade.jpg);" class="ingresso-poster">
+                    </div>
+
+                    <div class="ingresso-poster-botoes">
+                        <a class="compraringresso" href="comprar_ingressos_liberdade.html"><i
+                                class="material-symbols-outlined">sell</i>Ingressos</a>
+
+                    </div>
+                </div>
+            </a>
+
+            <a href="comprar_ingressos_freira.html">
+                <div class="ingressos-container">
+                    <h1>A Freira 2</h1>
+
+                    <div style="background-image: url(imagem/freira-poster.jpg);" class="ingresso-poster">
+                    </div>
+
+                    <div class="ingresso-poster-botoes">
+                        <a class="compraringresso" href="comprar_ingressos_freira.html"><i
+                                class="material-symbols-outlined">sell</i>Ingressos</a>
+                    </div>
+                </div>
+            </a>
+
+            <a href="comprar_ingressos_fnaf.html">
+                <div class="ingressos-container">
+                    <h1>Five Nights at Freddy's</h1>
+
+                    <div style="background-image: url(imagem/fnaf-poster.webp);" class="ingresso-poster">
+                    </div>
+
+                    <div class="ingresso-poster-botoes">
+                        <a class="compraringresso" href="comprar_ingressos_fnaf.html"><i
+                                class="material-symbols-outlined">sell</i>Ingressos</a>
+
+                    </div>
+                </div>
+            </a>
+
+            <a href="comprar_ingressos_marvels.html">
+                <div class="ingressos-container">
+                    <h1>As Marvels</h1>
+
+                    <div style="background-image: url(imagem/marvels-poster.jpg);" class="ingresso-poster">
+                    </div>
+
+                    <div class="ingresso-poster-botoes">
+                        <a class="compraringresso" href="comprar_ingressos_marvels.html"><i
+                                class="material-symbols-outlined">sell</i>Ingressos</a>
+
+                    </div>
+                </div>
+            </a>
+
+        </div>
 
         <a id="botaodireita" class="botoescontrolright" onclick="scrollRight()"><ion-icon
                 name="chevron-forward-outline"></ion-icon></a>
 
     </div>
-    
 
     <div class="marcadores">
         <div style="background-color: goldenrod;" id="bola1" class="bola"></div>
         <div id="bola2" class="bola"></div>
     </div>
 
-
-  
-
     <div style="margin-top: 10vh;" class="lanches-section">
-        
+
         <div class="lanches-imagem">
             <h1>Com fome?</h1>
             <p>Faça o seu pedido e retire no cinema</p>
             <img src="imagem/combo-fundo.svg">
-            <p>A deliciosa pipoca <span style="color: goldenrod;">CineFlip</span> está disponível em sete sabores deliciosos e uma variedade de tamanhos perfeitos! Chega de esperar na fila do estande de concessão. Faça seu pedido on-line com antecedência e retire na bilheteria!</p>
+            <p>A deliciosa pipoca <span style="color: goldenrod;">CineFlip</span>
+                está disponível em sete sabores deliciosos e uma variedade
+                de tamanhos perfeitos! Chega de esperar na fila do estande
+                de concessão. Faça seu pedido on-line com antecedência e
+                retire na bilheteria!</p>
 
             <div class="lista-vantagens">
                 <i class="material-symbols-outlined">directions_run</i>
@@ -412,99 +401,19 @@
         </div>
 
         <div class="lanches-menu">
-
-            <div class="lanches-nav">
-                <label class="data">
-                    <input checked onclick="showpedidos()"type="radio" value="1" name="botao" />
-                    <p>Mais Pedidos</p>
-                </label>
-                <label class="data">
-                    <input onclick="showpromos()"type="radio" value="1" name="botao" />
-                    <p>Promoções Especiais</p>
-                </label>
-            </div>
-
-           <div id="maispedidos" class="menu-row fade-in">
-            <div class="lanche-container">
-                <img src="imagem/pipocarefri.svg">
-                <p>Combo Pipoca + Refri</p>
-                <p>R$19,99</p>
-                <div class="comprarlanche">
-                    <p>Comprar</p>
-                    <i class="material-symbols-outlined">shopping_cart</i>
-                </div>
-            </div>
-
-            <div class="lanche-container">
-                <img src="imagem/pipocadoce.svg">
-                <p> Pipoca Caramelizada + Refri</p>
-                <p>R$25,00</p>
-                <div class="comprarlanche">
-                    <p>Comprar</p>
-                    <i class="material-symbols-outlined">shopping_cart</i>
-                </div>
-            </div>
-
-            <div class="lanche-container">
-                <img src="imagem/doce.svg">
-                <p>3 Pacotes M&M Grande</p>
-                <p>R$20,00</p>
-                <div class="comprarlanche">
-                    <p>Comprar</p>
-                    <i class="material-symbols-outlined">shopping_cart</i>
-                </div>
-            </div>
-           </div>
-
-
-
-
-
-           <div id="promos" class="menu-row fade-in">
-            <div class="lanche-container">
-                <img src="imagem/swift-pipoca.svg">
-                <p>Combo Taylor Swift</p>
-                <p>R$30,00</p>
-                <div class="comprarlanche">
-                    <p>Comprar</p>
-                    <i class="material-symbols-outlined">shopping_cart</i>
-                </div>
-            </div>
-
-            <div class="lanche-container">
-                <img src="imagem/halloween.svg">
-                <p>Balde Pipoca Halloween</p>
-                <p>R$20,00</p>
-                <div class="comprarlanche">
-                    <p>Comprar</p>
-                    <i class="material-symbols-outlined">shopping_cart</i>
-                </div>
-            </div>
-
-            <div class="lanche-container">
-                <img src="imagem/mario-pipoca.svg">
-                <p>Balde Pipoca Mario</p>
-                <p>R$29,99</p>
-                <div class="comprarlanche">
-                    <p>Comprar</p>
-                    <i class="material-symbols-outlined">shopping_cart</i>
-                </div>
-            </div>
-           </div>
-
-
-            <h1>Ou</h1>
             <h1>Monte o seu Combo</h1>
             <img class="imagem-monte-combo" src="imagem/monte-combo.svg">
-            <a class="montar-combo-btn" href="montar_combo.html"><i class="material-symbols-outlined">fastfood</i>Monte seu Combo</a>
-    </div>
+            <a class="montar-combo-btn" href="montar_combo.html"><i class="material-symbols-outlined">fastfood</i>Monte
+                seu
+                Combo</a>
+        </div>
 
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
-    <script type="application/javascript" src="js/showHeaderFilmes.js"></script>
-    <script type="application/javascript" src="js/carrosselshow.js"></script>
-    <script type="application/javascript" src="js/lanchesNavShow.js"></script>
+        <script type="application/javascript" src="js/showHeaderFilmes.js"></script>
+        <script type="application/javascript" src="js/carrosselshow.js"></script>
+        <script type="application/javascript" src="js/lanchesNavShow.js"></script>
 
 </body>
 
