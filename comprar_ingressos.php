@@ -25,14 +25,12 @@
     <div class="navbarlinks">
         <a href="cartaz.html"><i class="material-symbols-outlined">movie</i>Filmes
             em Cartaz</a>
-        <a href="lanches.html"><i class="material-symbols-outlined">fastfood</i>Lanches</a>
+        <a href="montar_combo.html"><i class="material-symbols-outlined">fastfood</i>Lanches</a>
         <a href="unidades.html"><i class="material-symbols-outlined">location_on</i>Unidades</a>
-    </div>
-
-    <div class="navlogin-btn">
         <a href="login.html"><i class="material-symbols-outlined">account_circle</i>Login</a>
         <a href="cad_clientes.html"><i class="material-symbols-outlined">account_circle</i>Registrar</a>
     </div>
+
 </div>
 
 <div class="container-geral">
@@ -64,7 +62,7 @@
     <div class="container-desenho-form slide-in-left">
 
         <div class="desenho">
-            <img src="desenho-login.svg">
+            <img src="imagem/desenho-login.svg">
             <img class="responsive-img" src="imagem/cineflip-logo.svg" style="width:150px;height:40px">
         </div>
 

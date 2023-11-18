@@ -6,7 +6,8 @@ body {
 
 hr {
   width: 90%;
-  border-top: 0.1vw solid white;
+  border: 1px solid goldenrod;
+  border-radius: 20px;
 }
 a{
   text-decoration: none;
@@ -180,7 +181,6 @@ h1 {
   width: 100%;
   box-sizing: border-box;
   background: linear-gradient(0deg,rgb(15, 18, 36) -16.9%, rgb(10, 9, 16) 119.9%);
-  border-top: 1px solid goldenrod;
 }
 /* barra lateral */
 .lanches-imagem {
@@ -328,6 +328,122 @@ h1 {
 }
 .montar-combo-btn .material-symbols-outlined {
   color: white;
+}
+
+
+/* rodapé */
+.footer{
+  background-color: rgb(30, 30, 30);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.footer hr{
+  width: 70%;
+  border: 1px solid grey;
+  border-radius: 15px;
+}
+.footer-social-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2vw;
+  padding: 4vh;
+}
+.footer-social-link{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1vw;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+.footer-social-link ion-icon{
+  color: white;
+  font-size: 2vw;
+}
+.footer-social-link p{
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1vw;
+  color: white;
+  margin: 0;
+}
+.footer-social-link:hover > ion-icon{
+  color: goldenrod;
+}
+.footer-social-link:hover p{
+  color: goldenrod;
+}
+
+.footer-links-container{
+  display: flex;
+  align-items: first baseline;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: 100%;
+  padding: 6vh;
+  box-sizing: border-box;
+}
+.footer-links-container .links-column{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.links-column{
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1vw;
+  color: white;
+  gap: 2vh
+}
+.links-column p{
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1vw;
+  color: rgb(141, 141, 141);
+  margin: 0;
+  cursor: pointer;
+}
+.links-column h2{
+  margin: 0;
+}
+.links-column a{
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1vw;
+  color: rgb(141, 141, 141);
+  margin: 0;
+}
+
+.creditofinal{
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1vw;
+  color: white;
+}
+
+
+.footer-final{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 2vh;
+  box-sizing: border-box;
+}
+.footer-final p{
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1vw;
+  color: rgb(141, 141, 141);
+  margin: 0;
+}
+.footer-final h2{
+  margin: 0;
+}
+.footer-final img{
+  width: 10vw;
+  height: 5vh;
+  margin: 0;
 }
 
 
