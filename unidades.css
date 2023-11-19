@@ -1,0 +1,67 @@
+body{
+    margin: 0;
+}
+/* header com a imagem do filme */
+.ingressos-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    flex-direction: column;
+}
+.unidade-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    box-sizing: border-box;
+    padding: 4vh;
+}
+
+.imagem-texto-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    width: 80vw;
+}
+.shopping-imagem{
+    width: 40vw;
+    background-size: 100% 100%;
+    height: 40vh;
+    background-color: aqua;
+}
+
+.shopping-texto{
+    width: 70%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: baseline baseline;
+    height: 40vh;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 0 6vh;
+}
+.shopping-texto p{
+    font-family: 'Quicksand',sans-serif;
+    color: white;
+    font-size: 1vw;
+    text-wrap: wrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1vw;
+}
+.shopping-texto .material-icons-outlined{
+    font-size: 2vw;
+}
+.shopping-texto iframe{
+    width: 30vw;
+    height: 30vh;
+    margin: 0;
+    padding: 0;
+    border: none;
+}

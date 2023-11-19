@@ -27,7 +27,7 @@
             em Cartaz</a>
         <a href="montar_combo.html"><i class="material-symbols-outlined">fastfood</i>Lanches</a>
         <a href="unidades.html"><i class="material-symbols-outlined">location_on</i>Unidades</a>
-        <a href="login.html"><i class="material-symbols-outlined">account_circle</i>Login</a>
+        <a href="admin_login.php"><i class="material-symbols-outlined">account_circle</i>Admin</a>
         <a href="cad_clientes.html"><i class="material-symbols-outlined">account_circle</i>Registrar</a>
     </div>
 
