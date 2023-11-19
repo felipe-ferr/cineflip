@@ -11,11 +11,11 @@
 
     <script type="application/javascript" src="js/showHeaderFilmes.js"></script>
 
-
-
-
-    <title>CineFlip</title>
+    <title>Resumo do Pedido | CineFlip</title>
+    <link rel="icon" type="image/x-icon" href="favicon/favicon.ico">
 </head>
+
+
 
 <div class="navbarContainer" id="nav">
     <div class="navbarlogo">
