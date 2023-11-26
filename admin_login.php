@@ -137,9 +137,9 @@
                     </table>
                 </div>
 
-            </div>
+        
 
-            <div class="tables">
+    
                 <?php
                 $con = mysqli_connect("127.0.0.1", "root", "", "cinema");
                 if (mysqli_connect_errno()) {
@@ -216,9 +216,8 @@
                     </table>
                 </div>
 
-            </div>
+     
 
-            <div class="tables">
                 <?php
                 $con = mysqli_connect("127.0.0.1", "root", "", "cinema");
                 if (mysqli_connect_errno()) {
@@ -275,7 +274,7 @@
                     </table>
                 </div>
 
-            </div>
+    
 
         </div>
 
