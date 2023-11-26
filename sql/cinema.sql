@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 13/11/2023 às 02:10
+-- Tempo de geração: 26/11/2023 às 19:23
 -- Versão do servidor: 10.4.28-MariaDB
 -- Versão do PHP: 8.2.4
 
@@ -43,8 +43,8 @@ CREATE TABLE `clientes` (
 --
 
 INSERT INTO `clientes` (`id`, `nome`, `cpf`, `telefone`, `sexo`, `end`, `email`, `senha`) VALUES
-(61, 'Felipe', '8791841', '8787878', 'Não Especificado', 'afasdfa', 'felipealbuquerque0100@gmail.com', '4234'),
-(62, 'oi', '075.117.861-62', '6436436', 'Feminino', 'afasdfa', 'felipedealbuquerque1@gmail.com', '45643');
+(62, 'oi', '075.117.861-62', '6436436', 'Feminino', 'afasdfa', 'felipedealbuquerque1@gmail.com', '45643'),
+(65, 'aff', '07511786162', '8787878', 'Feminino', 'Brasília', 'caroline120829@gmail.com', '5r234234');
 
 -- --------------------------------------------------------
 
@@ -59,7 +59,7 @@ CREATE TABLE `ingressos` (
   `data` varchar(200) NOT NULL,
   `idioma` varchar(200) NOT NULL,
   `horario` varchar(200) NOT NULL,
-  `tipoIngresso` varchar(2) NOT NULL,
+  `tipoIngresso` varchar(200) NOT NULL,
   `assento` varchar(200) NOT NULL,
   `metodoPagamento` varchar(200) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
@@ -70,12 +70,13 @@ CREATE TABLE `ingressos` (
 
 INSERT INTO `ingressos` (`id`, `filme`, `cinema`, `data`, `idioma`, `horario`, `tipoIngresso`, `assento`, `metodoPagamento`) VALUES
 (316, 'Oppenheimer', 'Terraço Shopping', 'Segunda', 'Legendado 3D', '15h30', 'Me', 'E5,E6', 'Cartão de Crédito'),
-(317, 'Oppenheimer', 'Terraço Shopping', 'Segunda', 'Legendado 2D', '15h30', 'Me', 'E5,E6', 'Cartão de Crédito'),
 (318, 'Oppenheimer', 'Terraço Shopping', 'Quarta', 'Dublado 2D', '16h00', 'In', 'E5,E6', 'Cartão de Crédito'),
 (319, 'Five Nights at Freddys', 'Taguatinga Shopping', 'Quinta', 'Dublado 2D', '16h00', 'Me', 'b7,b8', 'Pix'),
 (320, 'Taylor Swift: The Eras Tour', 'Boulevard Shopping', 'Quarta', 'Dublado 2D', '21h00', 'In', 'a8,a9', 'Pix'),
 (321, 'Super Mario Bros. O Filme', 'Taguatinga Shopping', 'Quinta', 'Dublado 2D', '16h00', 'Me', 'd10,d11', 'Boleto'),
-(322, 'Super Mario Bros. O Filme', 'Taguatinga Shopping', 'Quinta', 'Dublado 2D', '16h00', 'Me', 'd10,d11', 'Boleto');
+(322, 'Super Mario Bros. O Filme', 'Taguatinga Shopping', 'Quinta', 'Dublado 2D', '16h00', 'Me', 'd10,d11', 'Boleto'),
+(323, 'Oppenheimer', 'Terraço Shopping', 'Sábado', 'Dublado 2D', '19h00', 'Me', 'E8,E9', 'Cartão de Crédito'),
+(324, 'Oppenheimer', 'Boulevard Shopping', 'Quinta', 'Dublado 2D', '21h00', 'Inteira', 'E13,E14', 'Boleto');
 
 -- --------------------------------------------------------
 
@@ -88,6 +89,14 @@ CREATE TABLE `pedidos` (
   `pedido` varchar(200) NOT NULL,
   `metodoPagamento` varchar(200) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+
+--
+-- Despejando dados para a tabela `pedidos`
+--
+
+INSERT INTO `pedidos` (`id`, `pedido`, `metodoPagamento`) VALUES
+(56, 'Pipoca Simples,Pipoca Caramelizada,Pipoca de Chocolate', 'Boleto'),
+(57, 'Pipoca Simples', 'Boleto');
 
 --
 -- Índices para tabelas despejadas
@@ -119,19 +128,19 @@ ALTER TABLE `pedidos`
 -- AUTO_INCREMENT de tabela `clientes`
 --
 ALTER TABLE `clientes`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=64;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=66;
 
 --
 -- AUTO_INCREMENT de tabela `ingressos`
 --
 ALTER TABLE `ingressos`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=323;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=325;
 
 --
 -- AUTO_INCREMENT de tabela `pedidos`
 --
 ALTER TABLE `pedidos`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=55;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=58;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
